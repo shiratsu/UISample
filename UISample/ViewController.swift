@@ -10,9 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    /**
+     xibを読み込む
+     */
+    override func loadView() {
+        if let view = UINib(nibName: "ViewController", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    @IBAction func gotoCustomnav(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_customnavbar", sender: self)
     }
 
     override func didReceiveMemoryWarning() {

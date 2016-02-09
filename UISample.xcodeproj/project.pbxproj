@@ -14,6 +14,9 @@
 		569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 569527A21C687E0D00466FC4 /* LaunchScreen.storyboard */; };
 		569527AF1C687E0D00466FC4 /* UISampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527AE1C687E0D00466FC4 /* UISampleTests.swift */; };
 		569527BA1C687E0D00466FC4 /* UISampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527B91C687E0D00466FC4 /* UISampleUITests.swift */; };
+		569527C81C687EEF00466FC4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527C71C687EEF00466FC4 /* ViewController.xib */; };
+		569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527CA1C687F5700466FC4 /* CustomNavbar.xib */; };
+		569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527EA1C6973FA00466FC4 /* CustomNavbar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		569527B51C687E0D00466FC4 /* UISampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UISampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527B91C687E0D00466FC4 /* UISampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISampleUITests.swift; sourceTree = "<group>"; };
 		569527BB1C687E0D00466FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		569527C71C687EEF00466FC4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		569527CA1C687F5700466FC4 /* CustomNavbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavbar.xib; sourceTree = "<group>"; };
+		569527EA1C6973FA00466FC4 /* CustomNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavbar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 				569527A01C687E0D00466FC4 /* Assets.xcassets */,
 				569527A21C687E0D00466FC4 /* LaunchScreen.storyboard */,
 				569527A51C687E0D00466FC4 /* Info.plist */,
+				569527C71C687EEF00466FC4 /* ViewController.xib */,
+				569527CA1C687F5700466FC4 /* CustomNavbar.xib */,
+				569527EA1C6973FA00466FC4 /* CustomNavbar.swift */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -231,6 +240,8 @@
 			files = (
 				569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
+				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
+				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */,
 			);
@@ -348,7 +360,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -386,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -397,10 +409,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "indival-inc..UISample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -408,10 +424,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = UISample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "indival-inc..UISample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
