@@ -34,6 +34,7 @@
                     <navigationItem key="navigationItem" id="02v-Se-Sm2"/>
                     <connections>
                         <segue destination="y6b-Bt-gg9" kind="show" identifier="show_customnavbar" id="tF3-Xz-xxf"/>
+                        <segue destination="OHx-3T-eoH" kind="show" identifier="show_customswitch" id="fWB-Rs-zMO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -47,6 +48,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9F-MS-rU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1150" y="289"/>
+        </scene>
+        <!--Custom SwitchVCL-->
+        <scene sceneID="cgG-hi-Fws">
+            <objects>
+                <viewController id="OHx-3T-eoH" customClass="CustomSwitchVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-uV-wgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1170" y="998"/>
         </scene>
     </scenes>
 </document>

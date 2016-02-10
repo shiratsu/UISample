@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSwitchVCL" customModule="UISample" customModuleProvider="target">
+            <connections>
+                <outlet property="menuView" destination="Mul-n2-rae" id="OWP-eA-kgo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Mul-n2-rae">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MBV-r8-N6O"/>
+                        <outlet property="delegate" destination="-1" id="iEh-C5-1zG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mul-n2-rae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4TS-PX-aCB"/>
+                <constraint firstItem="Mul-n2-rae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mqf-rV-7BJ"/>
+                <constraint firstAttribute="trailing" secondItem="Mul-n2-rae" secondAttribute="trailing" id="UUc-ea-YaQ"/>
+                <constraint firstAttribute="bottom" secondItem="Mul-n2-rae" secondAttribute="bottom" id="lqK-0e-bah"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -17,6 +17,10 @@
 		569527C81C687EEF00466FC4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527C71C687EEF00466FC4 /* ViewController.xib */; };
 		569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527CA1C687F5700466FC4 /* CustomNavbar.xib */; };
 		569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527EA1C6973FA00466FC4 /* CustomNavbar.swift */; };
+		56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74D911C69E30100A578CD /* CustomSwitchVCL.swift */; };
+		56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */; };
+		56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74D951C69E62700A578CD /* SwitchWithCell.swift */; };
+		56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74D961C69E62700A578CD /* SwitchWithCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,10 @@
 		569527C71C687EEF00466FC4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		569527CA1C687F5700466FC4 /* CustomNavbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavbar.xib; sourceTree = "<group>"; };
 		569527EA1C6973FA00466FC4 /* CustomNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavbar.swift; sourceTree = "<group>"; };
+		56E74D911C69E30100A578CD /* CustomSwitchVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitchVCL.swift; sourceTree = "<group>"; };
+		56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitchVCL.xib; sourceTree = "<group>"; };
+		56E74D951C69E62700A578CD /* SwitchWithCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchWithCell.swift; sourceTree = "<group>"; };
+		56E74D961C69E62700A578CD /* SwitchWithCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchWithCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,10 @@
 				569527C71C687EEF00466FC4 /* ViewController.xib */,
 				569527CA1C687F5700466FC4 /* CustomNavbar.xib */,
 				569527EA1C6973FA00466FC4 /* CustomNavbar.swift */,
+				56E74D911C69E30100A578CD /* CustomSwitchVCL.swift */,
+				56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */,
+				56E74D951C69E62700A578CD /* SwitchWithCell.swift */,
+				56E74D961C69E62700A578CD /* SwitchWithCell.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -238,10 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */,
 				569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
+				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +283,8 @@
 			files = (
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
+				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
+				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
 				5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,6 +517,7 @@
 				569527C01C687E0D00466FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		569527C11C687E0D00466FC4 /* Build configuration list for PBXNativeTarget "UISampleTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +526,7 @@
 				569527C31C687E0D00466FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		569527C41C687E0D00466FC4 /* Build configuration list for PBXNativeTarget "UISampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +535,7 @@
 				569527C61C687E0D00466FC4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

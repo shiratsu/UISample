@@ -27,6 +27,9 @@ class ViewController: UIViewController {
     @IBAction func gotoCustomnav(sender: AnyObject) {
         self.performSegueWithIdentifier("show_customnavbar", sender: self)
     }
+    @IBAction func goSwitch(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_customswitch", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
