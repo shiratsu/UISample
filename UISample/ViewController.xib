@@ -33,13 +33,39 @@
                         <action selector="goSwitch:" destination="-1" eventType="touchUpInside" id="yFv-Ib-NZB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-oi-ca6">
+                    <rect key="frame" x="233" y="267" width="135" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1OP-Jp-Mrm"/>
+                        <constraint firstAttribute="width" constant="135" id="MLf-tB-Ulj"/>
+                    </constraints>
+                    <state key="normal" title="シンプルカレンダー"/>
+                    <connections>
+                        <action selector="gotoSimpleCalendar:" destination="-1" eventType="touchUpInside" id="cde-Od-Mra"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thb-bc-TMv">
+                    <rect key="frame" x="255" y="329" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0Q7-sx-PXK"/>
+                        <constraint firstAttribute="width" constant="90" id="UjT-i5-P7a"/>
+                    </constraints>
+                    <state key="normal" title="横カレンダー"/>
+                    <connections>
+                        <action selector="gotoLandCalendar:" destination="-1" eventType="touchUpInside" id="elb-2a-ugt"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="45" id="9Wo-Uu-0W1"/>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HkH-71-XAc"/>
+                <constraint firstItem="Thb-bc-TMv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OEW-5L-PC5"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pcf-Hi-I0W"/>
+                <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="52" id="TSG-7l-AKM"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9"/>
+                <constraint firstItem="Thb-bc-TMv" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="32" id="jVf-7o-JJx"/>
+                <constraint firstItem="XVM-oi-ca6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ooe-Ct-BYy"/>
             </constraints>
         </view>
     </objects>

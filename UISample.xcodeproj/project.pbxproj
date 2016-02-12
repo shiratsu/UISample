@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */; };
+		561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */; };
 		5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527991C687E0C00466FC4 /* AppDelegate.swift */; };
 		5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695279B1C687E0D00466FC4 /* ViewController.swift */; };
 		5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5695279D1C687E0D00466FC4 /* Main.storyboard */; };
@@ -21,6 +23,10 @@
 		56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */; };
 		56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74D951C69E62700A578CD /* SwitchWithCell.swift */; };
 		56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74D961C69E62700A578CD /* SwitchWithCell.xib */; };
+		56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE01C6B2FE100A578CD /* SimpleCalendar.swift */; };
+		56E74DE31C6B2FE100A578CD /* SimpleCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */; };
+		56E74DE51C6B326E00A578CD /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE41C6B326E00A578CD /* DayView.swift */; };
+		56E74DE71C6B336600A578CD /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE61C6B336600A578CD /* MonthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandScapeCalendar.swift; sourceTree = "<group>"; };
+		561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandScapeCalendar.xib; sourceTree = "<group>"; };
 		569527961C687E0C00466FC4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527991C687E0C00466FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5695279B1C687E0D00466FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +69,10 @@
 		56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitchVCL.xib; sourceTree = "<group>"; };
 		56E74D951C69E62700A578CD /* SwitchWithCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchWithCell.swift; sourceTree = "<group>"; };
 		56E74D961C69E62700A578CD /* SwitchWithCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitchWithCell.xib; sourceTree = "<group>"; };
+		56E74DE01C6B2FE100A578CD /* SimpleCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleCalendar.swift; sourceTree = "<group>"; };
+		56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleCalendar.xib; sourceTree = "<group>"; };
+		56E74DE41C6B326E00A578CD /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		56E74DE61C6B336600A578CD /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,12 @@
 				56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */,
 				56E74D951C69E62700A578CD /* SwitchWithCell.swift */,
 				56E74D961C69E62700A578CD /* SwitchWithCell.xib */,
+				56E74DE01C6B2FE100A578CD /* SimpleCalendar.swift */,
+				56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */,
+				56E74DE41C6B326E00A578CD /* DayView.swift */,
+				56E74DE61C6B336600A578CD /* MonthView.swift */,
+				561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */,
+				561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -257,6 +275,8 @@
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
+				561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */,
+				56E74DE31C6B2FE100A578CD /* SimpleCalendar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */,
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
+				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
+				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,
 				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
+				56E74DE51C6B326E00A578CD /* DayView.swift in Sources */,
 				5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,6 +30,15 @@ class ViewController: UIViewController {
     @IBAction func goSwitch(sender: AnyObject) {
         self.performSegueWithIdentifier("show_customswitch", sender: self)
     }
+    
+    @IBAction func gotoSimpleCalendar(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_simplecalendar", sender: self)
+    }
+    
+    @IBAction func gotoLandCalendar(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_landcalendar", sender: self)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

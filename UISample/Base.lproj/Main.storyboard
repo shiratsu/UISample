@@ -35,16 +35,57 @@
                     <connections>
                         <segue destination="y6b-Bt-gg9" kind="show" identifier="show_customnavbar" id="tF3-Xz-xxf"/>
                         <segue destination="OHx-3T-eoH" kind="show" identifier="show_customswitch" id="fWB-Rs-zMO"/>
+                        <segue destination="qkR-d3-JeD" kind="show" identifier="show_simplecalendar" id="bjq-u6-aHU"/>
+                        <segue destination="oUM-Zl-RNK" kind="show" identifier="show_landcalendar" id="7KQ-ny-Thm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="329" y="424"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eP4-5t-seJ">
+            <objects>
+                <navigationController id="Hrr-bl-WqU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1If-Rc-nMr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="76w-AL-xTB" kind="relationship" relationship="rootViewController" id="BnK-QY-qNM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gj0-oK-xny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76" y="-1019"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0Lj-Pt-AnH">
+            <objects>
+                <viewController id="76w-AL-xTB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JCx-vt-egY"/>
+                        <viewControllerLayoutGuide type="bottom" id="LfX-SS-e7d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GaF-zo-Srs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="2Uo-g7-qRy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jy6-bJ-FR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="996" y="-987"/>
+        </scene>
         <!--Custom Navbar-->
         <scene sceneID="8gI-F6-P34">
             <objects>
-                <viewController id="y6b-Bt-gg9" customClass="CustomNavbar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="y6b-Bt-gg9" customClass="CustomNavbar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Hrr-bl-WqU" kind="presentation" id="Mci-xK-cdj"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9F-MS-rU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1150" y="289"/>
@@ -56,6 +97,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-uV-wgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1170" y="998"/>
+        </scene>
+        <!--Simple Calendar-->
+        <scene sceneID="8ZK-aK-Ffw">
+            <objects>
+                <viewController id="qkR-d3-JeD" customClass="SimpleCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vCT-Mu-isz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1106" y="1806"/>
+        </scene>
+        <!--Land Scape Calendar-->
+        <scene sceneID="yR6-6C-5KJ">
+            <objects>
+                <viewController id="oUM-Zl-RNK" customClass="LandScapeCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lzi-Ct-QU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="2608"/>
         </scene>
     </scenes>
 </document>

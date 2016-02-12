@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LandScapeCalendar" customModule="UISample" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarScrollView" destination="w9W-DM-y0a" id="xX4-UX-zk0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w9W-DM-y0a">
+                    <rect key="frame" x="16" y="126" width="568" height="247"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="247" id="gAR-wy-Asd"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ArX-Kr-AlS"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="w9W-DM-y0a" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="KdR-qT-riM"/>
+                <constraint firstItem="w9W-DM-y0a" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="126" id="V5p-HI-r1Z"/>
+                <constraint firstAttribute="trailing" secondItem="w9W-DM-y0a" secondAttribute="trailing" constant="16" id="taX-wW-Zkk"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
