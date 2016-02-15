@@ -55,6 +55,17 @@
                         <action selector="gotoLandCalendar:" destination="-1" eventType="touchUpInside" id="elb-2a-ugt"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j8-fJ-REj">
+                    <rect key="frame" x="255" y="394" width="90" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="696-za-ilK"/>
+                        <constraint firstAttribute="height" constant="30" id="tiQ-Ta-0cE"/>
+                    </constraints>
+                    <state key="normal" title="縦カレンダー"/>
+                    <connections>
+                        <action selector="gotoVartivalCalendar:" destination="-1" eventType="touchUpInside" id="T3g-hd-Hal"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -64,7 +75,9 @@
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pcf-Hi-I0W"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="52" id="TSG-7l-AKM"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9"/>
+                <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="Thb-bc-TMv" secondAttribute="bottom" constant="35" id="Y5V-eU-nCJ"/>
                 <constraint firstItem="Thb-bc-TMv" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="32" id="jVf-7o-JJx"/>
+                <constraint firstItem="6j8-fJ-REj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jif-kl-e8Y"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ooe-Ct-BYy"/>
             </constraints>
         </view>

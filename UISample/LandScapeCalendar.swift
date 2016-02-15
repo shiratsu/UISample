@@ -37,17 +37,17 @@ class LandScapeCalendar: UIViewController {
         
         let monthview1 = MonthView(frame: CGRect(x: 10, y: 5, width: 150, height: 205))
         monthview1.setUpLabel("2016年1月")
-        monthview1.setUpDays(2016, month: 1,aryCheckDays: [2,20,21])
+        monthview1.setUpDays(2016, month: 1,aryCheckDays: [2,20,21],firstY: 23)
         calendarScrollView.addSubview(monthview1)
         
         let monthview2 = MonthView(frame: CGRect(x: 170, y: 5, width: 150, height: 205))
         monthview2.setUpLabel("2016年2月")
-        monthview2.setUpDays(2016, month: 2,aryCheckDays: [1,20,21])
+        monthview2.setUpDays(2016, month: 2,aryCheckDays: [1,20,21],firstY: 23)
         calendarScrollView.addSubview(monthview2)
         
         let monthview3 = MonthView(frame: CGRect(x: 330, y: 5, width: 150, height: 205))
         monthview3.setUpLabel("2016年3月")
-        monthview3.setUpDays(2016, month: 3,aryCheckDays: [3,30,15])
+        monthview3.setUpDays(2016, month: 3,aryCheckDays: [3,30,15],firstY: 23)
         calendarScrollView.addSubview(monthview3)
         
         calendarScrollView.contentSize = CGSize(width: 500, height: 240)

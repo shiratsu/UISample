@@ -34,7 +34,7 @@ class SimpleCalendar: UIViewController {
         super.viewDidLayoutSubviews()
         
         monthView.setUpLabel("2016年1月")
-        monthView.setUpDays(2016, month: 1,aryCheckDays: [2,20,21])
+        monthView.setUpDays(2016, month: 1,aryCheckDays: [2,20,21],firstY: 23)
     }
 
     override func didReceiveMemoryWarning() {

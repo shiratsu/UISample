@@ -39,6 +39,9 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_landcalendar", sender: self)
     }
     
+    @IBAction func gotoVartivalCalendar(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_varticalcalendar", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

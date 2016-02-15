@@ -23,18 +23,19 @@ class MonthView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func setUpLabel(text:String){
+    func setUpLabel(text:String,floatFontSize:CGFloat = 15){
         
-        let textSize = text.sizeWithAttributes([NSFontAttributeName: UIFont(name: "HiraginoSans-W3", size: 15)!])
+        let textSize = text.sizeWithAttributes([NSFontAttributeName: UIFont(name: "HiraginoSans-W3", size: floatFontSize)!])
         
         let diff = (self.frame.size.width - textSize.width)/2
         
-        titleLabel = UILabel(frame: CGRect(x: diff, y: 5, width: textSize.width+2, height: 15))
+        titleLabel = UILabel(frame: CGRect(x: diff, y: 5, width: textSize.width+10, height: floatFontSize))
+        titleLabel.font = UIFont(name: "HiraginoSans-W3", size: floatFontSize)
         titleLabel.text = text
         self.addSubview(titleLabel)
     }
     
-    func setUpDays(year:Int,month:Int,aryCheckDays:[Int]){
+    func setUpDays(year:Int,month:Int,aryCheckDays:[Int],firstY:Int,aryAnotherCheck:[Int] = [],floatFontSize:CGFloat = 15){
         
         let subViews:[UIView] = self.subviews as [UIView]
         for view in subViews {
@@ -45,20 +46,20 @@ class MonthView: UIView {
         
         let day:Int! = self.getLastDay(year,month:month);
         let dayWidth:Int = Int( frame.size.width / 7.0 )
-        let dayHeight:Int = dayWidth+10
+        let dayHeight:Int = dayWidth+1
         
         //まずは曜日をセット
         var i = 0
         for weekday in aryWeek{
             let x:Int       = (i * (dayWidth));
-            let y:Int       = 23
+            let y:Int       = firstY
             let frame:CGRect = CGRectMake(CGFloat(x),
                 CGFloat(y),
                 CGFloat(dayWidth),
                 CGFloat(dayHeight)
             );
             
-            let dayView:DayView = DayView(frame: frame, week: weekday)
+            let dayView:DayView = DayView(frame: frame, week: weekday,floatFontSize:floatFontSize)
             
             self.addSubview(dayView)
             
@@ -73,16 +74,23 @@ class MonthView: UIView {
             for var i:Int = 0; i < day!;i++ {
                 let week:Int    = self.getWeek(year,month: month,day:i+1)+1
                 let x:Int       = ((weekday - 1 ) * (dayWidth));
-                let y:Int       = (week-1) * dayHeight+23
+                let y:Int       = (week-1) * dayHeight+firstY
                 let frame:CGRect = CGRectMake(CGFloat(x),
                     CGFloat(y),
                     CGFloat(dayWidth),
                     CGFloat(dayHeight)
                 );
                 
-                let dayView:DayView = DayView(frame: frame, year:year,month:month,day:i+1,weekday:weekday)
+                let dayView:DayView = DayView(frame: frame, year:year,month:month,day:i+1,weekday:weekday,floatFontSize:floatFontSize)
                 if aryCheckDays.contains(dayView.dayInt){
                     dayView.backgroundColor = UIColor.orangeColor()
+                }
+                
+                //他の選択色を付けたい場合
+                if aryAnotherCheck.contains(dayView.dayInt){
+                    dayView.dayLabel.backgroundColor = UIColor.greenColor()
+                    dayView.dayLabel.textColor = UIColor.whiteColor()
+                    
                 }
                 
                 self.addSubview(dayView)

@@ -37,6 +37,7 @@
                         <segue destination="OHx-3T-eoH" kind="show" identifier="show_customswitch" id="fWB-Rs-zMO"/>
                         <segue destination="qkR-d3-JeD" kind="show" identifier="show_simplecalendar" id="bjq-u6-aHU"/>
                         <segue destination="oUM-Zl-RNK" kind="show" identifier="show_landcalendar" id="7KQ-ny-Thm"/>
+                        <segue destination="83v-iW-fv6" kind="show" identifier="show_varticalcalendar" id="MF5-yn-uOa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -97,6 +98,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-uV-wgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1170" y="998"/>
+        </scene>
+        <!--Vartical Calendar-->
+        <scene sceneID="Hac-of-ynu">
+            <objects>
+                <viewController id="83v-iW-fv6" customClass="VarticalCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YNh-O3-Z82" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="1592"/>
         </scene>
         <!--Simple Calendar-->
         <scene sceneID="8ZK-aK-Ffw">

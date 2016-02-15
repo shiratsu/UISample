@@ -17,20 +17,46 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-7S-tqd" customClass="MonthView" customModule="UISample" customModuleProvider="target">
+                <view contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rhP-7S-tqd" customClass="MonthView" customModule="UISample" customModuleProvider="target">
                     <rect key="frame" x="106" y="98" width="389" height="355"/>
                     <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" secondItem="rhP-7S-tqd" secondAttribute="height" multiplier="389:355" id="wrg-MV-HG9"/>
+                        <constraint firstAttribute="width" secondItem="rhP-7S-tqd" secondAttribute="height" multiplier="389:355" id="wrg-MV-HG9">
+                            <variation key="heightClass=regular-widthClass=compact" constant="-37.563380281690172"/>
+                        </constraint>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="rhP-7S-tqd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="D0m-Ju-eHm"/>
-                <constraint firstItem="rhP-7S-tqd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="98" id="GMp-Gb-fyI"/>
+                <constraint firstItem="rhP-7S-tqd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="98" id="GMp-Gb-fyI">
+                    <variation key="heightClass=regular-widthClass=compact" constant="97"/>
+                </constraint>
                 <constraint firstAttribute="trailing" secondItem="rhP-7S-tqd" secondAttribute="trailing" constant="105" id="OU8-dK-WM1"/>
+                <constraint firstAttribute="trailing" secondItem="rhP-7S-tqd" secondAttribute="trailing" constant="32" id="Rdp-ZQ-BeS"/>
+                <constraint firstItem="rhP-7S-tqd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="kro-PT-kXN"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="D0m-Ju-eHm"/>
+                    <exclude reference="OU8-dK-WM1"/>
+                    <exclude reference="Rdp-ZQ-BeS"/>
+                    <exclude reference="kro-PT-kXN"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="D0m-Ju-eHm"/>
+                    <include reference="OU8-dK-WM1"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="constraints">
+                    <include reference="Rdp-ZQ-BeS"/>
+                    <include reference="kro-PT-kXN"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
