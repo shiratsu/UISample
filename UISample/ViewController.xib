@@ -77,14 +77,27 @@
                         <action selector="showModal:" destination="-1" eventType="touchUpInside" id="970-6o-AVy"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-ZF-W8W">
+                    <rect key="frame" x="263" y="521" width="75" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="3Rx-yc-bc5"/>
+                        <constraint firstAttribute="width" constant="75" id="bU8-7e-T2r"/>
+                    </constraints>
+                    <state key="normal" title="キーボード"/>
+                    <connections>
+                        <action selector="gotoKeyboard:" destination="-1" eventType="touchUpInside" id="YBl-6P-NT0"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="jdw-ZF-W8W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5lQ-Y6-xsh"/>
                 <constraint firstItem="qNb-yu-3KK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7R8-RE-R5d"/>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="45" id="9Wo-Uu-0W1"/>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HkH-71-XAc"/>
                 <constraint firstItem="Thb-bc-TMv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OEW-5L-PC5"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pcf-Hi-I0W"/>
+                <constraint firstItem="jdw-ZF-W8W" firstAttribute="top" secondItem="qNb-yu-3KK" secondAttribute="bottom" constant="32" id="Qzq-ZK-PpZ"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="52" id="TSG-7l-AKM"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9"/>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="Thb-bc-TMv" secondAttribute="bottom" constant="35" id="Y5V-eU-nCJ"/>

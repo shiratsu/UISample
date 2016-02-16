@@ -53,11 +53,16 @@ class ViewController: UIViewController {
             animations: { [weak self] () -> Void in
                 grayModal.frame.origin.y = self!.view.frame.origin.y
             },
-            completion: { [weak self] finished in
+            completion: {finished in
                 
             })
         
     }
+    
+    @IBAction func gotoKeyboard(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_keyboard", sender: self)
+    }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
