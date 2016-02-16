@@ -15,3 +15,5 @@ This README would normally document whatever steps are necessary to get your app
 ### どんなサンプル
 * ナビゲーションバーの下に、segmentedcontrol
 * calendar
+* 透過モーダル
+* キーボードの文字入力制限
