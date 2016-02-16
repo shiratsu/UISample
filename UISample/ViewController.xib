@@ -66,9 +66,21 @@
                         <action selector="gotoVartivalCalendar:" destination="-1" eventType="touchUpInside" id="T3g-hd-Hal"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNb-yu-3KK">
+                    <rect key="frame" x="256" y="459" width="88" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="6li-b3-n6E"/>
+                        <constraint firstAttribute="width" constant="88" id="k5T-x0-W4I"/>
+                    </constraints>
+                    <state key="normal" title="グレーmodal"/>
+                    <connections>
+                        <action selector="showModal:" destination="-1" eventType="touchUpInside" id="970-6o-AVy"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="qNb-yu-3KK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7R8-RE-R5d"/>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="45" id="9Wo-Uu-0W1"/>
                 <constraint firstItem="zqI-ET-Fz0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HkH-71-XAc"/>
                 <constraint firstItem="Thb-bc-TMv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OEW-5L-PC5"/>
@@ -76,6 +88,7 @@
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="52" id="TSG-7l-AKM"/>
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9"/>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="Thb-bc-TMv" secondAttribute="bottom" constant="35" id="Y5V-eU-nCJ"/>
+                <constraint firstItem="qNb-yu-3KK" firstAttribute="top" secondItem="6j8-fJ-REj" secondAttribute="bottom" constant="35" id="aoU-fX-0Hm"/>
                 <constraint firstItem="Thb-bc-TMv" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="32" id="jVf-7o-JJx"/>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jif-kl-e8Y"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ooe-Ct-BYy"/>

@@ -42,6 +42,22 @@ class ViewController: UIViewController {
     @IBAction func gotoVartivalCalendar(sender: AnyObject) {
         self.performSegueWithIdentifier("show_varticalcalendar", sender: self)
     }
+    @IBAction func showModal(sender: AnyObject) {
+        let grayModal = UnderGrayModal.instance()
+        grayModal.initColor()
+        grayModal.frame.origin.y = self.view.frame.size.height
+        grayModal.frame.size.width = self.view.frame.width
+        self.view.addSubview(grayModal)
+        UIView.animateWithDuration(
+            0.5,
+            animations: { [weak self] () -> Void in
+                grayModal.frame.origin.y = self!.view.frame.origin.y
+            },
+            completion: { [weak self] finished in
+                
+            })
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

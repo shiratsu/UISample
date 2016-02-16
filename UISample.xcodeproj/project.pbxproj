@@ -13,6 +13,8 @@
 		561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60CB1C71733600CFADF6 /* OneCalendarCell.xib */; };
 		561E60D81C7180D800CFADF6 /* VarticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60D61C7180D800CFADF6 /* VarticalCalendar.swift */; };
 		561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */; };
+		5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */; };
+		5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */; };
 		5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527991C687E0C00466FC4 /* AppDelegate.swift */; };
 		5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695279B1C687E0D00466FC4 /* ViewController.swift */; };
 		5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5695279D1C687E0D00466FC4 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		561E60CB1C71733600CFADF6 /* OneCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneCalendarCell.xib; sourceTree = "<group>"; };
 		561E60D61C7180D800CFADF6 /* VarticalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VarticalCalendar.swift; sourceTree = "<group>"; };
 		561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarticalCalendar.xib; sourceTree = "<group>"; };
+		5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderGrayModal.swift; sourceTree = "<group>"; };
+		5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderGrayModal.xib; sourceTree = "<group>"; };
 		569527961C687E0C00466FC4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527991C687E0C00466FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5695279B1C687E0D00466FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 				561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */,
 				561E60D61C7180D800CFADF6 /* VarticalCalendar.swift */,
 				561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */,
+				5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */,
+				5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
+				5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */,
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */,
@@ -324,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				561E60D81C7180D800CFADF6 /* VarticalCalendar.swift in Sources */,
+				5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
 				561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */,
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
