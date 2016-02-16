@@ -17,3 +17,8 @@ This README would normally document whatever steps are necessary to get your app
 * calendar
 * 透過モーダル
 * キーボードの文字入力制限
+* 
+
+## Caution for using 
+* If possible,please tell me before using.I will happy.
+* If there are any question,please create issue.
