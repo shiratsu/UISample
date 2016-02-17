@@ -10,7 +10,7 @@ This README would normally document whatever steps are necessary to get your app
 
 ### How do I get set up? ###
 
-* 特に無し
+* nothing
 
 ### どんなサンプル
 * ナビゲーションバーの下に、segmentedcontrol
@@ -20,5 +20,5 @@ This README would normally document whatever steps are necessary to get your app
 * 
 
 ## Caution for using 
-* If possible,please tell me before using.I will happy.
+* If possible,please let us know before using.I will be happy.
 * If there are any question,please create issue.
