@@ -15,6 +15,25 @@
 		561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */; };
 		5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */; };
 		5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */; };
+		568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */; };
+		568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */; };
+		568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0F01C745776003AF9B2 /* MultiLineTitleView.xib */; };
+		568ED0F41C745C17003AF9B2 /* MultiLineTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0F31C745C17003AF9B2 /* MultiLineTitleView.swift */; };
+		568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0F51C745E2D003AF9B2 /* TableViewInTableCell.swift */; };
+		568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0F61C745E2D003AF9B2 /* TableViewInTableCell.xib */; };
+		568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0F91C747357003AF9B2 /* PaddingLabel.swift */; };
+		568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0FB1C747B96003AF9B2 /* TableViewInCell.swift */; };
+		568ED0FE1C747B96003AF9B2 /* TableViewInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0FC1C747B96003AF9B2 /* TableViewInCell.xib */; };
+		568ED1011C755057003AF9B2 /* CellAcordionVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0FF1C755057003AF9B2 /* CellAcordionVCL.swift */; };
+		568ED1021C755057003AF9B2 /* CellAcordionVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1001C755057003AF9B2 /* CellAcordionVCL.xib */; };
+		568ED1051C755C0D003AF9B2 /* FirstCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED1031C755C0D003AF9B2 /* FirstCustomCell.swift */; };
+		568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1041C755C0D003AF9B2 /* FirstCustomCell.xib */; };
+		568ED1091C755C93003AF9B2 /* SecondCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED1071C755C93003AF9B2 /* SecondCustomCell.swift */; };
+		568ED10A1C755C93003AF9B2 /* SecondCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1081C755C93003AF9B2 /* SecondCustomCell.xib */; };
+		568ED10D1C755CB9003AF9B2 /* ThirdCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED10B1C755CB9003AF9B2 /* ThirdCustomCell.swift */; };
+		568ED10E1C755CB9003AF9B2 /* ThirdCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED10C1C755CB9003AF9B2 /* ThirdCustomCell.xib */; };
+		568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED10F1C755CCC003AF9B2 /* ForthCustomCell.swift */; };
+		568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */; };
 		5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527991C687E0C00466FC4 /* AppDelegate.swift */; };
 		5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695279B1C687E0D00466FC4 /* ViewController.swift */; };
 		5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5695279D1C687E0D00466FC4 /* Main.storyboard */; };
@@ -63,6 +82,25 @@
 		561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarticalCalendar.xib; sourceTree = "<group>"; };
 		5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderGrayModal.swift; sourceTree = "<group>"; };
 		5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderGrayModal.xib; sourceTree = "<group>"; };
+		568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLineNavHeader.swift; sourceTree = "<group>"; };
+		568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLineNavHeader.xib; sourceTree = "<group>"; };
+		568ED0F01C745776003AF9B2 /* MultiLineTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiLineTitleView.xib; sourceTree = "<group>"; };
+		568ED0F31C745C17003AF9B2 /* MultiLineTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiLineTitleView.swift; sourceTree = "<group>"; };
+		568ED0F51C745E2D003AF9B2 /* TableViewInTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewInTableCell.swift; sourceTree = "<group>"; };
+		568ED0F61C745E2D003AF9B2 /* TableViewInTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewInTableCell.xib; sourceTree = "<group>"; };
+		568ED0F91C747357003AF9B2 /* PaddingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
+		568ED0FB1C747B96003AF9B2 /* TableViewInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewInCell.swift; sourceTree = "<group>"; };
+		568ED0FC1C747B96003AF9B2 /* TableViewInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewInCell.xib; sourceTree = "<group>"; };
+		568ED0FF1C755057003AF9B2 /* CellAcordionVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellAcordionVCL.swift; sourceTree = "<group>"; };
+		568ED1001C755057003AF9B2 /* CellAcordionVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellAcordionVCL.xib; sourceTree = "<group>"; };
+		568ED1031C755C0D003AF9B2 /* FirstCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstCustomCell.swift; sourceTree = "<group>"; };
+		568ED1041C755C0D003AF9B2 /* FirstCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstCustomCell.xib; sourceTree = "<group>"; };
+		568ED1071C755C93003AF9B2 /* SecondCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondCustomCell.swift; sourceTree = "<group>"; };
+		568ED1081C755C93003AF9B2 /* SecondCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondCustomCell.xib; sourceTree = "<group>"; };
+		568ED10B1C755CB9003AF9B2 /* ThirdCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdCustomCell.swift; sourceTree = "<group>"; };
+		568ED10C1C755CB9003AF9B2 /* ThirdCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCustomCell.xib; sourceTree = "<group>"; };
+		568ED10F1C755CCC003AF9B2 /* ForthCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthCustomCell.swift; sourceTree = "<group>"; };
+		568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthCustomCell.xib; sourceTree = "<group>"; };
 		569527961C687E0C00466FC4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527991C687E0C00466FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5695279B1C687E0D00466FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,8 +159,31 @@
 			children = (
 				561E60CA1C71733600CFADF6 /* OneCalendarCell.swift */,
 				561E60CB1C71733600CFADF6 /* OneCalendarCell.xib */,
+				568ED0FB1C747B96003AF9B2 /* TableViewInCell.swift */,
+				568ED0FC1C747B96003AF9B2 /* TableViewInCell.xib */,
+				568ED1031C755C0D003AF9B2 /* FirstCustomCell.swift */,
+				568ED1041C755C0D003AF9B2 /* FirstCustomCell.xib */,
+				568ED1071C755C93003AF9B2 /* SecondCustomCell.swift */,
+				568ED1081C755C93003AF9B2 /* SecondCustomCell.xib */,
+				568ED10B1C755CB9003AF9B2 /* ThirdCustomCell.swift */,
+				568ED10C1C755CB9003AF9B2 /* ThirdCustomCell.xib */,
+				568ED10F1C755CCC003AF9B2 /* ForthCustomCell.swift */,
+				568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */,
 			);
 			name = table;
+			sourceTree = "<group>";
+		};
+		568ED0F21C74577D003AF9B2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */,
+				5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */,
+				568ED0F31C745C17003AF9B2 /* MultiLineTitleView.swift */,
+				568ED0F01C745776003AF9B2 /* MultiLineTitleView.xib */,
+				56E74DE41C6B326E00A578CD /* DayView.swift */,
+				56E74DE61C6B336600A578CD /* MonthView.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 		5695278D1C687E0C00466FC4 = {
@@ -148,6 +209,7 @@
 		569527981C687E0C00466FC4 /* UISample */ = {
 			isa = PBXGroup;
 			children = (
+				568ED0F21C74577D003AF9B2 /* view */,
 				561E60C91C7172FE00CFADF6 /* table */,
 				569527991C687E0C00466FC4 /* AppDelegate.swift */,
 				5695279B1C687E0D00466FC4 /* ViewController.swift */,
@@ -164,16 +226,19 @@
 				56E74D961C69E62700A578CD /* SwitchWithCell.xib */,
 				56E74DE01C6B2FE100A578CD /* SimpleCalendar.swift */,
 				56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */,
-				56E74DE41C6B326E00A578CD /* DayView.swift */,
-				56E74DE61C6B336600A578CD /* MonthView.swift */,
 				561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */,
 				561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */,
 				561E60D61C7180D800CFADF6 /* VarticalCalendar.swift */,
 				561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */,
-				5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */,
-				5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */,
 				56BA6CAB1C72FA17005F5AF7 /* KeyboardSample.swift */,
 				56BA6CAC1C72FA17005F5AF7 /* KeyboardSample.xib */,
+				568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */,
+				568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */,
+				568ED0F51C745E2D003AF9B2 /* TableViewInTableCell.swift */,
+				568ED0F61C745E2D003AF9B2 /* TableViewInTableCell.xib */,
+				568ED0F91C747357003AF9B2 /* PaddingLabel.swift */,
+				568ED0FF1C755057003AF9B2 /* CellAcordionVCL.swift */,
+				568ED1001C755057003AF9B2 /* CellAcordionVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -302,16 +367,25 @@
 			files = (
 				56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */,
 				56BA6CAE1C72FA17005F5AF7 /* KeyboardSample.xib in Resources */,
+				568ED10E1C755CB9003AF9B2 /* ThirdCustomCell.xib in Resources */,
 				569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
+				568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */,
+				568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */,
+				568ED10A1C755C93003AF9B2 /* SecondCustomCell.xib in Resources */,
 				5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */,
+				568ED1021C755057003AF9B2 /* CellAcordionVCL.xib in Resources */,
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
+				568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */,
+				568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */,
+				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
 				561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
 				561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */,
+				568ED0FE1C747B96003AF9B2 /* TableViewInCell.xib in Resources */,
 				56E74DE31C6B2FE100A578CD /* SimpleCalendar.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,12 +418,22 @@
 				561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */,
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
+				568ED1051C755C0D003AF9B2 /* FirstCustomCell.swift in Sources */,
+				568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
 				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
+				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
+				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
+				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
 				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,
+				568ED1011C755057003AF9B2 /* CellAcordionVCL.swift in Sources */,
 				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
+				568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */,
+				568ED1091C755C93003AF9B2 /* SecondCustomCell.swift in Sources */,
+				568ED10D1C755CB9003AF9B2 /* ThirdCustomCell.swift in Sources */,
 				56E74DE51C6B326E00A578CD /* DayView.swift in Sources */,
 				5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */,
+				568ED0F41C745C17003AF9B2 /* MultiLineTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

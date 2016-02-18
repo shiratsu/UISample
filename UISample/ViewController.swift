@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_customswitch", sender: self)
     }
     
+    
     @IBAction func gotoSimpleCalendar(sender: AnyObject) {
         self.performSegueWithIdentifier("show_simplecalendar", sender: self)
     }
@@ -63,6 +64,13 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_keyboard", sender: self)
     }
     
+    @IBAction func goto2linenav(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_twoline", sender: self)
+    }
+    
+    @IBAction func gotoTableViewInCell(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_accordion", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

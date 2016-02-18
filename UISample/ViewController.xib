@@ -11,8 +11,8 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azj-Uc-Bt9">
-                    <rect key="frame" x="239" y="110" width="122" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azj-Uc-Bt9">
+                    <rect key="frame" x="116" y="97" width="122" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="122" id="MqO-NV-wND"/>
                         <constraint firstAttribute="height" constant="30" id="SHR-tu-ewq"/>
@@ -22,19 +22,8 @@
                         <action selector="gotoCustomnav:" destination="-1" eventType="touchUpInside" id="lUE-DT-nRl"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-ET-Fz0">
-                    <rect key="frame" x="240" y="185" width="120" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="30" id="7jx-Wu-oFI"/>
-                        <constraint firstAttribute="width" constant="120" id="nZd-lS-Emw"/>
-                    </constraints>
-                    <state key="normal" title="カスタムスイッチ"/>
-                    <connections>
-                        <action selector="goSwitch:" destination="-1" eventType="touchUpInside" id="yFv-Ib-NZB"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-oi-ca6">
-                    <rect key="frame" x="233" y="267" width="135" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVM-oi-ca6">
+                    <rect key="frame" x="110" y="164" width="135" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="1OP-Jp-Mrm"/>
                         <constraint firstAttribute="width" constant="135" id="MLf-tB-Ulj"/>
@@ -45,7 +34,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thb-bc-TMv">
-                    <rect key="frame" x="255" y="329" width="90" height="30"/>
+                    <rect key="frame" x="381" y="164" width="90" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="0Q7-sx-PXK"/>
                         <constraint firstAttribute="width" constant="90" id="UjT-i5-P7a"/>
@@ -55,8 +44,8 @@
                         <action selector="gotoLandCalendar:" destination="-1" eventType="touchUpInside" id="elb-2a-ugt"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j8-fJ-REj">
-                    <rect key="frame" x="255" y="394" width="90" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6j8-fJ-REj">
+                    <rect key="frame" x="155" y="225" width="90" height="30"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="696-za-ilK"/>
                         <constraint firstAttribute="height" constant="30" id="tiQ-Ta-0cE"/>
@@ -67,7 +56,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNb-yu-3KK">
-                    <rect key="frame" x="256" y="459" width="88" height="30"/>
+                    <rect key="frame" x="381" y="231" width="88" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="6li-b3-n6E"/>
                         <constraint firstAttribute="width" constant="88" id="k5T-x0-W4I"/>
@@ -77,8 +66,19 @@
                         <action selector="showModal:" destination="-1" eventType="touchUpInside" id="970-6o-AVy"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-ZF-W8W">
-                    <rect key="frame" x="263" y="521" width="75" height="30"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMg-YV-A3D">
+                    <rect key="frame" x="403" y="285" width="48" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="0wn-N4-Ks3"/>
+                        <constraint firstAttribute="width" constant="48" id="XXd-aE-D3d"/>
+                    </constraints>
+                    <state key="normal" title="2行nav"/>
+                    <connections>
+                        <action selector="goto2linenav:" destination="-1" eventType="touchUpOutside" id="eyc-Ee-aBq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdw-ZF-W8W">
+                    <rect key="frame" x="163" y="285" width="75" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="3Rx-yc-bc5"/>
                         <constraint firstAttribute="width" constant="75" id="bU8-7e-T2r"/>
@@ -88,23 +88,83 @@
                         <action selector="gotoKeyboard:" destination="-1" eventType="touchUpInside" id="YBl-6P-NT0"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIx-Mm-hSi">
+                    <rect key="frame" x="129" y="349" width="109" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="FCQ-Yc-ehc">
+                            <variation key="heightClass=regular-widthClass=compact" constant="96"/>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="30" id="VEp-H5-CWi"/>
+                    </constraints>
+                    <state key="normal" title="cell accordion"/>
+                    <connections>
+                        <action selector="gotoTableViewInCell:" destination="-1" eventType="touchUpInside" id="9fT-0T-8fY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-ET-Fz0">
+                    <rect key="frame" x="366" y="97" width="120" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="7jx-Wu-oFI"/>
+                        <constraint firstAttribute="width" constant="120" id="nZd-lS-Emw"/>
+                    </constraints>
+                    <state key="normal" title="カスタムスイッチ"/>
+                    <connections>
+                        <action selector="goSwitch:" destination="-1" eventType="touchUpInside" id="yFv-Ib-NZB"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="jdw-ZF-W8W" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5lQ-Y6-xsh"/>
-                <constraint firstItem="qNb-yu-3KK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="7R8-RE-R5d"/>
-                <constraint firstItem="zqI-ET-Fz0" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="45" id="9Wo-Uu-0W1"/>
-                <constraint firstItem="zqI-ET-Fz0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HkH-71-XAc"/>
-                <constraint firstItem="Thb-bc-TMv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OEW-5L-PC5"/>
-                <constraint firstItem="azj-Uc-Bt9" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Pcf-Hi-I0W"/>
-                <constraint firstItem="jdw-ZF-W8W" firstAttribute="top" secondItem="qNb-yu-3KK" secondAttribute="bottom" constant="32" id="Qzq-ZK-PpZ"/>
-                <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="52" id="TSG-7l-AKM"/>
-                <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9"/>
-                <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="Thb-bc-TMv" secondAttribute="bottom" constant="35" id="Y5V-eU-nCJ"/>
-                <constraint firstItem="qNb-yu-3KK" firstAttribute="top" secondItem="6j8-fJ-REj" secondAttribute="bottom" constant="35" id="aoU-fX-0Hm"/>
-                <constraint firstItem="Thb-bc-TMv" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="32" id="jVf-7o-JJx"/>
-                <constraint firstItem="6j8-fJ-REj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jif-kl-e8Y"/>
-                <constraint firstItem="XVM-oi-ca6" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ooe-Ct-BYy"/>
+                <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="37" id="5Dk-EO-hAX"/>
+                <constraint firstAttribute="trailing" secondItem="pMg-YV-A3D" secondAttribute="trailing" constant="149" id="C5H-hz-eEc">
+                    <variation key="heightClass=regular-widthClass=compact" constant="66"/>
+                </constraint>
+                <constraint firstItem="UIx-Mm-hSi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="129" id="FYp-V3-kgz">
+                    <variation key="heightClass=regular-widthClass=compact" constant="72"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="zqI-ET-Fz0" secondAttribute="trailing" constant="114" id="HfY-1z-4au">
+                    <variation key="heightClass=regular-widthClass=compact" constant="49"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="qNb-yu-3KK" secondAttribute="trailing" constant="131" id="QEf-SJ-6rn">
+                    <variation key="heightClass=regular-widthClass=compact" constant="59"/>
+                </constraint>
+                <constraint firstItem="zqI-ET-Fz0" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="97" id="Uyj-zn-EMM"/>
+                <constraint firstAttribute="trailing" secondItem="Thb-bc-TMv" secondAttribute="trailing" constant="129" id="VKK-Ej-utN">
+                    <variation key="heightClass=regular-widthClass=compact" constant="57"/>
+                </constraint>
+                <constraint firstItem="azj-Uc-Bt9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="116" id="VrN-JQ-FQ9">
+                    <variation key="heightClass=regular-widthClass=compact" constant="65"/>
+                </constraint>
+                <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9">
+                    <variation key="heightClass=regular-widthClass=compact" constant="108"/>
+                </constraint>
+                <constraint firstItem="6j8-fJ-REj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="155" id="cqP-ow-FZR">
+                    <variation key="heightClass=regular-widthClass=compact" constant="79"/>
+                </constraint>
+                <constraint firstItem="qNb-yu-3KK" firstAttribute="top" secondItem="Thb-bc-TMv" secondAttribute="bottom" constant="37" id="d7N-i0-GUb">
+                    <variation key="heightClass=regular-widthClass=compact" constant="34"/>
+                </constraint>
+                <constraint firstItem="pMg-YV-A3D" firstAttribute="top" secondItem="qNb-yu-3KK" secondAttribute="bottom" constant="24" id="dfE-aQ-HeL">
+                    <variation key="heightClass=regular-widthClass=compact" constant="23"/>
+                </constraint>
+                <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="31" id="gNa-3b-SQm">
+                    <variation key="heightClass=regular-widthClass=compact" constant="27"/>
+                </constraint>
+                <constraint firstItem="Thb-bc-TMv" firstAttribute="top" secondItem="zqI-ET-Fz0" secondAttribute="bottom" constant="37" id="iAO-Ry-qgP">
+                    <variation key="heightClass=regular-widthClass=compact" constant="41"/>
+                </constraint>
+                <constraint firstItem="UIx-Mm-hSi" firstAttribute="top" secondItem="jdw-ZF-W8W" secondAttribute="bottom" constant="34" id="qeP-rj-g0i">
+                    <variation key="heightClass=regular-widthClass=compact" constant="32"/>
+                </constraint>
+                <constraint firstItem="jdw-ZF-W8W" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="163" id="tQ9-Lm-aqp">
+                    <variation key="heightClass=regular-widthClass=compact" constant="87"/>
+                </constraint>
+                <constraint firstItem="jdw-ZF-W8W" firstAttribute="top" secondItem="6j8-fJ-REj" secondAttribute="bottom" constant="30" id="uhe-FZ-Vpb">
+                    <variation key="heightClass=regular-widthClass=compact" constant="35"/>
+                </constraint>
+                <constraint firstItem="XVM-oi-ca6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="wvQ-jZ-MPw">
+                    <variation key="heightClass=regular-widthClass=compact" constant="34"/>
+                </constraint>
             </constraints>
         </view>
     </objects>
