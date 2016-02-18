@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--ModalVCL-->
+        <scene sceneID="ne7-9b-KdV">
+            <objects>
+                <viewController id="aCh-JI-3Wy" customClass="ModalVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcj-CV-4Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="-536"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tsi-Fr-XrW">
             <objects>
@@ -25,7 +33,23 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3As-oU-Ks2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="424"/>
+            <point key="canvasLocation" x="-1370" y="48"/>
+        </scene>
+        <!--Cell AcordionVCL-->
+        <scene sceneID="5jC-Qw-lBM">
+            <objects>
+                <viewController id="fdW-MI-abj" customClass="CellAcordionVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3o4-cy-JX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1272" y="1272"/>
+        </scene>
+        <!--Two Line Nav Header-->
+        <scene sceneID="27i-FK-TB8">
+            <objects>
+                <viewController id="JDF-9p-mt2" customClass="TwoLineNavHeader" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kfy-CT-Aey" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="1328"/>
         </scene>
         <!--Keyboard Sample-->
         <scene sceneID="Ejf-jV-RM2">
@@ -33,7 +57,7 @@
                 <viewController id="FaJ-6u-4wq" customClass="KeyboardSample" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX7-hY-jxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-278" y="1340"/>
+            <point key="canvasLocation" x="354" y="1476"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OQC-AA-pdS">
@@ -47,6 +71,9 @@
                         <segue destination="oUM-Zl-RNK" kind="show" identifier="show_landcalendar" id="7KQ-ny-Thm"/>
                         <segue destination="83v-iW-fv6" kind="show" identifier="show_varticalcalendar" id="MF5-yn-uOa"/>
                         <segue destination="FaJ-6u-4wq" kind="show" identifier="show_keyboard" id="got-bf-qHv"/>
+                        <segue destination="JDF-9p-mt2" kind="show" identifier="show_twoline" id="hd8-LU-2g6"/>
+                        <segue destination="fdW-MI-abj" kind="show" identifier="show_accordion" id="avp-ZO-xEh"/>
+                        <segue destination="aCh-JI-3Wy" kind="presentation" identifier="show_modal" id="jDm-iZ-H9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -67,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gj0-oK-xny" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="76" y="-1019"/>
+            <point key="canvasLocation" x="940" y="-1163"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0Lj-Pt-AnH">
@@ -86,7 +113,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jy6-bJ-FR1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="-987"/>
+            <point key="canvasLocation" x="1668" y="-1227"/>
         </scene>
         <!--Custom Navbar-->
         <scene sceneID="8gI-F6-P34">
@@ -98,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J9F-MS-rU1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1150" y="289"/>
+            <point key="canvasLocation" x="278" y="-463"/>
         </scene>
         <!--Custom SwitchVCL-->
         <scene sceneID="cgG-hi-Fws">
@@ -106,7 +133,7 @@
                 <viewController id="OHx-3T-eoH" customClass="CustomSwitchVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VuV-uV-wgU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1170" y="998"/>
+            <point key="canvasLocation" x="1026" y="-402"/>
         </scene>
         <!--Vartical Calendar-->
         <scene sceneID="Hac-of-ynu">
@@ -114,7 +141,7 @@
                 <viewController id="83v-iW-fv6" customClass="VarticalCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNh-O3-Z82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="2432"/>
+            <point key="canvasLocation" x="1038" y="1840"/>
         </scene>
         <!--Simple Calendar-->
         <scene sceneID="8ZK-aK-Ffw">
@@ -122,7 +149,7 @@
                 <viewController id="qkR-d3-JeD" customClass="SimpleCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vCT-Mu-isz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1106" y="1806"/>
+            <point key="canvasLocation" x="1098" y="374"/>
         </scene>
         <!--Land Scape Calendar-->
         <scene sceneID="yR6-6C-5KJ">
@@ -130,7 +157,7 @@
                 <viewController id="oUM-Zl-RNK" customClass="LandScapeCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzi-Ct-QU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118" y="2608"/>
+            <point key="canvasLocation" x="1134" y="1184"/>
         </scene>
     </scenes>
 </document>

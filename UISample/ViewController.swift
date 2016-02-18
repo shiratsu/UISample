@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_customswitch", sender: self)
     }
     
+    
     @IBAction func gotoSimpleCalendar(sender: AnyObject) {
         self.performSegueWithIdentifier("show_simplecalendar", sender: self)
     }
@@ -63,12 +64,36 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_keyboard", sender: self)
     }
     
+    @IBAction func goto2linenav(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_twoline", sender: self)
+    }
+    
+    @IBAction func gotoTableViewInCell(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_accordion", sender: self)
+    }
+    
+    
+    @IBAction func gotoModal2(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_modal", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if segue.identifier == "show_modal" {
+            let svc = segue.destinationViewController as! ModalVCL
+            svc.providesPresentationContextTransitionStyle = true
+            svc.definesPresentationContext = true
+            svc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        }
+        
+    }
 
 }
 
