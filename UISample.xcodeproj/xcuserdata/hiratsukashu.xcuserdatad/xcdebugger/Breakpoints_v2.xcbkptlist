@@ -394,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477467484.866895"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "347"
-            endingLineNumber = "347"
+            startingLineNumber = "222"
+            endingLineNumber = "222"
             landmarkName = "handleCell(_:expandInt:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -410,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477467583.972518"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "345"
-            endingLineNumber = "345"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "handleCell(_:expandInt:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -426,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477467863.571222"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
             landmarkName = "tableView(_:didSelectRowAtIndexPath:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477468384.166119"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "430"
-            endingLineNumber = "430"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
             landmarkName = "handleCell(_:expandInt:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477468384.166119"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "435"
-            endingLineNumber = "435"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
             landmarkName = "handleCell(_:expandInt:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -474,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/CellAcordionVCL.swift"
-            timestampString = "477468384.166119"
+            timestampString = "477469876.047496"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "434"
-            endingLineNumber = "434"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
             landmarkName = "handleCell(_:expandInt:)"
             landmarkType = "5">
          </BreakpointContent>

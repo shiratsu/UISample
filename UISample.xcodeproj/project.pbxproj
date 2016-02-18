@@ -34,6 +34,8 @@
 		568ED10E1C755CB9003AF9B2 /* ThirdCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED10C1C755CB9003AF9B2 /* ThirdCustomCell.xib */; };
 		568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED10F1C755CCC003AF9B2 /* ForthCustomCell.swift */; };
 		568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */; };
+		568ED1151C759851003AF9B2 /* ModalVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED1131C759851003AF9B2 /* ModalVCL.swift */; };
+		568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1141C759851003AF9B2 /* ModalVCL.xib */; };
 		5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527991C687E0C00466FC4 /* AppDelegate.swift */; };
 		5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695279B1C687E0D00466FC4 /* ViewController.swift */; };
 		5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5695279D1C687E0D00466FC4 /* Main.storyboard */; };
@@ -101,6 +103,8 @@
 		568ED10C1C755CB9003AF9B2 /* ThirdCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdCustomCell.xib; sourceTree = "<group>"; };
 		568ED10F1C755CCC003AF9B2 /* ForthCustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForthCustomCell.swift; sourceTree = "<group>"; };
 		568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthCustomCell.xib; sourceTree = "<group>"; };
+		568ED1131C759851003AF9B2 /* ModalVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalVCL.swift; sourceTree = "<group>"; };
+		568ED1141C759851003AF9B2 /* ModalVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalVCL.xib; sourceTree = "<group>"; };
 		569527961C687E0C00466FC4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527991C687E0C00466FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5695279B1C687E0D00466FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +243,8 @@
 				568ED0F91C747357003AF9B2 /* PaddingLabel.swift */,
 				568ED0FF1C755057003AF9B2 /* CellAcordionVCL.swift */,
 				568ED1001C755057003AF9B2 /* CellAcordionVCL.xib */,
+				568ED1131C759851003AF9B2 /* ModalVCL.swift */,
+				568ED1141C759851003AF9B2 /* ModalVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -371,6 +377,7 @@
 				569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
+				568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
 				568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */,
 				568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */,
@@ -430,6 +437,7 @@
 				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
 				568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */,
 				568ED1091C755C93003AF9B2 /* SecondCustomCell.swift in Sources */,
+				568ED1151C759851003AF9B2 /* ModalVCL.swift in Sources */,
 				568ED10D1C755CB9003AF9B2 /* ThirdCustomCell.swift in Sources */,
 				56E74DE51C6B326E00A578CD /* DayView.swift in Sources */,
 				5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */,

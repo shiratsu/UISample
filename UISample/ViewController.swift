@@ -71,12 +71,29 @@ class ViewController: UIViewController {
     @IBAction func gotoTableViewInCell(sender: AnyObject) {
         self.performSegueWithIdentifier("show_accordion", sender: self)
     }
+    
+    
+    @IBAction func gotoModal2(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_modal", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        super.prepareForSegue(segue, sender: sender)
+        
+        if segue.identifier == "show_modal" {
+            let svc = segue.destinationViewController as! ModalVCL
+            svc.providesPresentationContextTransitionStyle = true
+            svc.definesPresentationContext = true
+            svc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        }
+        
+    }
 
 }
 

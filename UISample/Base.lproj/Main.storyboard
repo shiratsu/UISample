@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
+        <!--ModalVCL-->
+        <scene sceneID="ne7-9b-KdV">
+            <objects>
+                <viewController id="aCh-JI-3Wy" customClass="ModalVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zcj-CV-4Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-707" y="-536"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tsi-Fr-XrW">
             <objects>
@@ -65,6 +73,7 @@
                         <segue destination="FaJ-6u-4wq" kind="show" identifier="show_keyboard" id="got-bf-qHv"/>
                         <segue destination="JDF-9p-mt2" kind="show" identifier="show_twoline" id="hd8-LU-2g6"/>
                         <segue destination="fdW-MI-abj" kind="show" identifier="show_accordion" id="avp-ZO-xEh"/>
+                        <segue destination="aCh-JI-3Wy" kind="presentation" identifier="show_modal" id="jDm-iZ-H9A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

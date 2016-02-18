@@ -101,6 +101,29 @@
                         <action selector="gotoTableViewInCell:" destination="-1" eventType="touchUpInside" id="9fT-0T-8fY"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w84-Sh-6Vt">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="1Nx-Kn-Bmg"/>
+                        <constraint firstAttribute="width" constant="51" id="EjQ-HZ-dpa"/>
+                    </constraints>
+                    <state key="normal" title="modal2"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="1Nx-Kn-Bmg"/>
+                            <exclude reference="EjQ-HZ-dpa"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="1Nx-Kn-Bmg"/>
+                            <include reference="EjQ-HZ-dpa"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="gotoModal2:" destination="-1" eventType="touchUpInside" id="e4A-Bx-NvG"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-ET-Fz0">
                     <rect key="frame" x="366" y="97" width="120" height="30"/>
                     <constraints>
@@ -125,6 +148,7 @@
                 <constraint firstAttribute="trailing" secondItem="zqI-ET-Fz0" secondAttribute="trailing" constant="114" id="HfY-1z-4au">
                     <variation key="heightClass=regular-widthClass=compact" constant="49"/>
                 </constraint>
+                <constraint firstItem="w84-Sh-6Vt" firstAttribute="top" secondItem="pMg-YV-A3D" secondAttribute="bottom" constant="44" id="Jkr-Pg-hGc"/>
                 <constraint firstAttribute="trailing" secondItem="qNb-yu-3KK" secondAttribute="trailing" constant="131" id="QEf-SJ-6rn">
                     <variation key="heightClass=regular-widthClass=compact" constant="59"/>
                 </constraint>
@@ -138,6 +162,7 @@
                 <constraint firstItem="azj-Uc-Bt9" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="W8G-sE-AD9">
                     <variation key="heightClass=regular-widthClass=compact" constant="108"/>
                 </constraint>
+                <constraint firstAttribute="trailing" secondItem="w84-Sh-6Vt" secondAttribute="trailing" constant="65" id="Wqk-ZV-aNN"/>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="155" id="cqP-ow-FZR">
                     <variation key="heightClass=regular-widthClass=compact" constant="79"/>
                 </constraint>
@@ -166,6 +191,24 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="34"/>
                 </constraint>
             </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="w84-Sh-6Vt"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Jkr-Pg-hGc"/>
+                    <exclude reference="Wqk-ZV-aNN"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="w84-Sh-6Vt"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Jkr-Pg-hGc"/>
+                    <include reference="Wqk-ZV-aNN"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>
