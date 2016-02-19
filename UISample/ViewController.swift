@@ -82,6 +82,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func gotoHtml(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_html", sender: self)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)

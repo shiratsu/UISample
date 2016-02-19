@@ -15,6 +15,7 @@
 		561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */; };
 		5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */; };
 		5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */; };
+		567FF7381C768E7E00ADDBFF /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 567FF7371C768E7E00ADDBFF /* RTLabel.m */; };
 		568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */; };
 		568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */; };
 		568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0F01C745776003AF9B2 /* MultiLineTitleView.xib */; };
@@ -36,6 +37,8 @@
 		568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */; };
 		568ED1151C759851003AF9B2 /* ModalVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED1131C759851003AF9B2 /* ModalVCL.swift */; };
 		568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1141C759851003AF9B2 /* ModalVCL.xib */; };
+		568ED1651C75DED2003AF9B2 /* HtmlTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED1631C75DED2003AF9B2 /* HtmlTest.swift */; };
+		568ED1661C75DED2003AF9B2 /* HtmlTest.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED1641C75DED2003AF9B2 /* HtmlTest.xib */; };
 		5695279A1C687E0C00466FC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527991C687E0C00466FC4 /* AppDelegate.swift */; };
 		5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695279B1C687E0D00466FC4 /* ViewController.swift */; };
 		5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5695279D1C687E0D00466FC4 /* Main.storyboard */; };
@@ -84,6 +87,8 @@
 		561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarticalCalendar.xib; sourceTree = "<group>"; };
 		5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderGrayModal.swift; sourceTree = "<group>"; };
 		5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderGrayModal.xib; sourceTree = "<group>"; };
+		567FF7361C768E7E00ADDBFF /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
+		567FF7371C768E7E00ADDBFF /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLineNavHeader.swift; sourceTree = "<group>"; };
 		568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLineNavHeader.xib; sourceTree = "<group>"; };
 		568ED0F01C745776003AF9B2 /* MultiLineTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MultiLineTitleView.xib; sourceTree = "<group>"; };
@@ -105,6 +110,9 @@
 		568ED1101C755CCC003AF9B2 /* ForthCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForthCustomCell.xib; sourceTree = "<group>"; };
 		568ED1131C759851003AF9B2 /* ModalVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalVCL.swift; sourceTree = "<group>"; };
 		568ED1141C759851003AF9B2 /* ModalVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalVCL.xib; sourceTree = "<group>"; };
+		568ED1631C75DED2003AF9B2 /* HtmlTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HtmlTest.swift; sourceTree = "<group>"; };
+		568ED1641C75DED2003AF9B2 /* HtmlTest.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HtmlTest.xib; sourceTree = "<group>"; };
+		568ED16B1C761CE3003AF9B2 /* UISample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UISample-Bridging-Header.h"; sourceTree = "<group>"; };
 		569527961C687E0C00466FC4 /* UISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		569527991C687E0C00466FC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5695279B1C687E0D00466FC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +221,8 @@
 		569527981C687E0C00466FC4 /* UISample */ = {
 			isa = PBXGroup;
 			children = (
+				567FF7361C768E7E00ADDBFF /* RTLabel.h */,
+				567FF7371C768E7E00ADDBFF /* RTLabel.m */,
 				568ED0F21C74577D003AF9B2 /* view */,
 				561E60C91C7172FE00CFADF6 /* table */,
 				569527991C687E0C00466FC4 /* AppDelegate.swift */,
@@ -245,6 +255,9 @@
 				568ED1001C755057003AF9B2 /* CellAcordionVCL.xib */,
 				568ED1131C759851003AF9B2 /* ModalVCL.swift */,
 				568ED1141C759851003AF9B2 /* ModalVCL.xib */,
+				568ED1631C75DED2003AF9B2 /* HtmlTest.swift */,
+				568ED1641C75DED2003AF9B2 /* HtmlTest.xib */,
+				568ED16B1C761CE3003AF9B2 /* UISample-Bridging-Header.h */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -381,6 +394,7 @@
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
 				568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */,
 				568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */,
+				568ED1661C75DED2003AF9B2 /* HtmlTest.xib in Resources */,
 				568ED10A1C755C93003AF9B2 /* SecondCustomCell.xib in Resources */,
 				5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */,
 				568ED1021C755057003AF9B2 /* CellAcordionVCL.xib in Resources */,
@@ -432,8 +446,10 @@
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
 				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
+				568ED1651C75DED2003AF9B2 /* HtmlTest.swift in Sources */,
 				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,
 				568ED1011C755057003AF9B2 /* CellAcordionVCL.swift in Sources */,
+				567FF7381C768E7E00ADDBFF /* RTLabel.m in Sources */,
 				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
 				568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */,
 				568ED1091C755C93003AF9B2 /* SecondCustomCell.swift in Sources */,
@@ -587,7 +603,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "indival-inc..UISample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UISample/UISample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -602,7 +618,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "indival-inc..UISample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "UISample/UISample-Bridging-Header.h";
 			};
 			name = Release;
 		};
