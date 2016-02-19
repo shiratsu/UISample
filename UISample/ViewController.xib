@@ -124,6 +124,29 @@
                         <action selector="gotoModal2:" destination="-1" eventType="touchUpInside" id="e4A-Bx-NvG"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ie2-wj-5fH">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="Ewd-10-Yyd"/>
+                        <constraint firstAttribute="height" constant="30" id="ZLS-OZ-6rO"/>
+                    </constraints>
+                    <state key="normal" title="html"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Ewd-10-Yyd"/>
+                            <exclude reference="ZLS-OZ-6rO"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="Ewd-10-Yyd"/>
+                            <include reference="ZLS-OZ-6rO"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="gotoHtml:" destination="-1" eventType="touchUpInside" id="Hhh-DP-4oW"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zqI-ET-Fz0">
                     <rect key="frame" x="366" y="97" width="120" height="30"/>
                     <constraints>
@@ -172,6 +195,7 @@
                 <constraint firstItem="pMg-YV-A3D" firstAttribute="top" secondItem="qNb-yu-3KK" secondAttribute="bottom" constant="24" id="dfE-aQ-HeL">
                     <variation key="heightClass=regular-widthClass=compact" constant="23"/>
                 </constraint>
+                <constraint firstItem="Ie2-wj-5fH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="95" id="ezC-En-Tqc"/>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="top" secondItem="XVM-oi-ca6" secondAttribute="bottom" constant="31" id="gNa-3b-SQm">
                     <variation key="heightClass=regular-widthClass=compact" constant="27"/>
                 </constraint>
@@ -190,12 +214,16 @@
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="wvQ-jZ-MPw">
                     <variation key="heightClass=regular-widthClass=compact" constant="34"/>
                 </constraint>
+                <constraint firstItem="Ie2-wj-5fH" firstAttribute="top" secondItem="UIx-Mm-hSi" secondAttribute="bottom" constant="14" id="xZK-z3-4cd"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="w84-Sh-6Vt"/>
+                    <exclude reference="Ie2-wj-5fH"/>
                 </mask>
                 <mask key="constraints">
+                    <exclude reference="ezC-En-Tqc"/>
+                    <exclude reference="xZK-z3-4cd"/>
                     <exclude reference="Jkr-Pg-hGc"/>
                     <exclude reference="Wqk-ZV-aNN"/>
                 </mask>
@@ -203,8 +231,11 @@
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="w84-Sh-6Vt"/>
+                    <include reference="Ie2-wj-5fH"/>
                 </mask>
                 <mask key="constraints">
+                    <include reference="ezC-En-Tqc"/>
+                    <include reference="xZK-z3-4cd"/>
                     <include reference="Jkr-Pg-hGc"/>
                     <include reference="Wqk-ZV-aNN"/>
                 </mask>
