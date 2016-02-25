@@ -27,7 +27,15 @@ class TestTableViewCell: UITableViewCell {
         
     }
     
-    class func heightForTestLabel(tableView: UITableView, var strText:String) -> CGFloat {
+    /**
+     文字列の高さを計算して、セルの幅をいい感じに決めてくれるメソッド
+     
+     - parameter tableView: <#tableView description#>
+     - parameter strText:   <#strText description#>
+     
+     - returns: <#return value description#>
+     */
+    class func heightForTestLabel(tableView: UITableView, strText:String) -> CGFloat {
         struct Sizing {
             static var cell: TestTableViewCell?
         }
@@ -44,7 +52,6 @@ class TestTableViewCell: UITableViewCell {
             let content:NSString = strText
             
             let all = NSRange(location: 0, length: content.length)
-            var matches : Array<String> = Array<String>()
             
             do {
                 let regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpressionOptions.CaseInsensitive)
