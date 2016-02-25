@@ -31,6 +31,16 @@ class CellAcordionVCL: UIViewController {
     var aryTable:NSMutableArray = NSMutableArray(array: ["UITableViewCell","UITableViewCell","UITableViewCell","UITableViewCell"])
     var aryMutablle15:NSMutableArray = NSMutableArray(array: ["応募者の活動履歴","勤務履歴（職種別）","勤務履歴（バイト別）","自社プロフィール確認履歴"])
     
+    var dic_height:NSMutableDictionary! = NSMutableDictionary()
+    
+    var strTest1 = "<ul class=\"list-nav-top\"><li><a href=\"http://sftworks.jp?igdef=1\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_all');\">全国</a></li><li><a href=\"http://sftworks.jp/area_kansai\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_kansai');\">関西エリア</a></li><li>大阪府</li><li><a href=\"http://sftworks.jp/pref_hyogo\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_hyogo');\">兵庫県</a></li><li><a href=\"http://sftworks.jp/pref_kyoto\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_kyoto');\">京都府</a></li><li><a href=\"http://sftworks.jp/pref_shiga\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_shiga');\">滋賀県</a></li><li><a href=\"http://sftworks.jp/pref_nara\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_nara');\">奈良県</a></li><li><a href=\"http://sftworks.jp/pref_wakayama\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_wakayama');\">和歌山県</a></li></ul><ul class=\"list-nav-top\"><li><a href=\"http://sftworks.jp?igdef=1\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_all');\">全国</a></li><li><a href=\"http://sftworks.jp/area_kansai\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_kansai');\">関西エリア</a></li><li>大阪府</li><li><a href=\"http://sftworks.jp/pref_hyogo\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_hyogo');\">兵庫県</a></li><li><a href=\"http://sftworks.jp/pref_kyoto\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_kyoto');\">京都府</a></li><li><a href=\"http://sftworks.jp/pref_shiga\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_shiga');\">滋賀県</a></li><li><a href=\"http://sftworks.jp/pref_nara\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_nara');\">奈良県</a></li><li><a href=\"http://sftworks.jp/pref_wakayama\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_wakayama');\">和歌山県</a></li></ul><ul class=\"list-nav-top\"><li><a href=\"http://sftworks.jp?igdef=1\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_all');\">全国</a></li><li><a href=\"http://sftworks.jp/area_kansai\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'area_kansai');\">関西エリア</a></li><li>大阪府</li><li><a href=\"http://sftworks.jp/pref_hyogo\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_hyogo');\">兵庫県</a></li><li><a href=\"http://sftworks.jp/pref_kyoto\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_kyoto');\">京都府</a></li><li><a href=\"http://sftworks.jp/pref_shiga\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_shiga');\">滋賀県</a></li><li><a href=\"http://sftworks.jp/pref_nara\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_nara');\">奈良県</a></li><li><a href=\"http://sftworks.jp/pref_wakayama\" onclick=\"ga('send', 'event', 'TOPPREF', 'areaPref_txt', 'pref_wakayama');\">和歌山県</a></li></ul>"
+    
+    var strTest2 = "hiratsukatesteststestststststst"
+    var strTest3 = "hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst"
+    
+    var aryTest:[String]!
+    
+    
     /**
      xibを読み込む
      */
@@ -42,6 +52,8 @@ class CellAcordionVCL: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        aryTest = [strTest1,strTest2,strTest3,strTest3,strTest2,strTest1,strTest1,strTest1,strTest2,strTest3,strTest3,strTest2,strTest1,strTest1,strTest2]
 
         var nib  = UINib(nibName: "FirstCustomCell", bundle:nil)
         menuView.registerNib(nib, forCellReuseIdentifier:"FirstCustomCell")
@@ -55,8 +67,12 @@ class CellAcordionVCL: UIViewController {
         nib = UINib(nibName: "ForthCustomCell", bundle:nil)
         menuView.registerNib(nib, forCellReuseIdentifier:"ForthCustomCell")
         
+        nib = UINib(nibName: "TestTableViewCell", bundle:nil)
+        menuView.registerNib(nib, forCellReuseIdentifier:"TestTableViewCell")
         
         // Do any additional setup after loading the view.
+        self.menuView.estimatedRowHeight = 44
+        self.menuView.rowHeight = UITableViewAutomaticDimension
     }
     
     /*
@@ -81,7 +97,31 @@ class CellAcordionVCL: UIViewController {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
-        return 45
+        if indexPath.section != 15{
+            
+            var cell_height:CGFloat = 0
+            let text_height = TestTableViewCell.heightForTestLabel(menuView, strText:aryTest[indexPath.section])
+            cell_height = 15+text_height
+            dic_height.setValue(cell_height, forKey: String(indexPath.row))
+            
+            return cell_height
+            
+            
+        }else{
+            return 45
+        }
+    }
+    
+    func tableView(tableView: UITableView, estimatedHeightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section != 15{
+            guard let cell_height = dic_height.objectForKey(String(indexPath.section)) as? CGFloat else{
+                return 45
+            }
+            return cell_height
+        }else{
+            return 45
+        }
+        
     }
     
     
@@ -130,9 +170,9 @@ class CellAcordionVCL: UIViewController {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if indexPath.section != 15{
-            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "UITableViewCell")
-            cell.textLabel!.text = "aaaaaaaaa"
             
+            let cell: TestTableViewCell = tableView.dequeueReusableCellWithIdentifier("TestTableViewCell") as! TestTableViewCell
+            cell.testLabel.text = aryTest[indexPath.section]
             return cell
         }else{
             

@@ -15,6 +15,9 @@
 		561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */; };
 		5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */; };
 		5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */; };
+		567A0D331C7DC1270057E01F /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A0D311C7DC1270057E01F /* TestTableViewCell.swift */; };
+		567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567A0D321C7DC1270057E01F /* TestTableViewCell.xib */; };
+		567A0D361C7EEA5B0057E01F /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A0D351C7EEA5B0057E01F /* Regexp.swift */; };
 		567FF7381C768E7E00ADDBFF /* RTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 567FF7371C768E7E00ADDBFF /* RTLabel.m */; };
 		568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */; };
 		568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568ED0ED1C7456C5003AF9B2 /* TwoLineNavHeader.xib */; };
@@ -87,6 +90,9 @@
 		561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarticalCalendar.xib; sourceTree = "<group>"; };
 		5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderGrayModal.swift; sourceTree = "<group>"; };
 		5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderGrayModal.xib; sourceTree = "<group>"; };
+		567A0D311C7DC1270057E01F /* TestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		567A0D321C7DC1270057E01F /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
+		567A0D351C7EEA5B0057E01F /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
 		567FF7361C768E7E00ADDBFF /* RTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLabel.h; sourceTree = "<group>"; };
 		567FF7371C768E7E00ADDBFF /* RTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLabel.m; sourceTree = "<group>"; };
 		568ED0EC1C7456C5003AF9B2 /* TwoLineNavHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLineNavHeader.swift; sourceTree = "<group>"; };
@@ -258,6 +264,9 @@
 				568ED1631C75DED2003AF9B2 /* HtmlTest.swift */,
 				568ED1641C75DED2003AF9B2 /* HtmlTest.xib */,
 				568ED16B1C761CE3003AF9B2 /* UISample-Bridging-Header.h */,
+				567A0D311C7DC1270057E01F /* TestTableViewCell.swift */,
+				567A0D321C7DC1270057E01F /* TestTableViewCell.xib */,
+				567A0D351C7EEA5B0057E01F /* Regexp.swift */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -402,6 +411,7 @@
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */,
 				568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */,
+				567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */,
 				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
 				561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
@@ -434,6 +444,7 @@
 			files = (
 				561E60D81C7180D800CFADF6 /* VarticalCalendar.swift in Sources */,
 				5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */,
+				567A0D331C7DC1270057E01F /* TestTableViewCell.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
 				56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */,
 				561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */,
@@ -453,6 +464,7 @@
 				56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */,
 				568ED1111C755CCC003AF9B2 /* ForthCustomCell.swift in Sources */,
 				568ED1091C755C93003AF9B2 /* SecondCustomCell.swift in Sources */,
+				567A0D361C7EEA5B0057E01F /* Regexp.swift in Sources */,
 				568ED1151C759851003AF9B2 /* ModalVCL.swift in Sources */,
 				568ED10D1C755CB9003AF9B2 /* ThirdCustomCell.swift in Sources */,
 				56E74DE51C6B326E00A578CD /* DayView.swift in Sources */,

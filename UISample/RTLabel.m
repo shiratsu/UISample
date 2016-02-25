@@ -157,7 +157,7 @@
 	_text = @"";
 	_textAlignment = RTTextAlignmentLeft;
 	_lineBreakMode = RTTextLineBreakModeWordWrapping;
-	_lineSpacing = 3;
+	_lineSpacing = 0;
 	_currentSelectedButtonComponentIndex = -1;
 	_paragraphReplacement = @"\n";
 	
