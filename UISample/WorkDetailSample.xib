@@ -5,9 +5,9 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSwitchVCL" customModule="UISample" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkDetailSample" customModule="UISample" customModuleProvider="target">
             <connections>
-                <outlet property="menuView" destination="Mul-n2-rae" id="OWP-eA-kgo"/>
+                <outlet property="detailView" destination="9gz-4E-ETg" id="E7F-d8-bZz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -16,22 +16,23 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Mul-n2-rae">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="9gz-4E-ETg">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="MBV-r8-N6O"/>
-                        <outlet property="delegate" destination="-1" id="iEh-C5-1zG"/>
+                        <outlet property="dataSource" destination="-1" id="hvB-iz-iT1"/>
+                        <outlet property="delegate" destination="-1" id="vrY-Bt-IPR"/>
                     </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Mul-n2-rae" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4TS-PX-aCB"/>
-                <constraint firstItem="Mul-n2-rae" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Mqf-rV-7BJ"/>
-                <constraint firstAttribute="trailing" secondItem="Mul-n2-rae" secondAttribute="trailing" id="UUc-ea-YaQ"/>
-                <constraint firstAttribute="bottom" secondItem="Mul-n2-rae" secondAttribute="bottom" id="lqK-0e-bah"/>
+                <constraint firstItem="9gz-4E-ETg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8hN-1i-G0f"/>
+                <constraint firstItem="9gz-4E-ETg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="EEh-by-61g"/>
+                <constraint firstAttribute="trailing" secondItem="9gz-4E-ETg" secondAttribute="trailing" id="gLO-R3-kZq"/>
+                <constraint firstAttribute="bottom" secondItem="9gz-4E-ETg" secondAttribute="bottom" id="qlR-Y1-utJ"/>
             </constraints>
+            <point key="canvasLocation" x="389" y="32"/>
         </view>
     </objects>
 </document>

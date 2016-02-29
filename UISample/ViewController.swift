@@ -85,6 +85,9 @@ class ViewController: UIViewController {
     @IBAction func gotoHtml(sender: AnyObject) {
         self.performSegueWithIdentifier("show_html", sender: self)
     }
+    @IBAction func gotoDetailSample(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_workdetail", sender: self)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15E49a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="UISample" customModuleProvider="target"/>
@@ -158,6 +158,29 @@
                         <action selector="goSwitch:" destination="-1" eventType="touchUpInside" id="yFv-Ib-NZB"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URm-T4-eQK">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="135" id="6bh-j1-033"/>
+                        <constraint firstAttribute="height" constant="30" id="THP-PP-IYd"/>
+                    </constraints>
+                    <state key="normal" title="ワーク詳細サンプル"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="6bh-j1-033"/>
+                            <exclude reference="THP-PP-IYd"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="6bh-j1-033"/>
+                            <include reference="THP-PP-IYd"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="gotoDetailSample:" destination="-1" eventType="touchUpInside" id="uCC-bh-cKY"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
@@ -172,6 +195,7 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="49"/>
                 </constraint>
                 <constraint firstItem="w84-Sh-6Vt" firstAttribute="top" secondItem="pMg-YV-A3D" secondAttribute="bottom" constant="44" id="Jkr-Pg-hGc"/>
+                <constraint firstAttribute="trailing" secondItem="URm-T4-eQK" secondAttribute="trailing" constant="25" id="Pqd-Fd-SOw"/>
                 <constraint firstAttribute="trailing" secondItem="qNb-yu-3KK" secondAttribute="trailing" constant="131" id="QEf-SJ-6rn">
                     <variation key="heightClass=regular-widthClass=compact" constant="59"/>
                 </constraint>
@@ -215,29 +239,36 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="34"/>
                 </constraint>
                 <constraint firstItem="Ie2-wj-5fH" firstAttribute="top" secondItem="UIx-Mm-hSi" secondAttribute="bottom" constant="14" id="xZK-z3-4cd"/>
+                <constraint firstItem="URm-T4-eQK" firstAttribute="top" secondItem="w84-Sh-6Vt" secondAttribute="bottom" constant="14" id="yCW-x2-RLE"/>
             </constraints>
             <variation key="default">
                 <mask key="subviews">
                     <exclude reference="w84-Sh-6Vt"/>
                     <exclude reference="Ie2-wj-5fH"/>
+                    <exclude reference="URm-T4-eQK"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="ezC-En-Tqc"/>
                     <exclude reference="xZK-z3-4cd"/>
                     <exclude reference="Jkr-Pg-hGc"/>
                     <exclude reference="Wqk-ZV-aNN"/>
+                    <exclude reference="Pqd-Fd-SOw"/>
+                    <exclude reference="yCW-x2-RLE"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
                 <mask key="subviews">
                     <include reference="w84-Sh-6Vt"/>
                     <include reference="Ie2-wj-5fH"/>
+                    <include reference="URm-T4-eQK"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="ezC-En-Tqc"/>
                     <include reference="xZK-z3-4cd"/>
                     <include reference="Jkr-Pg-hGc"/>
                     <include reference="Wqk-ZV-aNN"/>
+                    <include reference="Pqd-Fd-SOw"/>
+                    <include reference="yCW-x2-RLE"/>
                 </mask>
             </variation>
         </view>

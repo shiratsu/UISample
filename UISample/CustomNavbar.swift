@@ -15,6 +15,7 @@ class CustomNavbar: UIViewController {
     @IBOutlet weak var segmentedbar: UIToolbar!
     var navBelowImageView:UIImageView! = nil
     
+    @IBOutlet weak var baseview: UIView!
     
     /**
      xibを読み込む

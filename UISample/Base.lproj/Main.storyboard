@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RS7-5P-ieG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E49a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RS7-5P-ieG">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--ModalVCL-->
@@ -35,13 +35,21 @@
             </objects>
             <point key="canvasLocation" x="-1778" y="-440"/>
         </scene>
+        <!--Work Detail Sample-->
+        <scene sceneID="fLc-7D-4yj">
+            <objects>
+                <viewController id="JlU-kA-hgr" customClass="WorkDetailSample" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bma-mN-ech" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1608" y="424"/>
+        </scene>
         <!--Html Test-->
         <scene sceneID="WDE-t6-igY">
             <objects>
                 <viewController id="usO-Aq-IIn" customClass="HtmlTest" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuA-Ir-kXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1478" y="464"/>
+            <point key="canvasLocation" x="-1470" y="1272"/>
         </scene>
         <!--Cell AcordionVCL-->
         <scene sceneID="5jC-Qw-lBM">
@@ -49,7 +57,7 @@
                 <viewController id="fdW-MI-abj" customClass="CellAcordionVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3o4-cy-JX5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1272" y="1272"/>
+            <point key="canvasLocation" x="-1288" y="2216"/>
         </scene>
         <!--Two Line Nav Header-->
         <scene sceneID="27i-FK-TB8">
@@ -57,7 +65,7 @@
                 <viewController id="JDF-9p-mt2" customClass="TwoLineNavHeader" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfy-CT-Aey" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="1328"/>
+            <point key="canvasLocation" x="-458" y="2288"/>
         </scene>
         <!--Keyboard Sample-->
         <scene sceneID="Ejf-jV-RM2">
@@ -65,7 +73,7 @@
                 <viewController id="FaJ-6u-4wq" customClass="KeyboardSample" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX7-hY-jxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="354" y="1476"/>
+            <point key="canvasLocation" x="418" y="2252"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OQC-AA-pdS">
@@ -83,6 +91,7 @@
                         <segue destination="fdW-MI-abj" kind="show" identifier="show_accordion" id="avp-ZO-xEh"/>
                         <segue destination="aCh-JI-3Wy" kind="presentation" identifier="show_modal" id="jDm-iZ-H9A"/>
                         <segue destination="usO-Aq-IIn" kind="show" identifier="show_html" id="IAr-af-4Zl"/>
+                        <segue destination="JlU-kA-hgr" kind="show" identifier="show_workdetail" id="QNr-Vk-scv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
