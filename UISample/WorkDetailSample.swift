@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import WebKit
 
-class WorkDetailSample: UIViewController {
+class WorkDetailSample: UIViewController,WKNavigationDelegate {
 
     @IBOutlet weak var detailView: UITableView!
     
@@ -21,6 +22,19 @@ class WorkDetailSample: UIViewController {
     var strTest4 = "hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststeststststststhiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststeststststststhiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst_hiratsukatesteststestststststst"
     var dicTest:[Int:String]!
     
+    var workInfoView:WKWebView!
+    
+    var pageSize:CGSize?
+    
+    func createWebView(){
+        let webViewConfiguration = WKWebViewConfiguration()
+        let wkusercontentcontroller = WKUserContentController()
+        webViewConfiguration.userContentController = wkusercontentcontroller
+        
+        self.workInfoView = WKWebView(frame: CGRect(x: 8, y: 8, width: self.view.frame.width-16, height: self.view.frame.height-16), configuration: webViewConfiguration)
+        self.workInfoView.navigationDelegate = self
+        
+    }
     
     /**
      xibを読み込む
@@ -69,8 +83,48 @@ class WorkDetailSample: UIViewController {
             ,16:strTest4
                     ]
         
+        //webviewを作成
+        createWebView()
+        
+        let URL = NSURL(string: "https://shotworks.jp")
+        let urlRequest: NSURLRequest = NSURLRequest(URL: URL!)
+        self.workInfoView.loadRequest(urlRequest)
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        self.workInfoView.frame.size.width = self.view.frame.size.width-16
+    }
+    
+    func webView(webView: WKWebView, didStartProvisionalNavigation navigation: WKNavigation!){
+        // インジケータを表示する
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+        
+    }
+    
+    func webView(webView: WKWebView, didFinishNavigation navigation: WKNavigation!){
+        // インジケータを表示する
+        
+        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+        
+        
+        pageSize = webView.scrollView.contentSize
+        
+        
+        let indexpath = NSIndexPath(forRow: 0, inSection: 2)
+        
+        self.detailView.beginUpdates()
+        self.detailView.reloadRowsAtIndexPaths([indexpath], withRowAnimation: UITableViewRowAnimation.None)
+        self.detailView.endUpdates()
+        
+        
+        
+    }
+    
     
     /*
     * セクション数を指定する
@@ -133,7 +187,12 @@ class WorkDetailSample: UIViewController {
         case 1:
             return 45
         case 2:
-            return 500
+            
+            if pageSize != nil{
+               return (pageSize?.height)!
+            }else{
+                return 500
+            }
         case 3:
             return 0
         case (4...6):
@@ -345,6 +404,11 @@ class WorkDetailSample: UIViewController {
             
         case 2:
             let cell2: WorkViewCell = tableView.dequeueReusableCellWithIdentifier("WorkViewCell") as! WorkViewCell
+            
+            if pageSize != nil{
+                cell2.setWebView(workInfoView, pageSize: pageSize!)
+            }
+            
             return cell2
 //        case 3:
 //            return 35

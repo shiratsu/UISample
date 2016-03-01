@@ -13,7 +13,19 @@
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="434.5"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="X4x-c9-o3t">
+                        <rect key="frame" x="150" y="208" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X4x-c9-o3t" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="a7o-tB-wDx"/>
+                    <constraint firstItem="X4x-c9-o3t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oUs-1Z-NKA"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="webIndicator" destination="X4x-c9-o3t" id="g4b-v8-Bin"/>
+            </connections>
             <point key="canvasLocation" x="139" y="508.5"/>
         </tableViewCell>
     </objects>

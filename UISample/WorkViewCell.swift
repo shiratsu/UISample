@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import WebKit
 
 class WorkViewCell: UITableViewCell {
 
+    @IBOutlet weak var webIndicator: UIActivityIndicatorView!
+    var isAlreadyLoad = false
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        webIndicator.startAnimating()
         // Initialization code
     }
 
@@ -20,5 +26,19 @@ class WorkViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func setWebView(webView:WKWebView,pageSize:CGSize){
+        
+        if !isAlreadyLoad{
+            webIndicator.stopAnimating()
+            webIndicator.hidden = true
+            webView.frame = CGRect(x: 8, y: 8, width: pageSize.width, height: pageSize.height)
+            webView.scrollView.scrollEnabled = false
+            self.addSubview(webView)
+            isAlreadyLoad = true
+        }
+        
+    }
+    
     
 }

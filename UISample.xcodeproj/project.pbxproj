@@ -27,6 +27,7 @@
 		56663D3D1C80788100D33441 /* WorkViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56663D3B1C80788100D33441 /* WorkViewCell.xib */; };
 		56663D401C84177700D33441 /* LinkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56663D3E1C84177700D33441 /* LinkCell.swift */; };
 		56663D411C84177700D33441 /* LinkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56663D3F1C84177700D33441 /* LinkCell.xib */; };
+		56663D431C851AEC00D33441 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56663D421C851AEC00D33441 /* WebKit.framework */; };
 		567A0D331C7DC1270057E01F /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A0D311C7DC1270057E01F /* TestTableViewCell.swift */; };
 		567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567A0D321C7DC1270057E01F /* TestTableViewCell.xib */; };
 		567A0D361C7EEA5B0057E01F /* Regexp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567A0D351C7EEA5B0057E01F /* Regexp.swift */; };
@@ -114,6 +115,7 @@
 		56663D3B1C80788100D33441 /* WorkViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkViewCell.xib; sourceTree = "<group>"; };
 		56663D3E1C84177700D33441 /* LinkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCell.swift; sourceTree = "<group>"; };
 		56663D3F1C84177700D33441 /* LinkCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinkCell.xib; sourceTree = "<group>"; };
+		56663D421C851AEC00D33441 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/PrivateFrameworks/WebKit.framework; sourceTree = SDKROOT; };
 		567A0D311C7DC1270057E01F /* TestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
 		567A0D321C7DC1270057E01F /* TestTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestTableViewCell.xib; sourceTree = "<group>"; };
 		567A0D351C7EEA5B0057E01F /* Regexp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regexp.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56663D431C851AEC00D33441 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +246,7 @@
 		5695278D1C687E0C00466FC4 = {
 			isa = PBXGroup;
 			children = (
+				56663D421C851AEC00D33441 /* WebKit.framework */,
 				569527981C687E0C00466FC4 /* UISample */,
 				569527AD1C687E0D00466FC4 /* UISampleTests */,
 				569527B81C687E0D00466FC4 /* UISampleUITests */,
@@ -658,6 +662,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = UISample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -673,6 +681,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
 				INFOPLIST_FILE = UISample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
