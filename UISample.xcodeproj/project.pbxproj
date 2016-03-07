@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		561D22491C8D5D23008CCF50 /* LabelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561D22471C8D5D23008CCF50 /* LabelList.swift */; };
+		561D224A1C8D5D23008CCF50 /* LabelList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561D22481C8D5D23008CCF50 /* LabelList.xib */; };
 		561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */; };
 		561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */; };
 		561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60CA1C71733600CFADF6 /* OneCalendarCell.swift */; };
@@ -95,6 +97,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		561D22471C8D5D23008CCF50 /* LabelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelList.swift; sourceTree = "<group>"; };
+		561D22481C8D5D23008CCF50 /* LabelList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelList.xib; sourceTree = "<group>"; };
 		561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandScapeCalendar.swift; sourceTree = "<group>"; };
 		561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandScapeCalendar.xib; sourceTree = "<group>"; };
 		561E60CA1C71733600CFADF6 /* OneCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneCalendarCell.swift; sourceTree = "<group>"; };
@@ -307,6 +311,8 @@
 				567A0D351C7EEA5B0057E01F /* Regexp.swift */,
 				56663D2A1C7FF34600D33441 /* WorkDetailSample.swift */,
 				56663D2B1C7FF34600D33441 /* WorkDetailSample.xib */,
+				561D22471C8D5D23008CCF50 /* LabelList.swift */,
+				561D22481C8D5D23008CCF50 /* LabelList.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				56663D2D1C7FF34600D33441 /* WorkDetailSample.xib in Resources */,
 				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
 				561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */,
+				561D224A1C8D5D23008CCF50 /* LabelList.xib in Resources */,
 				5695279F1C687E0D00466FC4 /* Main.storyboard in Resources */,
 				561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */,
 				568ED0FE1C747B96003AF9B2 /* TableViewInCell.xib in Resources */,
@@ -496,6 +503,7 @@
 				56663D2C1C7FF34600D33441 /* WorkDetailSample.swift in Sources */,
 				56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */,
 				561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */,
+				561D22491C8D5D23008CCF50 /* LabelList.swift in Sources */,
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				56663D3C1C80788100D33441 /* WorkViewCell.swift in Sources */,

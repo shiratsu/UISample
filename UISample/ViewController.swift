@@ -43,6 +43,11 @@ class ViewController: UIViewController {
     @IBAction func gotoVartivalCalendar(sender: AnyObject) {
         self.performSegueWithIdentifier("show_varticalcalendar", sender: self)
     }
+    @IBAction func gotoLabelList(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("show_labellist", sender: self)
+        
+    }
     @IBAction func showModal(sender: AnyObject) {
         let grayModal = UnderGrayModal.instance()
         grayModal.initColor()
@@ -88,6 +93,8 @@ class ViewController: UIViewController {
     @IBAction func gotoDetailSample(sender: AnyObject) {
         self.performSegueWithIdentifier("show_workdetail", sender: self)
     }
+    
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
