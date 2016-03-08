@@ -5,6 +5,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
+        <!--Text View In Table ViewVCL-->
+        <scene sceneID="Lpz-hc-bPe">
+            <objects>
+                <viewController id="Tb7-hJ-m0B" customClass="TextViewInTableViewVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXX-Y2-9fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-306" y="-1579"/>
+        </scene>
         <!--ModalVCL-->
         <scene sceneID="ne7-9b-KdV">
             <objects>
@@ -41,7 +49,7 @@
                 <viewController id="JlU-kA-hgr" customClass="WorkDetailSample" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bma-mN-ech" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1608" y="424"/>
+            <point key="canvasLocation" x="-1824" y="244"/>
         </scene>
         <!--Label List-->
         <scene sceneID="IlP-lr-v54">
@@ -49,7 +57,7 @@
                 <viewController id="5w2-hU-5HU" customClass="LabelList" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ELe-oY-eS7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2178" y="1244"/>
+            <point key="canvasLocation" x="-2738" y="996"/>
         </scene>
         <!--Html Test-->
         <scene sceneID="WDE-t6-igY">
@@ -57,7 +65,15 @@
                 <viewController id="usO-Aq-IIn" customClass="HtmlTest" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vuA-Ir-kXk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1470" y="1272"/>
+            <point key="canvasLocation" x="-1910" y="1156"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wry-2e-fFG">
+            <objects>
+                <viewController id="VsZ-ua-CEs" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gx2-6y-AvB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2178" y="2272"/>
         </scene>
         <!--Cell AcordionVCL-->
         <scene sceneID="5jC-Qw-lBM">
@@ -101,6 +117,8 @@
                         <segue destination="usO-Aq-IIn" kind="show" identifier="show_html" id="IAr-af-4Zl"/>
                         <segue destination="JlU-kA-hgr" kind="show" identifier="show_workdetail" id="QNr-Vk-scv"/>
                         <segue destination="5w2-hU-5HU" kind="show" identifier="show_labellist" id="gTr-Tt-zRP"/>
+                        <segue destination="VsZ-ua-CEs" kind="show" id="8ty-ey-iIB"/>
+                        <segue destination="Tb7-hJ-m0B" kind="show" identifier="show_textviewincell" id="AIR-Hd-FK5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

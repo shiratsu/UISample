@@ -94,7 +94,9 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_workdetail", sender: self)
     }
     
-    
+    @IBAction func gotoTextViewInCell(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_textviewincell", sender: self)
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)

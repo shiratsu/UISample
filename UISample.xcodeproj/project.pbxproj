@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		561D22491C8D5D23008CCF50 /* LabelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561D22471C8D5D23008CCF50 /* LabelList.swift */; };
 		561D224A1C8D5D23008CCF50 /* LabelList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561D22481C8D5D23008CCF50 /* LabelList.xib */; };
+		561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561D224B1C8D7A70008CCF50 /* TextViewInTableViewVCL.swift */; };
+		561D224E1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561D224C1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib */; };
 		561E60C31C6DE35000CFADF6 /* LandScapeCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */; };
 		561E60C41C6DE35000CFADF6 /* LandScapeCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */; };
 		561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561E60CA1C71733600CFADF6 /* OneCalendarCell.swift */; };
@@ -17,6 +19,8 @@
 		561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */; };
 		5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */; };
 		5635BED01C72C7F6007B580F /* UnderGrayModal.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */; };
+		563EEC721C8E6E2B00B21F07 /* TextViewInCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563EEC701C8E6E2B00B21F07 /* TextViewInCell.swift */; };
+		563EEC731C8E6E2B00B21F07 /* TextViewInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 563EEC711C8E6E2B00B21F07 /* TextViewInCell.xib */; };
 		56663D2C1C7FF34600D33441 /* WorkDetailSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56663D2A1C7FF34600D33441 /* WorkDetailSample.swift */; };
 		56663D2D1C7FF34600D33441 /* WorkDetailSample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56663D2B1C7FF34600D33441 /* WorkDetailSample.xib */; };
 		56663D301C803DC400D33441 /* MutableHeightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56663D2E1C803DC400D33441 /* MutableHeightCell.swift */; };
@@ -99,6 +103,8 @@
 /* Begin PBXFileReference section */
 		561D22471C8D5D23008CCF50 /* LabelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelList.swift; sourceTree = "<group>"; };
 		561D22481C8D5D23008CCF50 /* LabelList.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelList.xib; sourceTree = "<group>"; };
+		561D224B1C8D7A70008CCF50 /* TextViewInTableViewVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewInTableViewVCL.swift; sourceTree = "<group>"; };
+		561D224C1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewInTableViewVCL.xib; sourceTree = "<group>"; };
 		561E60C11C6DE35000CFADF6 /* LandScapeCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandScapeCalendar.swift; sourceTree = "<group>"; };
 		561E60C21C6DE35000CFADF6 /* LandScapeCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LandScapeCalendar.xib; sourceTree = "<group>"; };
 		561E60CA1C71733600CFADF6 /* OneCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneCalendarCell.swift; sourceTree = "<group>"; };
@@ -107,6 +113,8 @@
 		561E60D71C7180D800CFADF6 /* VarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VarticalCalendar.xib; sourceTree = "<group>"; };
 		5635BECD1C72C7E0007B580F /* UnderGrayModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderGrayModal.swift; sourceTree = "<group>"; };
 		5635BECF1C72C7F6007B580F /* UnderGrayModal.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UnderGrayModal.xib; sourceTree = "<group>"; };
+		563EEC701C8E6E2B00B21F07 /* TextViewInCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextViewInCell.swift; sourceTree = "<group>"; };
+		563EEC711C8E6E2B00B21F07 /* TextViewInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextViewInCell.xib; sourceTree = "<group>"; };
 		56663D2A1C7FF34600D33441 /* WorkDetailSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailSample.swift; sourceTree = "<group>"; };
 		56663D2B1C7FF34600D33441 /* WorkDetailSample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkDetailSample.xib; sourceTree = "<group>"; };
 		56663D2E1C803DC400D33441 /* MutableHeightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutableHeightCell.swift; sourceTree = "<group>"; };
@@ -230,6 +238,8 @@
 				56663D3B1C80788100D33441 /* WorkViewCell.xib */,
 				56663D3E1C84177700D33441 /* LinkCell.swift */,
 				56663D3F1C84177700D33441 /* LinkCell.xib */,
+				563EEC701C8E6E2B00B21F07 /* TextViewInCell.swift */,
+				563EEC711C8E6E2B00B21F07 /* TextViewInCell.xib */,
 			);
 			name = table;
 			sourceTree = "<group>";
@@ -313,6 +323,8 @@
 				56663D2B1C7FF34600D33441 /* WorkDetailSample.xib */,
 				561D22471C8D5D23008CCF50 /* LabelList.swift */,
 				561D22481C8D5D23008CCF50 /* LabelList.xib */,
+				561D224B1C8D7A70008CCF50 /* TextViewInTableViewVCL.swift */,
+				561D224C1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -439,11 +451,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				561D224E1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib in Resources */,
 				56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */,
 				56BA6CAE1C72FA17005F5AF7 /* KeyboardSample.xib in Resources */,
 				568ED10E1C755CB9003AF9B2 /* ThirdCustomCell.xib in Resources */,
 				569527A41C687E0D00466FC4 /* LaunchScreen.storyboard in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
+				563EEC731C8E6E2B00B21F07 /* TextViewInCell.xib in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
@@ -508,11 +522,13 @@
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				56663D3C1C80788100D33441 /* WorkViewCell.swift in Sources */,
 				568ED1051C755C0D003AF9B2 /* FirstCustomCell.swift in Sources */,
+				563EEC721C8E6E2B00B21F07 /* TextViewInCell.swift in Sources */,
 				568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
 				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
+				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,
 				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
 				568ED1651C75DED2003AF9B2 /* HtmlTest.swift in Sources */,
 				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,

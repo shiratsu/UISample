@@ -228,6 +228,9 @@
                             <include reference="y1D-Sr-fCj"/>
                         </mask>
                     </variation>
+                    <connections>
+                        <action selector="gotoTextViewInCell:" destination="-1" eventType="touchUpInside" id="a2A-m4-9Zm"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -302,16 +305,16 @@
                     <exclude reference="BcK-JI-Zbb"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="ezC-En-Tqc"/>
-                    <exclude reference="xZK-z3-4cd"/>
-                    <exclude reference="Jkr-Pg-hGc"/>
-                    <exclude reference="Wqk-ZV-aNN"/>
-                    <exclude reference="7bJ-sN-CYR"/>
-                    <exclude reference="WrM-jI-z3s"/>
-                    <exclude reference="Pqd-Fd-SOw"/>
-                    <exclude reference="yCW-x2-RLE"/>
                     <exclude reference="x9e-iJ-2ge"/>
                     <exclude reference="xjb-IJ-pf7"/>
+                    <exclude reference="ezC-En-Tqc"/>
+                    <exclude reference="xZK-z3-4cd"/>
+                    <exclude reference="Pqd-Fd-SOw"/>
+                    <exclude reference="yCW-x2-RLE"/>
+                    <exclude reference="7bJ-sN-CYR"/>
+                    <exclude reference="WrM-jI-z3s"/>
+                    <exclude reference="Jkr-Pg-hGc"/>
+                    <exclude reference="Wqk-ZV-aNN"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -323,16 +326,16 @@
                     <include reference="BcK-JI-Zbb"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="ezC-En-Tqc"/>
-                    <include reference="xZK-z3-4cd"/>
-                    <include reference="Jkr-Pg-hGc"/>
-                    <include reference="Wqk-ZV-aNN"/>
-                    <include reference="7bJ-sN-CYR"/>
-                    <include reference="WrM-jI-z3s"/>
-                    <include reference="Pqd-Fd-SOw"/>
-                    <include reference="yCW-x2-RLE"/>
                     <include reference="x9e-iJ-2ge"/>
                     <include reference="xjb-IJ-pf7"/>
+                    <include reference="ezC-En-Tqc"/>
+                    <include reference="xZK-z3-4cd"/>
+                    <include reference="Pqd-Fd-SOw"/>
+                    <include reference="yCW-x2-RLE"/>
+                    <include reference="7bJ-sN-CYR"/>
+                    <include reference="WrM-jI-z3s"/>
+                    <include reference="Jkr-Pg-hGc"/>
+                    <include reference="Wqk-ZV-aNN"/>
                 </mask>
             </variation>
         </view>
