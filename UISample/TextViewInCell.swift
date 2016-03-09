@@ -43,9 +43,6 @@ class TextViewInCell: UITableViewCell,UITextViewDelegate {
         let nowHeight = nowFrame.size.height
         
         
-        print(nowHeight)
-        print(lastHeight)
-        
         if nowHeight > lastHeight{
             
             lastContentSize = nowFrame

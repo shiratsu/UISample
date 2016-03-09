@@ -98,6 +98,11 @@ class ViewController: UIViewController {
         self.performSegueWithIdentifier("show_textviewincell", sender: self)
     }
     
+    @IBAction func gotoAutoLayoutCell(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_autolayout_cell", sender: self)
+    }
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         

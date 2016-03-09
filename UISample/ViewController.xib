@@ -217,7 +217,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="y1D-Sr-fCj"/>
                     </constraints>
-                    <state key="normal" title="TextViewExpandInTable"/>
+                    <state key="normal" title="TextViewをcellに入れて、高さ可変"/>
                     <variation key="default">
                         <mask key="constraints">
                             <exclude reference="y1D-Sr-fCj"/>
@@ -232,11 +232,36 @@
                         <action selector="gotoTextViewInCell:" destination="-1" eventType="touchUpInside" id="a2A-m4-9Zm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GyL-fo-6eE">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="108" id="0TG-Pg-fQu"/>
+                        <constraint firstAttribute="height" constant="30" id="b8Q-ln-M3T"/>
+                    </constraints>
+                    <state key="normal" title="auto_layout_cell"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="0TG-Pg-fQu"/>
+                            <exclude reference="b8Q-ln-M3T"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="0TG-Pg-fQu"/>
+                            <include reference="b8Q-ln-M3T"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="gotoAutoLayoutCell:" destination="-1" eventType="touchUpInside" id="IJn-s4-Cpg"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="GyL-fo-6eE" firstAttribute="top" secondItem="BcK-JI-Zbb" secondAttribute="bottom" constant="17" id="06b-D6-3Tg"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="37" id="5Dk-EO-hAX"/>
                 <constraint firstItem="o4c-EI-FT7" firstAttribute="top" secondItem="Ie2-wj-5fH" secondAttribute="bottom" constant="25" id="7bJ-sN-CYR"/>
+                <constraint firstItem="GyL-fo-6eE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="9Jq-tr-lzC"/>
                 <constraint firstAttribute="trailing" secondItem="pMg-YV-A3D" secondAttribute="trailing" constant="149" id="C5H-hz-eEc">
                     <variation key="heightClass=regular-widthClass=compact" constant="66"/>
                 </constraint>
@@ -262,7 +287,9 @@
                     <variation key="heightClass=regular-widthClass=compact" constant="108"/>
                 </constraint>
                 <constraint firstAttribute="trailing" secondItem="w84-Sh-6Vt" secondAttribute="trailing" constant="65" id="Wqk-ZV-aNN"/>
-                <constraint firstItem="o4c-EI-FT7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="68" id="WrM-jI-z3s"/>
+                <constraint firstItem="o4c-EI-FT7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="68" id="WrM-jI-z3s">
+                    <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                </constraint>
                 <constraint firstItem="6j8-fJ-REj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="155" id="cqP-ow-FZR">
                     <variation key="heightClass=regular-widthClass=compact" constant="79"/>
                 </constraint>
@@ -291,7 +318,9 @@
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="110" id="wvQ-jZ-MPw">
                     <variation key="heightClass=regular-widthClass=compact" constant="34"/>
                 </constraint>
-                <constraint firstAttribute="trailing" secondItem="BcK-JI-Zbb" secondAttribute="trailing" constant="12" id="x9e-iJ-2ge"/>
+                <constraint firstAttribute="trailing" secondItem="BcK-JI-Zbb" secondAttribute="trailing" constant="12" id="x9e-iJ-2ge">
+                    <variation key="heightClass=regular-widthClass=compact" constant="25"/>
+                </constraint>
                 <constraint firstItem="Ie2-wj-5fH" firstAttribute="top" secondItem="UIx-Mm-hSi" secondAttribute="bottom" constant="14" id="xZK-z3-4cd"/>
                 <constraint firstItem="BcK-JI-Zbb" firstAttribute="top" secondItem="URm-T4-eQK" secondAttribute="bottom" constant="25" id="xjb-IJ-pf7"/>
                 <constraint firstItem="URm-T4-eQK" firstAttribute="top" secondItem="w84-Sh-6Vt" secondAttribute="bottom" constant="14" id="yCW-x2-RLE"/>
@@ -303,18 +332,21 @@
                     <exclude reference="o4c-EI-FT7"/>
                     <exclude reference="URm-T4-eQK"/>
                     <exclude reference="BcK-JI-Zbb"/>
+                    <exclude reference="GyL-fo-6eE"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="x9e-iJ-2ge"/>
-                    <exclude reference="xjb-IJ-pf7"/>
                     <exclude reference="ezC-En-Tqc"/>
                     <exclude reference="xZK-z3-4cd"/>
-                    <exclude reference="Pqd-Fd-SOw"/>
-                    <exclude reference="yCW-x2-RLE"/>
-                    <exclude reference="7bJ-sN-CYR"/>
-                    <exclude reference="WrM-jI-z3s"/>
                     <exclude reference="Jkr-Pg-hGc"/>
                     <exclude reference="Wqk-ZV-aNN"/>
+                    <exclude reference="7bJ-sN-CYR"/>
+                    <exclude reference="WrM-jI-z3s"/>
+                    <exclude reference="Pqd-Fd-SOw"/>
+                    <exclude reference="yCW-x2-RLE"/>
+                    <exclude reference="x9e-iJ-2ge"/>
+                    <exclude reference="xjb-IJ-pf7"/>
+                    <exclude reference="06b-D6-3Tg"/>
+                    <exclude reference="9Jq-tr-lzC"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -324,18 +356,21 @@
                     <include reference="o4c-EI-FT7"/>
                     <include reference="URm-T4-eQK"/>
                     <include reference="BcK-JI-Zbb"/>
+                    <include reference="GyL-fo-6eE"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="x9e-iJ-2ge"/>
-                    <include reference="xjb-IJ-pf7"/>
                     <include reference="ezC-En-Tqc"/>
                     <include reference="xZK-z3-4cd"/>
-                    <include reference="Pqd-Fd-SOw"/>
-                    <include reference="yCW-x2-RLE"/>
-                    <include reference="7bJ-sN-CYR"/>
-                    <include reference="WrM-jI-z3s"/>
                     <include reference="Jkr-Pg-hGc"/>
                     <include reference="Wqk-ZV-aNN"/>
+                    <include reference="7bJ-sN-CYR"/>
+                    <include reference="WrM-jI-z3s"/>
+                    <include reference="Pqd-Fd-SOw"/>
+                    <include reference="yCW-x2-RLE"/>
+                    <include reference="x9e-iJ-2ge"/>
+                    <include reference="xjb-IJ-pf7"/>
+                    <include reference="06b-D6-3Tg"/>
+                    <include reference="9Jq-tr-lzC"/>
                 </mask>
             </variation>
         </view>

@@ -19,7 +19,15 @@
                 <viewController id="aCh-JI-3Wy" customClass="ModalVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcj-CV-4Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-707" y="-536"/>
+            <point key="canvasLocation" x="-767" y="-828"/>
+        </scene>
+        <!--Auto Layout ByPG-->
+        <scene sceneID="VJh-tU-Xkh">
+            <objects>
+                <viewController id="8Lg-os-3Or" customClass="AutoLayoutByPG" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iNv-vk-en3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1434" y="-1208"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tsi-Fr-XrW">
@@ -119,6 +127,7 @@
                         <segue destination="5w2-hU-5HU" kind="show" identifier="show_labellist" id="gTr-Tt-zRP"/>
                         <segue destination="VsZ-ua-CEs" kind="show" id="8ty-ey-iIB"/>
                         <segue destination="Tb7-hJ-m0B" kind="show" identifier="show_textviewincell" id="AIR-Hd-FK5"/>
+                        <segue destination="8Lg-os-3Or" kind="show" identifier="show_autolayout_cell" id="BBy-Js-dnr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
