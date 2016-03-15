@@ -23,19 +23,31 @@ class MonthView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func setUpLabel(text:String,floatFontSize:CGFloat = 15){
+    func setUpLabel(text:String,floatFontSize:CGFloat = 15,cellWidth:CGFloat = 0){
+        
+        if titleLabel != nil{
+            if titleLabel.isDescendantOfView(self){
+                self.titleLabel.removeFromSuperview()
+            }
+        }
+        let baseWidth = (cellWidth != 0) ? cellWidth : frame.size.width
         
         let textSize = text.sizeWithAttributes([NSFontAttributeName: UIFont(name: "HiraginoSans-W3", size: floatFontSize)!])
         
-        let diff = (self.frame.size.width - textSize.width)/2
+        let diff = (baseWidth - textSize.width)/2
         
         titleLabel = UILabel(frame: CGRect(x: diff, y: 5, width: textSize.width+10, height: floatFontSize))
+        
         titleLabel.font = UIFont(name: "HiraginoSans-W3", size: floatFontSize)
         titleLabel.text = text
+        
         self.addSubview(titleLabel)
+        
     }
     
-    func setUpDays(year:Int,month:Int,aryCheckDays:[Int],firstY:Int,aryAnotherCheck:[Int] = [],floatFontSize:CGFloat = 15){
+    func setUpDays(year:Int,month:Int,aryCheckDays:[Int],firstY:Int,aryAnotherCheck:[Int] = [],floatFontSize:CGFloat = 15,cellWidth:CGFloat = 0){
+        
+        let baseWidth = (cellWidth != 0) ? cellWidth : frame.size.width
         
         let subViews:[UIView] = self.subviews as [UIView]
         for view in subViews {
@@ -45,8 +57,8 @@ class MonthView: UIView {
         }
         
         let day:Int! = self.getLastDay(year,month:month);
-        let dayWidth:Int = Int( frame.size.width / 7.0 )
-        let dayHeight:Int = dayWidth+1
+        let dayWidth:Int = Int( baseWidth / 7.0 )
+        let dayHeight:Int = dayWidth-27
         
         //まずは曜日をセット
         var i = 0
@@ -62,6 +74,8 @@ class MonthView: UIView {
             let dayView:DayView = DayView(frame: frame, week: weekday,floatFontSize:floatFontSize)
             
             self.addSubview(dayView)
+            
+            
             
             i+=1
         }

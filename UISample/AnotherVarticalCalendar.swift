@@ -1,37 +1,49 @@
 //
-//  VarticalCalendar.swift
+//  AnotherVarticalCalendar.swift
 //  UISample
 //
-//  Created by 平塚 俊輔 on 2016/02/15.
+//  Created by 平塚 俊輔 on 2016/03/15.
 //  Copyright © 2016年 平塚 俊輔. All rights reserved.
 //
 
 import UIKit
 
-class VarticalCalendar: UIViewController {
-    
-    @IBOutlet weak var varticalCalendar: UITableView!
+class AnotherVarticalCalendar: UIViewController,UITableViewDataSource,UITableViewDelegate {
+
+    @IBOutlet weak var calendarView: UITableView!
     
     /**
      xibを読み込む
      */
     override func loadView() {
-        if let view = UINib(nibName: "VarticalCalendar", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
+        if let view = UINib(nibName: "AnotherVarticalCalendar", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
             self.view = view
         }
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        calendarView.delegate = self
+        calendarView.dataSource = self
         
-        var nib  = UINib(nibName: "OneCalendarCell", bundle:nil)
-        varticalCalendar.registerNib(nib, forCellReuseIdentifier:"OneCalendarCell")
-        nib  = UINib(nibName: "AutoCalendarCell", bundle:nil)
-        varticalCalendar.registerNib(nib, forCellReuseIdentifier:"AutoCalendarCell")
+        let nib  = UINib(nibName: "AutoCalendarCell", bundle:nil)
+        calendarView.registerNib(nib, forCellReuseIdentifier:"AutoCalendarCell")
+        
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        
+    }
     
     /*
     * セクション数を指定する
@@ -56,7 +68,13 @@ class VarticalCalendar: UIViewController {
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat{
-        return 162
+        
+        var cellHeight:CGFloat = 0
+        let calendarHeight = AutoCalendarCell.heightForAutoCell(calendarView)
+        cellHeight = 15+calendarHeight
+        
+        return calendarHeight
+        
     }
     
     
@@ -105,31 +123,31 @@ class VarticalCalendar: UIViewController {
     * Cellに値を設定する.
     */
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell: OneCalendarCell = tableView.dequeueReusableCellWithIdentifier("OneCalendarCell") as! OneCalendarCell
+        print(UIScreen.mainScreen().applicationFrame.size.width)
+        let cell: AutoCalendarCell = tableView.dequeueReusableCellWithIdentifier("AutoCalendarCell") as! AutoCalendarCell
         
         
         if indexPath.section == 0{
-            cell.setUpCalendar(2016, month: 1, aryCheck: [5,6,7,11,20],aryAnother: [5,6,11])
+            cell.setUpCalendar(2016, month: 1, aryCheck: [5,6,7,11,20],aryAnother: [5,6,11],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             
         }
         if indexPath.section == 1{
             if indexPath.row == 0{
-                cell.setUpCalendar(2016, month: 1, aryCheck: [7,8,9,13,18,25],aryAnother: [8,9,18])
+                cell.setUpCalendar(2016, month: 1, aryCheck: [7,8,9,13,18,25],aryAnother: [8,9,18],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             }
             if indexPath.row == 1{
-                cell.setUpCalendar(2016, month: 2, aryCheck: [3,10,11,25],aryAnother: [10,11])
+                cell.setUpCalendar(2016, month: 2, aryCheck: [3,10,11,25],aryAnother: [10,11],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             }
         }
         if indexPath.section == 2{
             if indexPath.row == 0{
-                cell.setUpCalendar(2016, month: 1, aryCheck: [2,13,15,26,27,28],aryAnother: [27,28])
+                cell.setUpCalendar(2016, month: 1, aryCheck: [2,13,15,26,27,28],aryAnother: [27,28],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             }
             if indexPath.row == 1{
-                cell.setUpCalendar(2016, month: 2, aryCheck: [1,9,29],aryAnother: [9,29])
+                cell.setUpCalendar(2016, month: 2, aryCheck: [1,9,29],aryAnother: [9,29],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             }
             if indexPath.row == 2{
-                cell.setUpCalendar(2016, month: 3, aryCheck: [5,17,20],aryAnother: [17])
+                cell.setUpCalendar(2016, month: 3, aryCheck: [5,17,20],aryAnother: [17],cellWIdth: UIScreen.mainScreen().applicationFrame.size.width)
             }
         }
         
@@ -139,7 +157,8 @@ class VarticalCalendar: UIViewController {
         
     }
     
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

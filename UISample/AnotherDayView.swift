@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DayView: UIView {
+class AnotherDayView: UIView {
     
     var dayInt:Int! = 0
     var dayLabel:UILabel! = nil
@@ -37,7 +37,27 @@ class DayView: UIView {
         }
         self.addSubview(dayLabel)
         
+        dayLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        let centerx = NSLayoutConstraint(
+            item: self.dayLabel,
+            attribute: NSLayoutAttribute.CenterX,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: NSLayoutAttribute.CenterX,
+            multiplier: 1.0,
+            constant: 0)
+        centerx.priority = 1000
+        let centery = NSLayoutConstraint(
+            item: self.dayLabel,
+            attribute: NSLayoutAttribute.CenterX,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: NSLayoutAttribute.CenterX,
+            multiplier: 1.0,
+            constant: 0)
+        centery.priority = 1000
+        self.addConstraint(centery)
     }
     
     init(frame:CGRect,week:String,floatFontSize:CGFloat = 12){
@@ -51,7 +71,29 @@ class DayView: UIView {
         dayLabel.text = week
         self.addSubview(dayLabel)
         
+        dayLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        dayLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let centerx = NSLayoutConstraint(
+            item: dayLabel,
+            attribute: NSLayoutAttribute.CenterX,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: NSLayoutAttribute.CenterX,
+            multiplier: 1.0,
+            constant: 0)
+        centerx.priority = 1000
+        let centery = NSLayoutConstraint(
+            item: dayLabel,
+            attribute: NSLayoutAttribute.CenterX,
+            relatedBy: .Equal,
+            toItem: self,
+            attribute: NSLayoutAttribute.CenterX,
+            multiplier: 1.0,
+            constant: 0)
+        centery.priority = 1000
+        self.addConstraint(centery)
     }
 }
 

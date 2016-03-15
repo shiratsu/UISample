@@ -81,6 +81,9 @@ class ViewController: UIViewController {
     @IBAction func gotoModal2(sender: AnyObject) {
         self.performSegueWithIdentifier("show_modal", sender: self)
     }
+    @IBAction func gotoAnotherCalendar(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_another_calendar", sender: self)
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
