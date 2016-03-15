@@ -88,7 +88,6 @@
 		56E74DE31C6B2FE100A578CD /* SimpleCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */; };
 		56E74DE51C6B326E00A578CD /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE41C6B326E00A578CD /* DayView.swift */; };
 		56E74DE71C6B336600A578CD /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE61C6B336600A578CD /* MonthView.swift */; };
-		56F4F6811C983E13007E79FD /* AnotherDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6801C983E13007E79FD /* AnotherDayView.swift */; };
 		56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */; };
 		56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */; };
 /* End PBXBuildFile section */
@@ -200,7 +199,6 @@
 		56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleCalendar.xib; sourceTree = "<group>"; };
 		56E74DE41C6B326E00A578CD /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		56E74DE61C6B336600A578CD /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
-		56F4F6801C983E13007E79FD /* AnotherDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherDayView.swift; sourceTree = "<group>"; };
 		56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherVarticalCalendar.swift; sourceTree = "<group>"; };
 		56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherVarticalCalendar.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -278,7 +276,6 @@
 				56E74DE41C6B326E00A578CD /* DayView.swift */,
 				56E74DE61C6B336600A578CD /* MonthView.swift */,
 				56B548BA1C97F9BB00191CE1 /* AnotherMonthView.swift */,
-				56F4F6801C983E13007E79FD /* AnotherDayView.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -579,7 +576,6 @@
 				567A0D361C7EEA5B0057E01F /* Regexp.swift in Sources */,
 				56663D381C80768C00D33441 /* SummaryCell.swift in Sources */,
 				568ED1151C759851003AF9B2 /* ModalVCL.swift in Sources */,
-				56F4F6811C983E13007E79FD /* AnotherDayView.swift in Sources */,
 				56B548BB1C97F9BB00191CE1 /* AnotherMonthView.swift in Sources */,
 				568ED10D1C755CB9003AF9B2 /* ThirdCustomCell.swift in Sources */,
 				56E74DE51C6B326E00A578CD /* DayView.swift in Sources */,

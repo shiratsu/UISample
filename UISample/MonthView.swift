@@ -58,7 +58,7 @@ class MonthView: UIView {
         
         let day:Int! = self.getLastDay(year,month:month);
         let dayWidth:Int = Int( baseWidth / 7.0 )
-        let dayHeight:Int = dayWidth-27
+        let dayHeight:Int = dayWidth+1
         
         //まずは曜日をセット
         var i = 0

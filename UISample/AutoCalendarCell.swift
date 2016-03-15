@@ -11,7 +11,7 @@ import UIKit
 class AutoCalendarCell: UITableViewCell {
 
     
-    @IBOutlet weak var calendar: MonthView!
+    @IBOutlet weak var calendar: AnotherMonthView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

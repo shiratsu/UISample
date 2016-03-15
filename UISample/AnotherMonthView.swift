@@ -11,7 +11,6 @@ import UIKit
 class AnotherMonthView: UIView {
     
     var titleLabel: UILabel!
-    var baseView:UIView!
     
     let aryWeek = ["日","月","火","水","木","金","土"]
     
@@ -24,17 +23,18 @@ class AnotherMonthView: UIView {
         super.init(coder: aDecoder)
     }
     
-    func setUpLabel(text:String,floatFontSize:CGFloat = 15){
+    func setUpLabel(text:String,floatFontSize:CGFloat = 15,cellWidth:CGFloat = 0){
         
         if titleLabel != nil{
             if titleLabel.isDescendantOfView(self){
                 self.titleLabel.removeFromSuperview()
             }
         }
+        let baseWidth = (cellWidth != 0) ? cellWidth : frame.size.width
         
         let textSize = text.sizeWithAttributes([NSFontAttributeName: UIFont(name: "HiraginoSans-W3", size: floatFontSize)!])
         
-        let diff = (self.frame.size.width - textSize.width)/2
+        let diff = (baseWidth - textSize.width)/2
         
         titleLabel = UILabel(frame: CGRect(x: diff, y: 5, width: textSize.width+10, height: floatFontSize))
         
@@ -42,52 +42,12 @@ class AnotherMonthView: UIView {
         titleLabel.text = text
         
         self.addSubview(titleLabel)
-        titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        //追加する
-        let title_center = NSLayoutConstraint(
-            item: self.titleLabel,
-            attribute: NSLayoutAttribute.CenterX,
-            relatedBy: .Equal,
-            toItem: self,
-            attribute: NSLayoutAttribute.CenterX,
-            multiplier: 1.0,
-            constant: 0)
-        title_center.priority = 1000
-        self.addConstraint(title_center)
-        
-        //追加する
-        let titleTop = NSLayoutConstraint(
-            item: self.titleLabel,
-            attribute: NSLayoutAttribute.Top,
-            relatedBy: .Equal,
-            toItem: self,
-            attribute: NSLayoutAttribute.Top,
-            multiplier: 1.0,
-            constant: 2)
-        titleTop.priority = 1000
-        self.addConstraint(titleTop)
-        
-        baseView = UIView()
-        self.addSubview(baseView)
-        
-        baseView.translatesAutoresizingMaskIntoConstraints = false
-        
-        //追加する
-        let baseTop = NSLayoutConstraint(item: self.baseView,attribute: NSLayoutAttribute.Top,relatedBy: .Equal,toItem: self.titleLabel,attribute: NSLayoutAttribute.Bottom,multiplier: 1.0,constant: 3)
-        self.addConstraint(baseTop)
-        
-        let baseLeading = NSLayoutConstraint(item: self.baseView,attribute: NSLayoutAttribute.Leading,relatedBy: .Equal,toItem: self,attribute: NSLayoutAttribute.Leading,multiplier: 1.0,constant: 0)
-        self.addConstraint(baseLeading)
-        
-        let baseBottom = NSLayoutConstraint(item: self.baseView,attribute: NSLayoutAttribute.Bottom,relatedBy: .Equal,toItem: self,attribute: NSLayoutAttribute.Bottom,multiplier: 1.0,constant: 0)
-        self.addConstraint(baseBottom)
-        
-        let baseTrailing = NSLayoutConstraint(item: self.baseView,attribute: NSLayoutAttribute.Trailing,relatedBy: .Equal,toItem: self,attribute: NSLayoutAttribute.Trailing,multiplier: 1.0,constant: 0)
-        self.addConstraint(baseTrailing)
         
     }
     
-    func setUpDays(year:Int,month:Int,aryCheckDays:[Int],firstY:Int,aryAnotherCheck:[Int] = [],floatFontSize:CGFloat = 15){
+    func setUpDays(year:Int,month:Int,aryCheckDays:[Int],firstY:Int,aryAnotherCheck:[Int] = [],floatFontSize:CGFloat = 15,cellWidth:CGFloat = 0){
+        
+        let baseWidth = (cellWidth != 0) ? cellWidth : frame.size.width
         
         let subViews:[UIView] = self.subviews as [UIView]
         for view in subViews {
@@ -97,9 +57,9 @@ class AnotherMonthView: UIView {
         }
         
         let day:Int! = self.getLastDay(year,month:month);
-        let dayWidth:Int = Int( frame.size.width / 7.0 )
-        let dayHeight:Int = dayWidth-8
-        var prevView:AnotherDayView? = nil
+        let dayWidth:Int = Int( baseWidth / 7.0 )
+        let dayHeight:Int = dayWidth-27
+        
         //まずは曜日をセット
         var i = 0
         for weekday in aryWeek{
@@ -111,68 +71,11 @@ class AnotherMonthView: UIView {
                 CGFloat(dayHeight)
             );
             
-            let dayView:AnotherDayView = AnotherDayView(frame: frame, week: weekday,floatFontSize:floatFontSize)
-            baseView.addSubview(dayView)
+            let dayView:DayView = DayView(frame: frame, week: weekday,floatFontSize:floatFontSize)
             
-            dayView.translatesAutoresizingMaskIntoConstraints = false
-            
-            
-            if weekday == "日"{
-                let dayX = NSLayoutConstraint(
-                    item: dayView,
-                    attribute: NSLayoutAttribute.Leading,
-                    relatedBy: .Equal,
-                    toItem: baseView,
-                    attribute: NSLayoutAttribute.Leading,
-                    multiplier: 1,
-                    constant: 0)
-                
-                baseView.addConstraint(dayX)
-                
-            }else{
-                if prevView != nil{
-                    let dayX = NSLayoutConstraint(
-                        item: dayView,
-                        attribute: NSLayoutAttribute.Leading,
-                        relatedBy: .Equal,
-                        toItem: prevView,
-                        attribute: NSLayoutAttribute.Trailing,
-                        multiplier: 1,
-                        constant: 0)
-                    
-                    dayView.addConstraint(dayX)
-                }
-                
-                
-            }
+            self.addSubview(dayView)
             
             
-            
-            let dayY = NSLayoutConstraint(
-                item: dayView,
-                attribute: NSLayoutAttribute.Top,
-                relatedBy: .Equal,
-                toItem: baseView,
-                attribute: NSLayoutAttribute.Top,
-                multiplier: 1,
-                constant: 0)
-            
-            baseView.addConstraint(dayY)
-            
-            
-            let dayWidth = NSLayoutConstraint(
-                item: dayView,
-                attribute: NSLayoutAttribute.Width,
-                relatedBy: .Equal,
-                toItem: baseView,
-                attribute: NSLayoutAttribute.Width,
-                multiplier: 0.14,
-                constant: 0)
-            dayWidth.priority = 1000
-            baseView.addConstraint(dayWidth)
-            
-            
-            prevView = dayView
             
             i+=1
         }
@@ -180,7 +83,6 @@ class AnotherMonthView: UIView {
         var lastYHeight = 0
         
         if day != nil {
-            prevView = nil
             //初日の曜日を取得
             var weekday:Int = self.getWeekDay(year,month: month,day:1)
             for var i:Int = 0; i < day!;i++ {
@@ -193,7 +95,7 @@ class AnotherMonthView: UIView {
                     CGFloat(dayHeight)
                 );
                 
-                let dayView:AnotherDayView = AnotherDayView(frame: frame, year:year,month:month,day:i+1,weekday:weekday,floatFontSize:floatFontSize)
+                let dayView:DayView = DayView(frame: frame, year:year,month:month,day:i+1,weekday:weekday,floatFontSize:floatFontSize)
                 if aryCheckDays.contains(dayView.dayInt){
                     dayView.backgroundColor = UIColor.orangeColor()
                 }
@@ -206,48 +108,6 @@ class AnotherMonthView: UIView {
                 }
                 
                 self.addSubview(dayView)
-                
-                if i == 0{
-                    dayView.translatesAutoresizingMaskIntoConstraints = false
-                    
-                    let dayX = NSLayoutConstraint(
-                        item: dayView,
-                        attribute: NSLayoutAttribute.Leading,
-                        relatedBy: .Equal,
-                        toItem: self,
-                        attribute: NSLayoutAttribute.Leading,
-                        multiplier: 1,
-                        constant: CGFloat(x))
-                    
-                    self.addConstraint(dayX)
-                    
-                    let dayY = NSLayoutConstraint(
-                        item: dayView,
-                        attribute: NSLayoutAttribute.Top,
-                        relatedBy: .Equal,
-                        toItem: self,
-                        attribute: NSLayoutAttribute.Top,
-                        multiplier: 1,
-                        constant: CGFloat(y))
-                    
-                    self.addConstraint(dayY)
-                    
-                    
-                    let dayWidth = NSLayoutConstraint(
-                        item: dayView,
-                        attribute: NSLayoutAttribute.Width,
-                        relatedBy: .Equal,
-                        toItem: self,
-                        attribute: NSLayoutAttribute.Width,
-                        multiplier: 0.14,
-                        constant: 0)
-                    dayWidth.priority = 1000
-                    self.addConstraint(dayWidth)
-                }
-                
-                
-                
-                
                 weekday+=1
                 if weekday > 7 {
                     weekday = 1
