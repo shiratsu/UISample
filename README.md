@@ -20,6 +20,8 @@ This README would normally document whatever steps are necessary to get your app
 * Accordion Cell
 * A tag in html can run correctly.
 * WKWebview in TableViewCell works,not scrolling
+* TextView height changes automatically in tableview cell
+* AutoLayout changes by program in tableview cell.
 
 ## Caution for using 
 * If possible,please let us know before using.I will be happy.
