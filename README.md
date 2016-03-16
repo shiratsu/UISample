@@ -23,6 +23,7 @@ This README would normally document whatever steps are necessary to get your app
 * TextView height changes automatically in tableview cell
 * AutoLayout changes by program in tableview cell.
 * Calendar fit each size of tableViewCell on AutoLayout.
+* Custom Alert Action Sheet.
 
 ## Caution for using 
 * If possible,please let us know before using.I will be happy.
