@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,AlertActionControllerDelegate {
 
     
     /**
@@ -23,7 +23,30 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //右のボタン
+        let cond_change_btn = showButton("右ボタン", width: 70, height: 50)
+        cond_change_btn.addTarget(self, action: "showMenu:", forControlEvents: UIControlEvents.TouchUpInside)
+        let right_btn = UIBarButtonItem(customView: cond_change_btn)
+        
+        //backButton.tintColor = UIColor(red: 255, green: 255, blue: 255, alpha: 1)
+        self.navigationItem.setRightBarButtonItem(right_btn, animated: true)
     }
+    
+    func showButton(titlestr :String,width:Int,height:Int) -> UIButton{
+        let myButton: UIButton = UIButton(frame: CGRectMake(0, 0, CGFloat(width), CGFloat(height)))
+        myButton.setTitle(titlestr, forState: UIControlState.Normal)
+        myButton.titleLabel?.font = UIFont(name:"HiraKakuProN-W3",size:16)!
+        myButton.titleLabel?.textAlignment = NSTextAlignment.Left
+        return myButton
+    }
+    
+    @IBAction func showMenu(sender: AnyObject) {
+        
+        self.performSegueWithIdentifier("show_alert_modal", sender: self)
+        
+    }
+    
     @IBAction func gotoCustomnav(sender: AnyObject) {
         self.performSegueWithIdentifier("show_customnavbar", sender: self)
     }
@@ -106,6 +129,69 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func showNormalAlert(sender: AnyObject) {
+        //UIActionSheet
+        let actionSheet:UIAlertController = UIAlertController(title:nil,
+            message: nil,
+            preferredStyle: UIAlertControllerStyle.Alert)
+        
+        
+        
+        let action1:UIAlertAction = UIAlertAction(title: "すべてのバイト",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("すべてのバイト")
+        })
+        
+        let action2:UIAlertAction = UIAlertAction(title: "募集中・選考中のバイト",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("募集中・選考中のバイト")
+        })
+        
+        
+        let action3:UIAlertAction = UIAlertAction(title: "勤務待ちのバイト",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("勤務待ちのバイト")
+        })
+        
+        let action4:UIAlertAction = UIAlertAction(title: "勤務中のバイト",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("勤務中のバイト")
+        })
+        
+        let action5:UIAlertAction = UIAlertAction(title: "勤務終了のバイト",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("勤務終了のバイト")
+        })
+        
+        let action6:UIAlertAction = UIAlertAction(title: "キャンセル",
+            style: UIAlertActionStyle.Default,
+            handler:{
+                (action:UIAlertAction!) -> Void in
+                print("キャンセル")
+        })
+        
+        //AlertもActionSheetも同じ
+        actionSheet.addAction(action1)
+        actionSheet.addAction(action2)
+        actionSheet.addAction(action3)
+        actionSheet.addAction(action4)
+        actionSheet.addAction(action5)
+        actionSheet.addAction(action6)
+        
+        self.presentViewController(actionSheet, animated: false, completion: nil)
+    }
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)
         
@@ -116,6 +202,34 @@ class ViewController: UIViewController {
             svc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
         }
         
+        if segue.identifier == "show_alert_modal" {
+            let svc = segue.destinationViewController as! AlertActionController
+            svc.delegate = self
+            svc.aryMenu = ["すべてのバイト","募集中・選考中のバイト","勤務待ちのバイト","勤務中のバイト","勤務終了のバイト","キャンセル"]
+            svc.aryFont = [UIFont(name: "HiraKakuProN-W6", size: 14)!
+                        ,UIFont(name: "HiraKakuProN-W3", size: 14)!
+                        ,UIFont(name: "HiraKakuProN-W3", size: 14)!
+                        ,UIFont(name: "HiraKakuProN-W3", size: 14)!
+                        ,UIFont(name: "HiraKakuProN-W3", size: 14)!
+                        ,UIFont(name: "HiraKakuProN-W3", size: 14)!
+                            ]
+            svc.aryColor = [UIColor.blackColor()
+                ,UIColor.blueColor()
+                ,UIColor.blueColor()
+                ,UIColor.blueColor()
+                ,UIColor.blueColor()
+                ,UIColor.redColor()
+            ]
+            
+            svc.providesPresentationContextTransitionStyle = true
+            svc.definesPresentationContext = true
+            svc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        }
+        
+    }
+    
+    func selectMenu(index: Int) {
+        print(index)
     }
 
 }

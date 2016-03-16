@@ -275,12 +275,37 @@
                         <action selector="gotoAnotherCalendar:" destination="-1" eventType="touchUpInside" id="fhi-6y-g16"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAL-qk-XRC">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="108" id="EQr-yh-sfa"/>
+                        <constraint firstAttribute="height" constant="30" id="Ioo-7e-ats"/>
+                    </constraints>
+                    <state key="normal" title="普通のAlert"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="EQr-yh-sfa"/>
+                            <exclude reference="Ioo-7e-ats"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="EQr-yh-sfa"/>
+                            <include reference="Ioo-7e-ats"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showNormalAlert:" destination="-1" eventType="touchUpInside" id="dWY-LE-zid"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="GyL-fo-6eE" firstAttribute="top" secondItem="BcK-JI-Zbb" secondAttribute="bottom" constant="17" id="06b-D6-3Tg"/>
                 <constraint firstItem="O8P-6x-Uxa" firstAttribute="top" secondItem="BcK-JI-Zbb" secondAttribute="bottom" constant="17" id="4Rg-jL-y2x"/>
+                <constraint firstItem="qAL-qk-XRC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="4yT-gO-PeP"/>
                 <constraint firstItem="XVM-oi-ca6" firstAttribute="top" secondItem="azj-Uc-Bt9" secondAttribute="bottom" constant="37" id="5Dk-EO-hAX"/>
+                <constraint firstItem="qAL-qk-XRC" firstAttribute="top" secondItem="GyL-fo-6eE" secondAttribute="bottom" constant="21" id="5GU-Hu-9Wz"/>
                 <constraint firstItem="o4c-EI-FT7" firstAttribute="top" secondItem="Ie2-wj-5fH" secondAttribute="bottom" constant="25" id="7bJ-sN-CYR"/>
                 <constraint firstItem="GyL-fo-6eE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="47" id="9Jq-tr-lzC"/>
                 <constraint firstAttribute="trailing" secondItem="pMg-YV-A3D" secondAttribute="trailing" constant="149" id="C5H-hz-eEc">
@@ -356,6 +381,7 @@
                     <exclude reference="BcK-JI-Zbb"/>
                     <exclude reference="GyL-fo-6eE"/>
                     <exclude reference="O8P-6x-Uxa"/>
+                    <exclude reference="qAL-qk-XRC"/>
                 </mask>
                 <mask key="constraints">
                     <exclude reference="ezC-En-Tqc"/>
@@ -372,6 +398,8 @@
                     <exclude reference="9Jq-tr-lzC"/>
                     <exclude reference="4Rg-jL-y2x"/>
                     <exclude reference="I9W-bA-QxC"/>
+                    <exclude reference="4yT-gO-PeP"/>
+                    <exclude reference="5GU-Hu-9Wz"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -383,6 +411,7 @@
                     <include reference="BcK-JI-Zbb"/>
                     <include reference="GyL-fo-6eE"/>
                     <include reference="O8P-6x-Uxa"/>
+                    <include reference="qAL-qk-XRC"/>
                 </mask>
                 <mask key="constraints">
                     <include reference="ezC-En-Tqc"/>
@@ -399,6 +428,8 @@
                     <include reference="9Jq-tr-lzC"/>
                     <include reference="4Rg-jL-y2x"/>
                     <include reference="I9W-bA-QxC"/>
+                    <include reference="4yT-gO-PeP"/>
+                    <include reference="5GU-Hu-9Wz"/>
                 </mask>
             </variation>
         </view>

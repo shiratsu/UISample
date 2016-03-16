@@ -107,13 +107,21 @@
             </objects>
             <point key="canvasLocation" x="-458" y="2288"/>
         </scene>
+        <!--Alert Action Controller-->
+        <scene sceneID="1xE-gR-lz0">
+            <objects>
+                <viewController id="gZe-Jg-Dtd" customClass="AlertActionController" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fep-7D-pwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="3048"/>
+        </scene>
         <!--Keyboard Sample-->
         <scene sceneID="Ejf-jV-RM2">
             <objects>
                 <viewController id="FaJ-6u-4wq" customClass="KeyboardSample" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nX7-hY-jxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="418" y="2252"/>
+            <point key="canvasLocation" x="1114" y="2708"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="OQC-AA-pdS">
@@ -137,6 +145,7 @@
                         <segue destination="Tb7-hJ-m0B" kind="show" identifier="show_textviewincell" id="AIR-Hd-FK5"/>
                         <segue destination="8Lg-os-3Or" kind="show" identifier="show_autolayout_cell" id="BBy-Js-dnr"/>
                         <segue destination="ZE0-IY-83h" kind="show" identifier="show_another_calendar" id="EyK-j0-bYm"/>
+                        <segue destination="gZe-Jg-Dtd" kind="presentation" identifier="show_alert_modal" animates="NO" id="Zsn-dC-ImJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -204,7 +213,7 @@
                 <viewController id="83v-iW-fv6" customClass="VarticalCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNh-O3-Z82" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1038" y="1840"/>
+            <point key="canvasLocation" x="1526" y="1912"/>
         </scene>
         <!--Simple Calendar-->
         <scene sceneID="8ZK-aK-Ffw">
@@ -220,7 +229,7 @@
                 <viewController id="oUM-Zl-RNK" customClass="LandScapeCalendar" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzi-Ct-QU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1134" y="1184"/>
+            <point key="canvasLocation" x="1750" y="1144"/>
         </scene>
     </scenes>
 </document>

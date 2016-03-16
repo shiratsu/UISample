@@ -90,6 +90,8 @@
 		56E74DE71C6B336600A578CD /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE61C6B336600A578CD /* MonthView.swift */; };
 		56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */; };
 		56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */; };
+		56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6861C9941F6007E79FD /* AlertActionController.swift */; };
+		56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6871C9941F6007E79FD /* AlertActionController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +203,8 @@
 		56E74DE61C6B336600A578CD /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
 		56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherVarticalCalendar.swift; sourceTree = "<group>"; };
 		56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherVarticalCalendar.xib; sourceTree = "<group>"; };
+		56F4F6861C9941F6007E79FD /* AlertActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionController.swift; sourceTree = "<group>"; };
+		56F4F6871C9941F6007E79FD /* AlertActionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertActionController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -352,6 +356,8 @@
 				563EEC8A1C8FE47C00B21F07 /* AutoLayoutByPG.xib */,
 				56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */,
 				56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */,
+				56F4F6861C9941F6007E79FD /* AlertActionController.swift */,
+				56F4F6871C9941F6007E79FD /* AlertActionController.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -487,6 +493,7 @@
 				56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */,
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				563EEC731C8E6E2B00B21F07 /* TextViewInCell.xib in Resources */,
+				56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
@@ -543,6 +550,7 @@
 				561E60D81C7180D800CFADF6 /* VarticalCalendar.swift in Sources */,
 				5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */,
 				567A0D331C7DC1270057E01F /* TestTableViewCell.swift in Sources */,
+				56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */,
 				56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */,
 				56663D401C84177700D33441 /* LinkCell.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
