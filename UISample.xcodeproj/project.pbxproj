@@ -92,6 +92,10 @@
 		56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */; };
 		56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6861C9941F6007E79FD /* AlertActionController.swift */; };
 		56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6871C9941F6007E79FD /* AlertActionController.xib */; };
+		589AD6071C9B0B2900B1C300 /* FirstVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AD6051C9B0B2900B1C300 /* FirstVCL.swift */; };
+		589AD6081C9B0B2900B1C300 /* FirstVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589AD6061C9B0B2900B1C300 /* FirstVCL.xib */; };
+		589AD60B1C9B0BD200B1C300 /* SecondVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AD6091C9B0BD200B1C300 /* SecondVCL.swift */; };
+		589AD60C1C9B0BD200B1C300 /* SecondVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589AD60A1C9B0BD200B1C300 /* SecondVCL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -205,6 +209,10 @@
 		56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherVarticalCalendar.xib; sourceTree = "<group>"; };
 		56F4F6861C9941F6007E79FD /* AlertActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionController.swift; sourceTree = "<group>"; };
 		56F4F6871C9941F6007E79FD /* AlertActionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertActionController.xib; sourceTree = "<group>"; };
+		589AD6051C9B0B2900B1C300 /* FirstVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVCL.swift; sourceTree = "<group>"; };
+		589AD6061C9B0B2900B1C300 /* FirstVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstVCL.xib; sourceTree = "<group>"; };
+		589AD6091C9B0BD200B1C300 /* SecondVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCL.swift; sourceTree = "<group>"; };
+		589AD60A1C9B0BD200B1C300 /* SecondVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondVCL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -358,6 +366,10 @@
 				56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */,
 				56F4F6861C9941F6007E79FD /* AlertActionController.swift */,
 				56F4F6871C9941F6007E79FD /* AlertActionController.xib */,
+				589AD6051C9B0B2900B1C300 /* FirstVCL.swift */,
+				589AD6061C9B0B2900B1C300 /* FirstVCL.xib */,
+				589AD6091C9B0BD200B1C300 /* SecondVCL.swift */,
+				589AD60A1C9B0BD200B1C300 /* SecondVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -510,9 +522,11 @@
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				56663D311C803DC500D33441 /* MutableHeightCell.xib in Resources */,
+				589AD6081C9B0B2900B1C300 /* FirstVCL.xib in Resources */,
 				568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */,
 				568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */,
 				563EEC8C1C8FE47C00B21F07 /* AutoLayoutByPG.xib in Resources */,
+				589AD60C1C9B0BD200B1C300 /* SecondVCL.xib in Resources */,
 				567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */,
 				56663D2D1C7FF34600D33441 /* WorkDetailSample.xib in Resources */,
 				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
@@ -563,12 +577,14 @@
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				56663D3C1C80788100D33441 /* WorkViewCell.swift in Sources */,
+				589AD60B1C9B0BD200B1C300 /* SecondVCL.swift in Sources */,
 				568ED1051C755C0D003AF9B2 /* FirstCustomCell.swift in Sources */,
 				563EEC721C8E6E2B00B21F07 /* TextViewInCell.swift in Sources */,
 				568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
 				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
+				589AD6071C9B0B2900B1C300 /* FirstVCL.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
 				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,
 				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
