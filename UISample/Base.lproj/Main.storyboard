@@ -115,6 +115,14 @@
             </objects>
             <point key="canvasLocation" x="262" y="3048"/>
         </scene>
+        <!--Two Action Table-->
+        <scene sceneID="9d5-gS-usM">
+            <objects>
+                <viewController id="KiY-8Y-GiK" customClass="TwoActionTable" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Ee-80-mgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1062" y="3872"/>
+        </scene>
         <!--Keyboard Sample-->
         <scene sceneID="Ejf-jV-RM2">
             <objects>
@@ -146,6 +154,7 @@
                         <segue destination="8Lg-os-3Or" kind="show" identifier="show_autolayout_cell" id="BBy-Js-dnr"/>
                         <segue destination="ZE0-IY-83h" kind="show" identifier="show_another_calendar" id="EyK-j0-bYm"/>
                         <segue destination="gZe-Jg-Dtd" kind="presentation" identifier="show_alert_modal" animates="NO" id="Zsn-dC-ImJ"/>
+                        <segue destination="KiY-8Y-GiK" kind="show" identifier="show_twoaction_table" id="rn0-Tl-D84"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>

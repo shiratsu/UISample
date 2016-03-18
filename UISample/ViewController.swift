@@ -191,6 +191,10 @@ class ViewController: UIViewController,AlertActionControllerDelegate {
         self.presentViewController(actionSheet, animated: false, completion: nil)
     }
     
+    @IBAction func showTwoActionCell(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_twoaction_table", sender: self)
+    }
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         super.prepareForSegue(segue, sender: sender)

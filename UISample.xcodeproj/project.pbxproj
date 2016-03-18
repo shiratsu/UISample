@@ -88,6 +88,10 @@
 		56E74DE31C6B2FE100A578CD /* SimpleCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */; };
 		56E74DE51C6B326E00A578CD /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE41C6B326E00A578CD /* DayView.swift */; };
 		56E74DE71C6B336600A578CD /* MonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74DE61C6B336600A578CD /* MonthView.swift */; };
+		56E768F71C9AD24E0006F3EC /* TwoActionTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E768F51C9AD24E0006F3EC /* TwoActionTable.swift */; };
+		56E768F81C9AD24E0006F3EC /* TwoActionTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E768F61C9AD24E0006F3EC /* TwoActionTable.xib */; };
+		56E768FB1C9AD4380006F3EC /* TwoActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E768F91C9AD4380006F3EC /* TwoActionCell.swift */; };
+		56E768FC1C9AD4380006F3EC /* TwoActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E768FA1C9AD4380006F3EC /* TwoActionCell.xib */; };
 		56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */; };
 		56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */; };
 		56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6861C9941F6007E79FD /* AlertActionController.swift */; };
@@ -201,6 +205,10 @@
 		56E74DE11C6B2FE100A578CD /* SimpleCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleCalendar.xib; sourceTree = "<group>"; };
 		56E74DE41C6B326E00A578CD /* DayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
 		56E74DE61C6B336600A578CD /* MonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthView.swift; sourceTree = "<group>"; };
+		56E768F51C9AD24E0006F3EC /* TwoActionTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoActionTable.swift; sourceTree = "<group>"; };
+		56E768F61C9AD24E0006F3EC /* TwoActionTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActionTable.xib; sourceTree = "<group>"; };
+		56E768F91C9AD4380006F3EC /* TwoActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoActionCell.swift; sourceTree = "<group>"; };
+		56E768FA1C9AD4380006F3EC /* TwoActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoActionCell.xib; sourceTree = "<group>"; };
 		56F4F6821C984DDA007E79FD /* AnotherVarticalCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherVarticalCalendar.swift; sourceTree = "<group>"; };
 		56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherVarticalCalendar.xib; sourceTree = "<group>"; };
 		56F4F6861C9941F6007E79FD /* AlertActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionController.swift; sourceTree = "<group>"; };
@@ -266,6 +274,8 @@
 				563EEC8E1C8FE55600B21F07 /* AutoLayoutCell.xib */,
 				56B548C01C97FB2C00191CE1 /* AutoCalendarCell.swift */,
 				56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */,
+				56E768F91C9AD4380006F3EC /* TwoActionCell.swift */,
+				56E768FA1C9AD4380006F3EC /* TwoActionCell.xib */,
 			);
 			name = table;
 			sourceTree = "<group>";
@@ -358,6 +368,8 @@
 				56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */,
 				56F4F6861C9941F6007E79FD /* AlertActionController.swift */,
 				56F4F6871C9941F6007E79FD /* AlertActionController.xib */,
+				56E768F51C9AD24E0006F3EC /* TwoActionTable.swift */,
+				56E768F61C9AD24E0006F3EC /* TwoActionTable.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -500,6 +512,7 @@
 				56663D351C80743B00D33441 /* WorkDetailItemCell.xib in Resources */,
 				568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */,
 				56B548C31C97FB2C00191CE1 /* AutoCalendarCell.xib in Resources */,
+				56E768FC1C9AD4380006F3EC /* TwoActionCell.xib in Resources */,
 				568ED0F11C745776003AF9B2 /* MultiLineTitleView.xib in Resources */,
 				568ED1661C75DED2003AF9B2 /* HtmlTest.xib in Resources */,
 				568ED10A1C755C93003AF9B2 /* SecondCustomCell.xib in Resources */,
@@ -511,6 +524,7 @@
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				56663D311C803DC500D33441 /* MutableHeightCell.xib in Resources */,
 				568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */,
+				56E768F81C9AD24E0006F3EC /* TwoActionTable.xib in Resources */,
 				568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */,
 				563EEC8C1C8FE47C00B21F07 /* AutoLayoutByPG.xib in Resources */,
 				567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */,
@@ -554,6 +568,7 @@
 				56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */,
 				56663D401C84177700D33441 /* LinkCell.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
+				56E768F71C9AD24E0006F3EC /* TwoActionTable.swift in Sources */,
 				56663D2C1C7FF34600D33441 /* WorkDetailSample.swift in Sources */,
 				56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */,
 				563EEC8F1C8FE55600B21F07 /* AutoLayoutCell.swift in Sources */,
@@ -571,6 +586,7 @@
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
 				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,
+				56E768FB1C9AD4380006F3EC /* TwoActionCell.swift in Sources */,
 				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
 				568ED1651C75DED2003AF9B2 /* HtmlTest.swift in Sources */,
 				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,
