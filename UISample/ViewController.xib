@@ -311,8 +311,7 @@
                             <exclude reference="ecG-F6-fbY"/>
                         </mask>
                     </variation>
-                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                        <rect key="frame" x="170" y="556" width="204" height="30"/>
+                    <variation key="heightClass=regular-widthClass=compact">
                         <mask key="constraints">
                             <include reference="1NH-zT-Tby"/>
                             <include reference="ecG-F6-fbY"/>
@@ -411,24 +410,24 @@
                     <exclude reference="5VF-Wa-VYv"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="ezC-En-Tqc"/>
-                    <exclude reference="xZK-z3-4cd"/>
-                    <exclude reference="Jkr-Pg-hGc"/>
-                    <exclude reference="Wqk-ZV-aNN"/>
-                    <exclude reference="7bJ-sN-CYR"/>
-                    <exclude reference="WrM-jI-z3s"/>
-                    <exclude reference="Pqd-Fd-SOw"/>
-                    <exclude reference="yCW-x2-RLE"/>
+                    <exclude reference="BE1-h1-37e"/>
+                    <exclude reference="TXm-X0-x90"/>
                     <exclude reference="x9e-iJ-2ge"/>
                     <exclude reference="xjb-IJ-pf7"/>
                     <exclude reference="06b-D6-3Tg"/>
                     <exclude reference="9Jq-tr-lzC"/>
+                    <exclude reference="ezC-En-Tqc"/>
+                    <exclude reference="xZK-z3-4cd"/>
                     <exclude reference="4Rg-jL-y2x"/>
                     <exclude reference="I9W-bA-QxC"/>
+                    <exclude reference="Pqd-Fd-SOw"/>
+                    <exclude reference="yCW-x2-RLE"/>
+                    <exclude reference="7bJ-sN-CYR"/>
+                    <exclude reference="WrM-jI-z3s"/>
                     <exclude reference="4yT-gO-PeP"/>
                     <exclude reference="5GU-Hu-9Wz"/>
-                    <exclude reference="BE1-h1-37e"/>
-                    <exclude reference="TXm-X0-x90"/>
+                    <exclude reference="Jkr-Pg-hGc"/>
+                    <exclude reference="Wqk-ZV-aNN"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -444,24 +443,24 @@
                     <include reference="5VF-Wa-VYv"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="ezC-En-Tqc"/>
-                    <include reference="xZK-z3-4cd"/>
-                    <include reference="Jkr-Pg-hGc"/>
-                    <include reference="Wqk-ZV-aNN"/>
-                    <include reference="7bJ-sN-CYR"/>
-                    <include reference="WrM-jI-z3s"/>
-                    <include reference="Pqd-Fd-SOw"/>
-                    <include reference="yCW-x2-RLE"/>
+                    <include reference="BE1-h1-37e"/>
+                    <include reference="TXm-X0-x90"/>
                     <include reference="x9e-iJ-2ge"/>
                     <include reference="xjb-IJ-pf7"/>
                     <include reference="06b-D6-3Tg"/>
                     <include reference="9Jq-tr-lzC"/>
+                    <include reference="ezC-En-Tqc"/>
+                    <include reference="xZK-z3-4cd"/>
                     <include reference="4Rg-jL-y2x"/>
                     <include reference="I9W-bA-QxC"/>
+                    <include reference="Pqd-Fd-SOw"/>
+                    <include reference="yCW-x2-RLE"/>
+                    <include reference="7bJ-sN-CYR"/>
+                    <include reference="WrM-jI-z3s"/>
                     <include reference="4yT-gO-PeP"/>
                     <include reference="5GU-Hu-9Wz"/>
-                    <include reference="BE1-h1-37e"/>
-                    <include reference="TXm-X0-x90"/>
+                    <include reference="Jkr-Pg-hGc"/>
+                    <include reference="Wqk-ZV-aNN"/>
                 </mask>
             </variation>
         </view>

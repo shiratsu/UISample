@@ -803,5 +803,51 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UISample/TwoActionCell.swift"
+            timestampString = "479954225.298969"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "5"
+            endingLineNumber = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UISample.TwoActionCell.init (UISample.TwoActionCell.Type)(style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; UISample.TwoActionCell"
+                  moduleName = "UISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
+                  timestampString = "479956149.436703"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "58">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "UISample.TwoActionCell.init (UISample.TwoActionCell.Type)(coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;UISample.TwoActionCell&gt;"
+                  moduleName = "UISample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
+                  timestampString = "479956149.436883"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

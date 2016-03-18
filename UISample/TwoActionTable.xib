@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TwoActionTable" customModule="UISample" customModuleProvider="target">
             <connections>
-                <outlet property="twoTable" destination="sq5-hj-Dq2" id="bPX-Ds-Lol"/>
+                <outlet property="twoTable" destination="sq5-hj-Dq2" id="4AT-Ag-yOh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

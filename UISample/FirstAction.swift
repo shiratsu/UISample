@@ -1,17 +1,25 @@
 //
-//  FirstVCL.swift
+//  FirstAction.swift
 //  UISample
 //
-//  Created by HIRATSUKA SHUNSUKE on 2016/03/18.
+//  Created by 平塚 俊輔 on 2016/03/18.
 //  Copyright © 2016年 平塚 俊輔. All rights reserved.
 //
 
 import UIKit
 
-class FirstVCL: UIViewController {
+class FirstAction: UIViewController {
 
+    var workid:String! = ""
     
-    var workid:String! = nil
+    /**
+     xibを読み込む
+     */
+    override func loadView() {
+        if let view = UINib(nibName: "FirstAction", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

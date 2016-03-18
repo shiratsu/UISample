@@ -118,10 +118,34 @@
         <!--Two Action Table-->
         <scene sceneID="9d5-gS-usM">
             <objects>
-                <viewController id="KiY-8Y-GiK" customClass="TwoActionTable" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController id="KiY-8Y-GiK" customClass="TwoActionTable" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="cSk-nH-NzT" kind="show" identifier="show_first" id="A5l-fp-1K8"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ee-80-mgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1062" y="3872"/>
+        </scene>
+        <!--First Action-->
+        <scene sceneID="jwP-Wj-kJz">
+            <objects>
+                <viewController storyboardIdentifier="FirstAction" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cSk-nH-NzT" customClass="FirstAction" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="lnj-83-KWI" kind="show" identifier="show_second" id="9pP-iS-wgu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Jl-Cb-xsC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1814" y="3920"/>
+        </scene>
+        <!--Second Action-->
+        <scene sceneID="fQ7-9J-u4R">
+            <objects>
+                <viewController storyboardIdentifier="SecondAction" useStoryboardIdentifierAsRestorationIdentifier="YES" id="lnj-83-KWI" customClass="SecondAction" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrd-gt-Q0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2452" y="3939"/>
         </scene>
         <!--Keyboard Sample-->
         <scene sceneID="Ejf-jV-RM2">

@@ -80,6 +80,10 @@
 		56B548C31C97FB2C00191CE1 /* AutoCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */; };
 		56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA6CAB1C72FA17005F5AF7 /* KeyboardSample.swift */; };
 		56BA6CAE1C72FA17005F5AF7 /* KeyboardSample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56BA6CAC1C72FA17005F5AF7 /* KeyboardSample.xib */; };
+		56C9F4341C9B8AD20075596D /* FirstAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9F4321C9B8AD20075596D /* FirstAction.swift */; };
+		56C9F4351C9B8AD20075596D /* FirstAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C9F4331C9B8AD20075596D /* FirstAction.xib */; };
+		56C9F4381C9B8AFA0075596D /* SecondAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9F4361C9B8AFA0075596D /* SecondAction.swift */; };
+		56C9F4391C9B8AFA0075596D /* SecondAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C9F4371C9B8AFA0075596D /* SecondAction.xib */; };
 		56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74D911C69E30100A578CD /* CustomSwitchVCL.swift */; };
 		56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */; };
 		56E74D971C69E62700A578CD /* SwitchWithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E74D951C69E62700A578CD /* SwitchWithCell.swift */; };
@@ -96,10 +100,6 @@
 		56F4F6851C984DDA007E79FD /* AnotherVarticalCalendar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */; };
 		56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F4F6861C9941F6007E79FD /* AlertActionController.swift */; };
 		56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56F4F6871C9941F6007E79FD /* AlertActionController.xib */; };
-		589AD6071C9B0B2900B1C300 /* FirstVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AD6051C9B0B2900B1C300 /* FirstVCL.swift */; };
-		589AD6081C9B0B2900B1C300 /* FirstVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589AD6061C9B0B2900B1C300 /* FirstVCL.xib */; };
-		589AD60B1C9B0BD200B1C300 /* SecondVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589AD6091C9B0BD200B1C300 /* SecondVCL.swift */; };
-		589AD60C1C9B0BD200B1C300 /* SecondVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 589AD60A1C9B0BD200B1C300 /* SecondVCL.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -201,6 +201,10 @@
 		56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCalendarCell.xib; sourceTree = "<group>"; };
 		56BA6CAB1C72FA17005F5AF7 /* KeyboardSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardSample.swift; sourceTree = "<group>"; };
 		56BA6CAC1C72FA17005F5AF7 /* KeyboardSample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardSample.xib; sourceTree = "<group>"; };
+		56C9F4321C9B8AD20075596D /* FirstAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAction.swift; sourceTree = "<group>"; };
+		56C9F4331C9B8AD20075596D /* FirstAction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstAction.xib; sourceTree = "<group>"; };
+		56C9F4361C9B8AFA0075596D /* SecondAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondAction.swift; sourceTree = "<group>"; };
+		56C9F4371C9B8AFA0075596D /* SecondAction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondAction.xib; sourceTree = "<group>"; };
 		56E74D911C69E30100A578CD /* CustomSwitchVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSwitchVCL.swift; sourceTree = "<group>"; };
 		56E74D921C69E30100A578CD /* CustomSwitchVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSwitchVCL.xib; sourceTree = "<group>"; };
 		56E74D951C69E62700A578CD /* SwitchWithCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchWithCell.swift; sourceTree = "<group>"; };
@@ -217,10 +221,6 @@
 		56F4F6831C984DDA007E79FD /* AnotherVarticalCalendar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnotherVarticalCalendar.xib; sourceTree = "<group>"; };
 		56F4F6861C9941F6007E79FD /* AlertActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertActionController.swift; sourceTree = "<group>"; };
 		56F4F6871C9941F6007E79FD /* AlertActionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlertActionController.xib; sourceTree = "<group>"; };
-		589AD6051C9B0B2900B1C300 /* FirstVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVCL.swift; sourceTree = "<group>"; };
-		589AD6061C9B0B2900B1C300 /* FirstVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstVCL.xib; sourceTree = "<group>"; };
-		589AD6091C9B0BD200B1C300 /* SecondVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCL.swift; sourceTree = "<group>"; };
-		589AD60A1C9B0BD200B1C300 /* SecondVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondVCL.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -378,6 +378,10 @@
 				56F4F6871C9941F6007E79FD /* AlertActionController.xib */,
 				56E768F51C9AD24E0006F3EC /* TwoActionTable.swift */,
 				56E768F61C9AD24E0006F3EC /* TwoActionTable.xib */,
+				56C9F4321C9B8AD20075596D /* FirstAction.swift */,
+				56C9F4331C9B8AD20075596D /* FirstAction.xib */,
+				56C9F4361C9B8AFA0075596D /* SecondAction.swift */,
+				56C9F4371C9B8AFA0075596D /* SecondAction.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -516,6 +520,7 @@
 				56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */,
+				56C9F4391C9B8AFA0075596D /* SecondAction.xib in Resources */,
 				561E60CD1C71733600CFADF6 /* OneCalendarCell.xib in Resources */,
 				56663D351C80743B00D33441 /* WorkDetailItemCell.xib in Resources */,
 				568ED1061C755C0D003AF9B2 /* FirstCustomCell.xib in Resources */,
@@ -530,13 +535,12 @@
 				56663D3D1C80788100D33441 /* WorkViewCell.xib in Resources */,
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
+				56C9F4351C9B8AD20075596D /* FirstAction.xib in Resources */,
 				56663D311C803DC500D33441 /* MutableHeightCell.xib in Resources */,
-				589AD6081C9B0B2900B1C300 /* FirstVCL.xib in Resources */,
 				568ED1121C755CCC003AF9B2 /* ForthCustomCell.xib in Resources */,
 				56E768F81C9AD24E0006F3EC /* TwoActionTable.xib in Resources */,
 				568ED0EF1C7456C5003AF9B2 /* TwoLineNavHeader.xib in Resources */,
 				563EEC8C1C8FE47C00B21F07 /* AutoLayoutByPG.xib in Resources */,
-				589AD60C1C9B0BD200B1C300 /* SecondVCL.xib in Resources */,
 				567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */,
 				56663D2D1C7FF34600D33441 /* WorkDetailSample.xib in Resources */,
 				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
@@ -573,8 +577,10 @@
 			files = (
 				561E60D81C7180D800CFADF6 /* VarticalCalendar.swift in Sources */,
 				5635BECE1C72C7E0007B580F /* UnderGrayModal.swift in Sources */,
+				56C9F4341C9B8AD20075596D /* FirstAction.swift in Sources */,
 				567A0D331C7DC1270057E01F /* TestTableViewCell.swift in Sources */,
 				56F4F6881C9941F6007E79FD /* AlertActionController.swift in Sources */,
+				56C9F4381C9B8AFA0075596D /* SecondAction.swift in Sources */,
 				56F4F6841C984DDA007E79FD /* AnotherVarticalCalendar.swift in Sources */,
 				56663D401C84177700D33441 /* LinkCell.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
@@ -588,14 +594,12 @@
 				569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */,
 				5695279C1C687E0D00466FC4 /* ViewController.swift in Sources */,
 				56663D3C1C80788100D33441 /* WorkViewCell.swift in Sources */,
-				589AD60B1C9B0BD200B1C300 /* SecondVCL.swift in Sources */,
 				568ED1051C755C0D003AF9B2 /* FirstCustomCell.swift in Sources */,
 				563EEC721C8E6E2B00B21F07 /* TextViewInCell.swift in Sources */,
 				568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
 				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
-				589AD6071C9B0B2900B1C300 /* FirstVCL.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
 				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,
 				56E768FB1C9AD4380006F3EC /* TwoActionCell.swift in Sources */,

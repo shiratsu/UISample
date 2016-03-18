@@ -1,15 +1,25 @@
 //
-//  SecondVCL.swift
+//  SecondAction.swift
 //  UISample
 //
-//  Created by HIRATSUKA SHUNSUKE on 2016/03/18.
+//  Created by 平塚 俊輔 on 2016/03/18.
 //  Copyright © 2016年 平塚 俊輔. All rights reserved.
 //
 
 import UIKit
 
-class SecondVCL: UIViewController {
+class SecondAction: UIViewController {
 
+    /**
+     xibを読み込む
+     */
+    override func loadView() {
+        if let view = UINib(nibName: "SecondAction", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
