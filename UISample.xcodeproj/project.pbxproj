@@ -75,6 +75,8 @@
 		569527C81C687EEF00466FC4 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527C71C687EEF00466FC4 /* ViewController.xib */; };
 		569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 569527CA1C687F5700466FC4 /* CustomNavbar.xib */; };
 		569527EB1C6973FA00466FC4 /* CustomNavbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 569527EA1C6973FA00466FC4 /* CustomNavbar.swift */; };
+		56AE18F61CA221B000FCFB8C /* SegmentedTabVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AE18F41CA221B000FCFB8C /* SegmentedTabVCL.swift */; };
+		56AE18F71CA221B000FCFB8C /* SegmentedTabVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56AE18F51CA221B000FCFB8C /* SegmentedTabVCL.xib */; };
 		56B548BB1C97F9BB00191CE1 /* AnotherMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B548BA1C97F9BB00191CE1 /* AnotherMonthView.swift */; };
 		56B548C21C97FB2C00191CE1 /* AutoCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B548C01C97FB2C00191CE1 /* AutoCalendarCell.swift */; };
 		56B548C31C97FB2C00191CE1 /* AutoCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */; };
@@ -196,6 +198,8 @@
 		569527C71C687EEF00466FC4 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		569527CA1C687F5700466FC4 /* CustomNavbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomNavbar.xib; sourceTree = "<group>"; };
 		569527EA1C6973FA00466FC4 /* CustomNavbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavbar.swift; sourceTree = "<group>"; };
+		56AE18F41CA221B000FCFB8C /* SegmentedTabVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedTabVCL.swift; sourceTree = "<group>"; };
+		56AE18F51CA221B000FCFB8C /* SegmentedTabVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SegmentedTabVCL.xib; sourceTree = "<group>"; };
 		56B548BA1C97F9BB00191CE1 /* AnotherMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnotherMonthView.swift; sourceTree = "<group>"; };
 		56B548C01C97FB2C00191CE1 /* AutoCalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoCalendarCell.swift; sourceTree = "<group>"; };
 		56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCalendarCell.xib; sourceTree = "<group>"; };
@@ -382,6 +386,8 @@
 				56C9F4331C9B8AD20075596D /* FirstAction.xib */,
 				56C9F4361C9B8AFA0075596D /* SecondAction.swift */,
 				56C9F4371C9B8AFA0075596D /* SecondAction.xib */,
+				56AE18F41CA221B000FCFB8C /* SegmentedTabVCL.swift */,
+				56AE18F51CA221B000FCFB8C /* SegmentedTabVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -508,6 +514,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56AE18F71CA221B000FCFB8C /* SegmentedTabVCL.xib in Resources */,
 				561D224E1C8D7A71008CCF50 /* TextViewInTableViewVCL.xib in Resources */,
 				56E74D981C69E62700A578CD /* SwitchWithCell.xib in Resources */,
 				563EEC901C8FE55600B21F07 /* AutoLayoutCell.xib in Resources */,
@@ -599,6 +606,7 @@
 				568ED0F71C745E2D003AF9B2 /* TableViewInTableCell.swift in Sources */,
 				56E74D931C69E30100A578CD /* CustomSwitchVCL.swift in Sources */,
 				56E74DE71C6B336600A578CD /* MonthView.swift in Sources */,
+				56AE18F61CA221B000FCFB8C /* SegmentedTabVCL.swift in Sources */,
 				568ED0EE1C7456C5003AF9B2 /* TwoLineNavHeader.swift in Sources */,
 				568ED0FA1C747357003AF9B2 /* PaddingLabel.swift in Sources */,
 				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,

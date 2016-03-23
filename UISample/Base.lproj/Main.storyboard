@@ -11,7 +11,7 @@
                 <viewController id="Tb7-hJ-m0B" customClass="TextViewInTableViewVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXX-Y2-9fB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-306" y="-1579"/>
+            <point key="canvasLocation" x="-850" y="-1595"/>
         </scene>
         <!--ModalVCL-->
         <scene sceneID="ne7-9b-KdV">
@@ -19,7 +19,7 @@
                 <viewController id="aCh-JI-3Wy" customClass="ModalVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zcj-CV-4Y9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767" y="-828"/>
+            <point key="canvasLocation" x="-1559" y="-1476"/>
         </scene>
         <!--Auto Layout ByPG-->
         <scene sceneID="VJh-tU-Xkh">
@@ -27,7 +27,7 @@
                 <viewController id="8Lg-os-3Or" customClass="AutoLayoutByPG" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iNv-vk-en3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1434" y="-1208"/>
+            <point key="canvasLocation" x="-2258" y="-1552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Tsi-Fr-XrW">
@@ -184,6 +184,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="416"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="77j-AJ-mRz">
+            <objects>
+                <viewController id="FJJ-oZ-L59" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9J4-yt-VDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134" y="-2072"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eP4-5t-seJ">
