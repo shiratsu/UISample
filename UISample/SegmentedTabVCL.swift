@@ -11,13 +11,138 @@ import UIKit
 class SegmentedTabVCL: UIViewController {
 
     @IBOutlet weak var pageCtrl: UISegmentedControl!
-    @IBOutlet weak var increaseNavBar: UIToolbar!
     @IBOutlet weak var pageView: UIScrollView!
+    @IBOutlet weak var toolnavbar: UIView!
+    var currentvcl:UIViewController!
+    var aryvcl:[UIViewController] = []
+    var selectedSegmentdNumber:Int = -1
+    var navBelowImageView:UIImageView! = nil
+    
+    var first:UIViewController! = nil
+    var second:UIViewController! = nil
+    var third:UIViewController! = nil
+    
+    
+    /**
+     xibを読み込む
+     */
+    override func loadView() {
+        if let view = UINib(nibName: "SegmentedTabVCL", bundle: nil).instantiateWithOwner(self, options: nil).first as? UIView {
+            self.view = view
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        for aview in (self.navigationController?.navigationBar.subviews)!{
+            
+            for bview in aview.subviews{
+                
+                
+                if let cview = bview as? UIImageView where cview.bounds.size.width == self.navigationController!.navigationBar.frame.size.width && cview.bounds.size.height < 2 {
+                    self.navBelowImageView = cview
+                }
+                
+            }
+            
+        }
+        
+        self.pageCtrl.addTarget(self, action: "changevcl:", forControlEvents: UIControlEvents.ValueChanged)
+        
+        
     }
+    
+    func setupViewControllers(){
+        
+        first = self.storyboard?.instantiateViewControllerWithIdentifier("firstvcl") as! FirstVCL
+        second = self.storyboard?.instantiateViewControllerWithIdentifier("secondvcl") as! SecondVCL
+        third = self.storyboard?.instantiateViewControllerWithIdentifier("thirdvcl") as! ThirdVCL
+        
+        aryvcl = [first,second,third]
+        
+        var x:CGFloat = 0
+        first.view.frame.origin = CGPoint(x: x, y: 0)
+        first.view.frame.size = UIScreen.mainScreen().bounds.size
+        
+        x += UIScreen.mainScreen().bounds.size.width
+        x += UIScreen.mainScreen().bounds.size.width
+        
+        pageView.addSubview(first.view)
+        
+        pageView.contentSize.width = x+UIScreen.mainScreen().bounds.size.width
+        pageView.contentSize.height = UIScreen.mainScreen().bounds.size.height
+    }
+    
+    func changeSegmentedControlValue(index: Int = -1){
+        
+        if index != -1 {
+            self.pageCtrl.selectedSegmentIndex = index
+        }
+        
+        if currentvcl != nil{
+            currentvcl.willMoveToParentViewController(nil)
+            currentvcl.view.removeFromSuperview()
+            currentvcl.removeFromParentViewController()
+        }
+        
+        let nextvcl = self.aryvcl[self.pageCtrl.selectedSegmentIndex]
+        
+        if let frontvcl = nextvcl as? FirstVCL{
+            frontvcl.view.frame.origin = CGPoint(x: 0, y: 0)
+            pageView.addSubview(frontvcl.view)
+        }else if let frontvcl = nextvcl as? SecondVCL{
+            var x:CGFloat = 0
+            x += UIScreen.mainScreen().bounds.size.width
+            frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
+            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
+            pageView.addSubview(frontvcl.view)
+        }else if let frontvcl = nextvcl as? ThirdVCL{
+            var x:CGFloat = 0
+            x += UIScreen.mainScreen().bounds.size.width
+            x += UIScreen.mainScreen().bounds.size.width
+            frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
+            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
+            pageView.addSubview(frontvcl.view)
+        }
+        
+        
+        nextvcl.didMoveToParentViewController(self)
+        self.currentvcl = nextvcl
+        
+        print(pageView.contentOffset.x)
+    }
+    
+    func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
+        let index = scrollView.contentOffset.x / scrollView.frame.size.width
+        self.pageCtrl.selectedSegmentIndex = Int(index)
+        
+        changeSegmentedControlValue(Int(index))
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        setupViewControllers()
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    
+    
+    @IBAction func changevcl(sender: AnyObject) {
+        let contentsOffsetX = pageView.frame.size.width*CGFloat(self.pageCtrl.selectedSegmentIndex)
+        let point = CGPoint(x: contentsOffsetX, y: 0)
+        pageView.setContentOffset(point, animated: true)
+//        print(pageView.contentOffset.x)
+        changeSegmentedControlValue()
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

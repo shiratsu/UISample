@@ -128,6 +128,11 @@ class ViewController: UIViewController,AlertActionControllerDelegate {
         self.performSegueWithIdentifier("show_autolayout_cell", sender: self)
     }
     
+    @IBAction func gotoSlidePager(sender: AnyObject) {
+        self.performSegueWithIdentifier("show_segmentedtab", sender: self)
+    }
+    
+    
     
     @IBAction func showNormalAlert(sender: AnyObject) {
         //UIActionSheet

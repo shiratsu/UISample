@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RS7-5P-ieG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="RS7-5P-ieG">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
@@ -179,19 +179,44 @@
                         <segue destination="ZE0-IY-83h" kind="show" identifier="show_another_calendar" id="EyK-j0-bYm"/>
                         <segue destination="gZe-Jg-Dtd" kind="presentation" identifier="show_alert_modal" animates="NO" id="Zsn-dC-ImJ"/>
                         <segue destination="KiY-8Y-GiK" kind="show" identifier="show_twoaction_table" id="rn0-Tl-D84"/>
+                        <segue destination="FJJ-oZ-L59" kind="show" identifier="show_segmentedtab" id="ATI-jb-0fQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FEl-nh-RTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-407" y="416"/>
         </scene>
-        <!--View Controller-->
+        <!--Segmented TabVCL-->
         <scene sceneID="77j-AJ-mRz">
             <objects>
-                <viewController id="FJJ-oZ-L59" sceneMemberID="viewController"/>
+                <viewController id="FJJ-oZ-L59" customClass="SegmentedTabVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9J4-yt-VDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="134" y="-2072"/>
+        </scene>
+        <!--FirstVCL-->
+        <scene sceneID="M9I-6U-HEk">
+            <objects>
+                <viewController storyboardIdentifier="firstvcl" id="nqq-ma-Gxh" customClass="FirstVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L1r-Sa-jUr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1070" y="-2992"/>
+        </scene>
+        <!--SecondVCL-->
+        <scene sceneID="12N-oi-4Jb">
+            <objects>
+                <viewController storyboardIdentifier="secondvcl" id="gXI-Ee-SHD" customClass="SecondVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xgo-bk-UOt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="-2157"/>
+        </scene>
+        <!--ThirdVCL-->
+        <scene sceneID="kKe-rY-yKZ">
+            <objects>
+                <viewController storyboardIdentifier="thirdvcl" id="nSi-wn-Bss" customClass="ThirdVCL" customModule="UISample" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MhE-ZQ-3Yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="-2557"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eP4-5t-seJ">

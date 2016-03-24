@@ -7,9 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentedTabVCL" customModule="UISample" customModuleProvider="target">
             <connections>
-                <outlet property="increaseNavBar" destination="OQB-wF-3RP" id="bzY-NR-SiF"/>
-                <outlet property="pageCtrl" destination="NY4-MR-Xnv" id="nOQ-Yz-5Vj"/>
+                <outlet property="pageCtrl" destination="U8K-5M-T40" id="e35-M5-bC0"/>
                 <outlet property="pageView" destination="1M5-jU-FkT" id="4Vy-7B-Y1Z"/>
+                <outlet property="toolnavbar" destination="tU3-3c-Wxb" id="Ey9-Tq-5nh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,40 +18,44 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQB-wF-3RP">
-                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
-                    <items>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="ZPi-7o-N0T"/>
-                        <barButtonItem style="plain" id="kve-pk-NHM">
-                            <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="NY4-MR-Xnv">
-                                <rect key="frame" x="239" y="7.5" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
-                                    <segment title=""/>
-                                </segments>
-                            </segmentedControl>
-                        </barButtonItem>
-                        <barButtonItem style="plain" systemItem="flexibleSpace" id="UTW-yr-JLa"/>
-                    </items>
-                </toolbar>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1M5-jU-FkT">
                     <rect key="frame" x="0.0" y="108" width="600" height="492"/>
                     <connections>
                         <outlet property="delegate" destination="-1" id="pDd-yn-iPa"/>
                     </connections>
                 </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tU3-3c-Wxb">
+                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="U8K-5M-T40">
+                            <rect key="frame" x="208" y="7" width="185" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="185" id="9QS-DK-yEb"/>
+                            </constraints>
+                            <segments>
+                                <segment title="一つ目"/>
+                                <segment title="２つめ"/>
+                                <segment title="３つめ"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="U8K-5M-T40" firstAttribute="centerX" secondItem="tU3-3c-Wxb" secondAttribute="centerX" id="FD6-gX-pCx"/>
+                        <constraint firstItem="U8K-5M-T40" firstAttribute="centerY" secondItem="tU3-3c-Wxb" secondAttribute="centerY" constant="-1" id="Z8s-tt-vuu"/>
+                        <constraint firstAttribute="height" constant="44" id="q9j-R6-b03"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="OQB-wF-3RP" secondAttribute="trailing" id="1ib-XP-3gv"/>
+                <constraint firstItem="1M5-jU-FkT" firstAttribute="top" secondItem="tU3-3c-Wxb" secondAttribute="bottom" id="AWE-2L-Tlb"/>
+                <constraint firstAttribute="trailing" secondItem="tU3-3c-Wxb" secondAttribute="trailing" id="CYq-4n-aZw"/>
                 <constraint firstItem="1M5-jU-FkT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D39-vL-8cl"/>
                 <constraint firstAttribute="trailing" secondItem="1M5-jU-FkT" secondAttribute="trailing" id="EHF-qJ-vzp"/>
                 <constraint firstAttribute="bottom" secondItem="1M5-jU-FkT" secondAttribute="bottom" id="KFy-iQ-jjX"/>
-                <constraint firstItem="OQB-wF-3RP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Ljx-tR-hPd"/>
-                <constraint firstItem="1M5-jU-FkT" firstAttribute="top" secondItem="OQB-wF-3RP" secondAttribute="bottom" id="fYD-wF-k9q"/>
-                <constraint firstItem="OQB-wF-3RP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kEv-6Q-6nO"/>
+                <constraint firstItem="tU3-3c-Wxb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rqx-MX-5GJ"/>
+                <constraint firstItem="tU3-3c-Wxb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="uO9-Ls-lMb"/>
             </constraints>
         </view>
     </objects>

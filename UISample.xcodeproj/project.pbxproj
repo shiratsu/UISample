@@ -82,6 +82,12 @@
 		56B548C31C97FB2C00191CE1 /* AutoCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */; };
 		56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BA6CAB1C72FA17005F5AF7 /* KeyboardSample.swift */; };
 		56BA6CAE1C72FA17005F5AF7 /* KeyboardSample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56BA6CAC1C72FA17005F5AF7 /* KeyboardSample.xib */; };
+		56C2A4361CA3758900F3AC11 /* FirstVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A4341CA3758900F3AC11 /* FirstVCL.swift */; };
+		56C2A4371CA3758900F3AC11 /* FirstVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C2A4351CA3758900F3AC11 /* FirstVCL.xib */; };
+		56C2A43A1CA3759B00F3AC11 /* SecondVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A4381CA3759B00F3AC11 /* SecondVCL.swift */; };
+		56C2A43B1CA3759B00F3AC11 /* SecondVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C2A4391CA3759B00F3AC11 /* SecondVCL.xib */; };
+		56C2A43E1CA3766900F3AC11 /* ThirdVCL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2A43C1CA3766900F3AC11 /* ThirdVCL.swift */; };
+		56C2A43F1CA3766900F3AC11 /* ThirdVCL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C2A43D1CA3766900F3AC11 /* ThirdVCL.xib */; };
 		56C9F4341C9B8AD20075596D /* FirstAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9F4321C9B8AD20075596D /* FirstAction.swift */; };
 		56C9F4351C9B8AD20075596D /* FirstAction.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56C9F4331C9B8AD20075596D /* FirstAction.xib */; };
 		56C9F4381C9B8AFA0075596D /* SecondAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C9F4361C9B8AFA0075596D /* SecondAction.swift */; };
@@ -205,6 +211,12 @@
 		56B548C11C97FB2C00191CE1 /* AutoCalendarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoCalendarCell.xib; sourceTree = "<group>"; };
 		56BA6CAB1C72FA17005F5AF7 /* KeyboardSample.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardSample.swift; sourceTree = "<group>"; };
 		56BA6CAC1C72FA17005F5AF7 /* KeyboardSample.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardSample.xib; sourceTree = "<group>"; };
+		56C2A4341CA3758900F3AC11 /* FirstVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstVCL.swift; sourceTree = "<group>"; };
+		56C2A4351CA3758900F3AC11 /* FirstVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstVCL.xib; sourceTree = "<group>"; };
+		56C2A4381CA3759B00F3AC11 /* SecondVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCL.swift; sourceTree = "<group>"; };
+		56C2A4391CA3759B00F3AC11 /* SecondVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondVCL.xib; sourceTree = "<group>"; };
+		56C2A43C1CA3766900F3AC11 /* ThirdVCL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdVCL.swift; sourceTree = "<group>"; };
+		56C2A43D1CA3766900F3AC11 /* ThirdVCL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThirdVCL.xib; sourceTree = "<group>"; };
 		56C9F4321C9B8AD20075596D /* FirstAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstAction.swift; sourceTree = "<group>"; };
 		56C9F4331C9B8AD20075596D /* FirstAction.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstAction.xib; sourceTree = "<group>"; };
 		56C9F4361C9B8AFA0075596D /* SecondAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondAction.swift; sourceTree = "<group>"; };
@@ -388,6 +400,12 @@
 				56C9F4371C9B8AFA0075596D /* SecondAction.xib */,
 				56AE18F41CA221B000FCFB8C /* SegmentedTabVCL.swift */,
 				56AE18F51CA221B000FCFB8C /* SegmentedTabVCL.xib */,
+				56C2A4341CA3758900F3AC11 /* FirstVCL.swift */,
+				56C2A4351CA3758900F3AC11 /* FirstVCL.xib */,
+				56C2A4381CA3759B00F3AC11 /* SecondVCL.swift */,
+				56C2A4391CA3759B00F3AC11 /* SecondVCL.xib */,
+				56C2A43C1CA3766900F3AC11 /* ThirdVCL.swift */,
+				56C2A43D1CA3766900F3AC11 /* ThirdVCL.xib */,
 			);
 			path = UISample;
 			sourceTree = "<group>";
@@ -525,6 +543,7 @@
 				569527A11C687E0D00466FC4 /* Assets.xcassets in Resources */,
 				563EEC731C8E6E2B00B21F07 /* TextViewInCell.xib in Resources */,
 				56F4F6891C9941F6007E79FD /* AlertActionController.xib in Resources */,
+				56C2A43B1CA3759B00F3AC11 /* SecondVCL.xib in Resources */,
 				569527C81C687EEF00466FC4 /* ViewController.xib in Resources */,
 				568ED1161C759851003AF9B2 /* ModalVCL.xib in Resources */,
 				56C9F4391C9B8AFA0075596D /* SecondAction.xib in Resources */,
@@ -540,6 +559,7 @@
 				568ED1021C755057003AF9B2 /* CellAcordionVCL.xib in Resources */,
 				56663D411C84177700D33441 /* LinkCell.xib in Resources */,
 				56663D3D1C80788100D33441 /* WorkViewCell.xib in Resources */,
+				56C2A43F1CA3766900F3AC11 /* ThirdVCL.xib in Resources */,
 				569527CC1C687F5700466FC4 /* CustomNavbar.xib in Resources */,
 				56E74D941C69E30100A578CD /* CustomSwitchVCL.xib in Resources */,
 				56C9F4351C9B8AD20075596D /* FirstAction.xib in Resources */,
@@ -550,6 +570,7 @@
 				563EEC8C1C8FE47C00B21F07 /* AutoLayoutByPG.xib in Resources */,
 				567A0D341C7DC1270057E01F /* TestTableViewCell.xib in Resources */,
 				56663D2D1C7FF34600D33441 /* WorkDetailSample.xib in Resources */,
+				56C2A4371CA3758900F3AC11 /* FirstVCL.xib in Resources */,
 				568ED0F81C745E2D003AF9B2 /* TableViewInTableCell.xib in Resources */,
 				561E60D91C7180D800CFADF6 /* VarticalCalendar.xib in Resources */,
 				561D224A1C8D5D23008CCF50 /* LabelList.xib in Resources */,
@@ -592,6 +613,7 @@
 				56663D401C84177700D33441 /* LinkCell.swift in Sources */,
 				561E60CC1C71733600CFADF6 /* OneCalendarCell.swift in Sources */,
 				56E768F71C9AD24E0006F3EC /* TwoActionTable.swift in Sources */,
+				56C2A4361CA3758900F3AC11 /* FirstVCL.swift in Sources */,
 				56663D2C1C7FF34600D33441 /* WorkDetailSample.swift in Sources */,
 				56BA6CAD1C72FA17005F5AF7 /* KeyboardSample.swift in Sources */,
 				563EEC8F1C8FE55600B21F07 /* AutoLayoutCell.swift in Sources */,
@@ -612,7 +634,9 @@
 				561D224D1C8D7A71008CCF50 /* TextViewInTableViewVCL.swift in Sources */,
 				56E768FB1C9AD4380006F3EC /* TwoActionCell.swift in Sources */,
 				568ED0FD1C747B96003AF9B2 /* TableViewInCell.swift in Sources */,
+				56C2A43A1CA3759B00F3AC11 /* SecondVCL.swift in Sources */,
 				568ED1651C75DED2003AF9B2 /* HtmlTest.swift in Sources */,
+				56C2A43E1CA3766900F3AC11 /* ThirdVCL.swift in Sources */,
 				56E74DE21C6B2FE100A578CD /* SimpleCalendar.swift in Sources */,
 				568ED1011C755057003AF9B2 /* CellAcordionVCL.swift in Sources */,
 				567FF7381C768E7E00ADDBFF /* RTLabel.m in Sources */,
