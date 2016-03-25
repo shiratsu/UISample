@@ -85,7 +85,7 @@ class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate,UIScrollViewDele
         pageView.addSubview(first.view)
         
         pageView.contentSize.width = x+UIScreen.mainScreen().bounds.size.width
-        pageView.contentSize.height = UIScreen.mainScreen().bounds.size.height
+        pageView.contentSize.height = 1800
     }
     
     func changeSegmentedControlValue(index: Int = -1){
@@ -104,13 +104,14 @@ class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate,UIScrollViewDele
         
         if let frontvcl = nextvcl as? FirstVCL{
             frontvcl.view.frame.origin = CGPoint(x: 0, y: 0)
+            frontvcl.view.frame.size = CGSizeMake(CGRectGetWidth(view.bounds), CGRectGetHeight(pageView.bounds))
+            
             pageView.addSubview(frontvcl.view)
         }else if let frontvcl = nextvcl as? SecondVCL{
             var x:CGFloat = 0
             x += UIScreen.mainScreen().bounds.size.width
             frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
-            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
-            pageView.scrollEnabled = false
+            frontvcl.view.frame.size = CGSizeMake(CGRectGetWidth(view.bounds), CGRectGetHeight(pageView.bounds))
             pageView.addSubview(frontvcl.view)
             
         }else if let frontvcl = nextvcl as? ThirdVCL{
@@ -118,7 +119,7 @@ class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate,UIScrollViewDele
             x += UIScreen.mainScreen().bounds.size.width
             x += UIScreen.mainScreen().bounds.size.width
             frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
-            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
+            frontvcl.view.frame.size = CGSizeMake(CGRectGetWidth(view.bounds), CGRectGetHeight(pageView.bounds))
             pageView.addSubview(frontvcl.view)
         }
         
@@ -126,7 +127,7 @@ class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate,UIScrollViewDele
         nextvcl.didMoveToParentViewController(self)
         self.currentvcl = nextvcl
         
-        print(pageView.contentOffset.x)
+//        print(pageView.contentOffset.x)
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
@@ -147,6 +148,7 @@ class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate,UIScrollViewDele
     }
     
     func setScrollViewHeight(height: CGFloat) {
+        
         pageView.contentSize.height = height
     }
     

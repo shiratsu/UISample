@@ -25,10 +25,10 @@ class ThirdVCL: UIViewController {
         super.viewDidLoad()
 
         // single swipe down
-        let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
-        swipeDownGestureRight.numberOfTouchesRequired = 1
-        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.view.addGestureRecognizer(swipeDownGestureRight)
+//        let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
+//        swipeDownGestureRight.numberOfTouchesRequired = 1
+//        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Right
+//        self.view.addGestureRecognizer(swipeDownGestureRight)
         
         
         // Do any additional setup after loading the view.

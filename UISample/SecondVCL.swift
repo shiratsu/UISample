@@ -75,17 +75,17 @@ class SecondVCL: UIViewController {
         self.menuView.estimatedRowHeight = 44
         self.menuView.rowHeight = UITableViewAutomaticDimension
         
-        // single swipe down
-        let swipeDownGestureLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeLeft:")
-        swipeDownGestureLeft.numberOfTouchesRequired = 1
-        swipeDownGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.menuView.addGestureRecognizer(swipeDownGestureLeft)
-        
-        // single swipe down
-        let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
-        swipeDownGestureRight.numberOfTouchesRequired = 1
-        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Right
-        self.menuView.addGestureRecognizer(swipeDownGestureRight)
+//        // single swipe down
+//        let swipeDownGestureLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeLeft:")
+//        swipeDownGestureLeft.numberOfTouchesRequired = 1
+//        swipeDownGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
+//        self.menuView.addGestureRecognizer(swipeDownGestureLeft)
+//        
+//        // single swipe down
+//        let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
+//        swipeDownGestureRight.numberOfTouchesRequired = 1
+//        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Right
+//        self.menuView.addGestureRecognizer(swipeDownGestureRight)
         
         // Do any additional setup after loading the view.
     }
@@ -431,12 +431,12 @@ class SecondVCL: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.menuView.layoutIfNeeded()
-        print(self.menuView.contentSize.height)
-        self.delegate?.setScrollViewHeight(self.menuView.contentSize.height)
-        
-        
-        print(self.menuView.contentSize.height)
+//        self.menuView.layoutIfNeeded()
+//        print(self.menuView.contentSize.height)
+//        self.delegate?.setScrollViewHeight(self.menuView.contentSize.height)
+//        
+//        
+//        print(self.menuView.contentSize.height)
     }
     
     

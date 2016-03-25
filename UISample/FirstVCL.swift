@@ -25,10 +25,10 @@ class FirstVCL: UIViewController {
         super.viewDidLoad()
 
         // single swipe down
-        let swipeDownGestureLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeLeft:")
-        swipeDownGestureLeft.numberOfTouchesRequired = 1
-        swipeDownGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
-        self.view.addGestureRecognizer(swipeDownGestureLeft)
+//        let swipeDownGestureLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeLeft:")
+//        swipeDownGestureLeft.numberOfTouchesRequired = 1
+//        swipeDownGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
+//        self.view.addGestureRecognizer(swipeDownGestureLeft)
         
         
         // Do any additional setup after loading the view.
