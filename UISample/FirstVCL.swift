@@ -35,7 +35,7 @@ class FirstVCL: UIViewController {
     }
     
     func handleSwipeLeft(sender: UITapGestureRecognizer){
-        print("Swiped Left!")
+        self.delegate?.changePage(1)
     }
     
     override func didReceiveMemoryWarning() {

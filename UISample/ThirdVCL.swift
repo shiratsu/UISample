@@ -27,7 +27,7 @@ class ThirdVCL: UIViewController {
         // single swipe down
         let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
         swipeDownGestureRight.numberOfTouchesRequired = 1
-        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Left
+        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Right
         self.view.addGestureRecognizer(swipeDownGestureRight)
         
         
@@ -36,6 +36,8 @@ class ThirdVCL: UIViewController {
     
     func handleSwipeRight(sender: UITapGestureRecognizer){
         print("Swiped Right!")
+        
+        self.delegate?.changePage(1)
     }
 
     override func didReceiveMemoryWarning() {

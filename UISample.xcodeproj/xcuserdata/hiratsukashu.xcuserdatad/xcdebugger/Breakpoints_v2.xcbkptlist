@@ -824,7 +824,7 @@
                   moduleName = "UISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
-                  timestampString = "480569321.241115"
+                  timestampString = "480578938.561513"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -839,7 +839,7 @@
                   moduleName = "UISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
-                  timestampString = "480569321.241322"
+                  timestampString = "480578938.561736"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -856,11 +856,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/SegmentedTabVCL.swift"
-            timestampString = "480568892.807452"
+            timestampString = "480578867.893214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "98"
-            endingLineNumber = "98"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "changeSegmentedControlValue(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -872,11 +872,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/SegmentedTabVCL.swift"
-            timestampString = "480568949.008597"
+            timestampString = "480578867.893214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "changevcl(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -888,12 +888,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/SegmentedTabVCL.swift"
-            timestampString = "480570298.456143"
+            timestampString = "480578867.893214"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
-            landmarkName = "changeSegmentedControlValue(_:direction:)"
+            startingLineNumber = "175"
+            endingLineNumber = "175"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UISample/SegmentedTabVCL.swift"
+            timestampString = "480578867.893214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "172"
+            endingLineNumber = "172"
+            landmarkName = "scrollViewDidScroll(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UISample/SegmentedTabVCL.swift"
+            timestampString = "480578867.893214"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "setScrollViewHeight(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
