@@ -10,6 +10,8 @@ import UIKit
 
 class FirstVCL: UIViewController {
     
+    weak var delegate:SegmentedTabVCLDelegate?
+    
     /**
      xibを読み込む
      */
@@ -22,9 +24,20 @@ class FirstVCL: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // single swipe down
+        let swipeDownGestureLeft: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeLeft:")
+        swipeDownGestureLeft.numberOfTouchesRequired = 1
+        swipeDownGestureLeft.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeDownGestureLeft)
+        
+        
         // Do any additional setup after loading the view.
     }
-
+    
+    func handleSwipeLeft(sender: UITapGestureRecognizer){
+        print("Swiped Left!")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SegmentedTabVCL" customModule="UISample" customModuleProvider="target">
             <connections>
                 <outlet property="pageCtrl" destination="U8K-5M-T40" id="e35-M5-bC0"/>
-                <outlet property="pageView" destination="1M5-jU-FkT" id="4Vy-7B-Y1Z"/>
+                <outlet property="pageView" destination="nbA-3b-upG" id="CqJ-q0-kdw"/>
                 <outlet property="toolnavbar" destination="tU3-3c-Wxb" id="Ey9-Tq-5nh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -18,12 +18,6 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1M5-jU-FkT">
-                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="pDd-yn-iPa"/>
-                    </connections>
-                </scrollView>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tU3-3c-Wxb">
                     <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                     <subviews>
@@ -46,16 +40,20 @@
                         <constraint firstAttribute="height" constant="44" id="q9j-R6-b03"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nbA-3b-upG">
+                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="1M5-jU-FkT" firstAttribute="top" secondItem="tU3-3c-Wxb" secondAttribute="bottom" id="AWE-2L-Tlb"/>
                 <constraint firstAttribute="trailing" secondItem="tU3-3c-Wxb" secondAttribute="trailing" id="CYq-4n-aZw"/>
-                <constraint firstItem="1M5-jU-FkT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="D39-vL-8cl"/>
-                <constraint firstAttribute="trailing" secondItem="1M5-jU-FkT" secondAttribute="trailing" id="EHF-qJ-vzp"/>
-                <constraint firstAttribute="bottom" secondItem="1M5-jU-FkT" secondAttribute="bottom" id="KFy-iQ-jjX"/>
+                <constraint firstAttribute="trailing" secondItem="nbA-3b-upG" secondAttribute="trailing" id="LNw-Qk-9kX"/>
                 <constraint firstItem="tU3-3c-Wxb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rqx-MX-5GJ"/>
+                <constraint firstItem="nbA-3b-upG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SHI-Tl-NPr"/>
+                <constraint firstAttribute="bottom" secondItem="nbA-3b-upG" secondAttribute="bottom" id="Zep-HL-It7"/>
                 <constraint firstItem="tU3-3c-Wxb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="uO9-Ls-lMb"/>
+                <constraint firstItem="nbA-3b-upG" firstAttribute="top" secondItem="tU3-3c-Wxb" secondAttribute="bottom" id="vbc-cE-2DV"/>
             </constraints>
         </view>
     </objects>

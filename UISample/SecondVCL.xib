@@ -7,6 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondVCL" customModule="UISample" customModuleProvider="target">
             <connections>
+                <outlet property="menuView" destination="UQ2-Ap-3ug" id="rIH-Vw-tUA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,17 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="second" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a21-rQ-3h3">
-                    <rect key="frame" x="272" y="222" width="56.5" height="20.5"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UQ2-Ap-3ug">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3tE-ZA-bv7"/>
+                        <outlet property="delegate" destination="-1" id="jEm-MT-847"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="a21-rQ-3h3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="222" id="m4G-LD-f88"/>
-                <constraint firstItem="a21-rQ-3h3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mOM-kj-Say"/>
+                <constraint firstAttribute="bottom" secondItem="UQ2-Ap-3ug" secondAttribute="bottom" id="B8r-xQ-ges"/>
+                <constraint firstItem="UQ2-Ap-3ug" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YDW-CZ-3kC"/>
+                <constraint firstAttribute="trailing" secondItem="UQ2-Ap-3ug" secondAttribute="trailing" id="YYW-lY-zar"/>
+                <constraint firstItem="UQ2-Ap-3ug" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fxd-HS-FG8"/>
             </constraints>
         </view>
     </objects>

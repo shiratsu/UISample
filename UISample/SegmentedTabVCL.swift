@@ -8,20 +8,31 @@
 
 import UIKit
 
-class SegmentedTabVCL: UIViewController {
+public protocol SegmentedTabVCLDelegate : class {
+    
+    func changeVCLBySwipe()
+}
+
+
+class SegmentedTabVCL: UIViewController,SegmentedTabVCLDelegate {
 
     @IBOutlet weak var pageCtrl: UISegmentedControl!
-    @IBOutlet weak var pageView: UIScrollView!
+    @IBOutlet weak var pageView: UIView!
     @IBOutlet weak var toolnavbar: UIView!
     var currentvcl:UIViewController!
     var aryvcl:[UIViewController] = []
     var selectedSegmentdNumber:Int = -1
     var navBelowImageView:UIImageView! = nil
     
-    var first:UIViewController! = nil
-    var second:UIViewController! = nil
-    var third:UIViewController! = nil
+    var first:FirstVCL! = nil
+    var second:SecondVCL! = nil
+    var third:ThirdVCL! = nil
     
+    var isVerticalOK = true
+    
+    let DIRECTION_NOTHING   = 0
+    let DIRECTION_LEFT      = 1
+    let DIRECTION_RIGHT     = 2
     
     /**
      xibを読み込む
@@ -59,24 +70,16 @@ class SegmentedTabVCL: UIViewController {
         
         first = self.storyboard?.instantiateViewControllerWithIdentifier("firstvcl") as! FirstVCL
         second = self.storyboard?.instantiateViewControllerWithIdentifier("secondvcl") as! SecondVCL
+        second.delegate = self
         third = self.storyboard?.instantiateViewControllerWithIdentifier("thirdvcl") as! ThirdVCL
         
         aryvcl = [first,second,third]
         
-        var x:CGFloat = 0
-        first.view.frame.origin = CGPoint(x: x, y: 0)
-        first.view.frame.size = UIScreen.mainScreen().bounds.size
         
-        x += UIScreen.mainScreen().bounds.size.width
-        x += UIScreen.mainScreen().bounds.size.width
         
-        pageView.addSubview(first.view)
-        
-        pageView.contentSize.width = x+UIScreen.mainScreen().bounds.size.width
-        pageView.contentSize.height = UIScreen.mainScreen().bounds.size.height
     }
     
-    func changeSegmentedControlValue(index: Int = -1){
+    func changeSegmentedControlValue(index: Int = -1,direction:Int = 0){
         
         if index != -1 {
             self.pageCtrl.selectedSegmentIndex = index
@@ -89,30 +92,49 @@ class SegmentedTabVCL: UIViewController {
         }
         
         let nextvcl = self.aryvcl[self.pageCtrl.selectedSegmentIndex]
+        nextvcl.view.frame = self.pageView.bounds
         
-        if let frontvcl = nextvcl as? FirstVCL{
-            frontvcl.view.frame.origin = CGPoint(x: 0, y: 0)
-            pageView.addSubview(frontvcl.view)
-        }else if let frontvcl = nextvcl as? SecondVCL{
-            var x:CGFloat = 0
-            x += UIScreen.mainScreen().bounds.size.width
-            frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
-            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
-            pageView.addSubview(frontvcl.view)
-        }else if let frontvcl = nextvcl as? ThirdVCL{
-            var x:CGFloat = 0
-            x += UIScreen.mainScreen().bounds.size.width
-            x += UIScreen.mainScreen().bounds.size.width
-            frontvcl.view.frame.origin = CGPoint(x: x, y: 0)
-            frontvcl.view.frame.size = UIScreen.mainScreen().bounds.size
-            pageView.addSubview(frontvcl.view)
+        switch direction{
+        case DIRECTION_NOTHING:
+            self.pageView.addSubview(nextvcl.view)
+            break
+        case DIRECTION_LEFT:
+            
+            //デフォではないので、自分でアニメーションを定義
+            nextvcl.view.frame = CGRect(x: self.view.frame.width, y: self.pageView.frame.origin.y, width: self.view.frame.width, height: self.pageView.frame.height)
+            self.pageView.addSubview(nextvcl.view)
+            UIView.animateWithDuration(
+                0.5,
+                animations: { [weak self] () -> Void in
+                    nextvcl.view.frame.origin.x = 0
+                },
+                completion: { [weak self] finished in
+                })
+            
+            
+            break
+        case DIRECTION_RIGHT:
+            nextvcl.view.frame = CGRect(x: -self.view.frame.width, y: self.pageView.frame.origin.y, width: self.view.frame.width, height: self.pageView.frame.height)
+            self.pageView.addSubview(nextvcl.view)
+            UIView.animateWithDuration(
+                0.5,
+                animations: { [weak self] () -> Void in
+                    nextvcl.view.frame.origin.x = self!.view.frame.width
+                },
+                completion: { [weak self] finished in
+                })
+            break
+        default:
+            self.pageView.addSubview(nextvcl.view)
+            break
         }
+        
         
         
         nextvcl.didMoveToParentViewController(self)
         self.currentvcl = nextvcl
         
-        print(pageView.contentOffset.x)
+        self.addChildViewController(nextvcl)
     }
     
     func scrollViewDidEndDecelerating(scrollView: UIScrollView) {
@@ -126,24 +148,26 @@ class SegmentedTabVCL: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         setupViewControllers()
+        changeSegmentedControlValue()
     }
     
     override func viewWillDisappear(animated: Bool) {
         super.viewWillDisappear(animated)
     }
     
-    
+
     
     @IBAction func changevcl(sender: AnyObject) {
-        let contentsOffsetX = pageView.frame.size.width*CGFloat(self.pageCtrl.selectedSegmentIndex)
-        let point = CGPoint(x: contentsOffsetX, y: 0)
-        pageView.setContentOffset(point, animated: true)
-//        print(pageView.contentOffset.x)
+        
         changeSegmentedControlValue()
     }
     
+    func changeVCLBySwipe() {
+        
+        
+    }
     
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

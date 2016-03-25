@@ -10,6 +10,8 @@ import UIKit
 
 class ThirdVCL: UIViewController {
     
+    weak var delegate:SegmentedTabVCLDelegate?
+    
     /**
      xibを読み込む
      */
@@ -22,7 +24,18 @@ class ThirdVCL: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // single swipe down
+        let swipeDownGestureRight: UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: "handleSwipeRight:")
+        swipeDownGestureRight.numberOfTouchesRequired = 1
+        swipeDownGestureRight.direction = UISwipeGestureRecognizerDirection.Left
+        self.view.addGestureRecognizer(swipeDownGestureRight)
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    func handleSwipeRight(sender: UITapGestureRecognizer){
+        print("Swiped Right!")
     }
 
     override func didReceiveMemoryWarning() {

@@ -824,7 +824,7 @@
                   moduleName = "UISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
-                  timestampString = "480511407.613666"
+                  timestampString = "480569321.241115"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -839,7 +839,7 @@
                   moduleName = "UISample"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/hiratsukashu/Documents/UISample/UISample/TwoActionCell.swift"
-                  timestampString = "480511407.613911"
+                  timestampString = "480569321.241322"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "0"
@@ -856,11 +856,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/SegmentedTabVCL.swift"
-            timestampString = "480511407.572763"
+            timestampString = "480568892.807452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
             landmarkName = "changeSegmentedControlValue(_:)"
             landmarkType = "5">
          </BreakpointContent>
@@ -872,12 +872,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UISample/SegmentedTabVCL.swift"
-            timestampString = "480511407.572763"
+            timestampString = "480568949.008597"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "143"
-            endingLineNumber = "143"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "changevcl(_:)"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UISample/SegmentedTabVCL.swift"
+            timestampString = "480570298.456143"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
+            landmarkName = "changeSegmentedControlValue(_:direction:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
